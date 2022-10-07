@@ -1,0 +1,137 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+{% load transl_extras %}
+
+<style>.navbar{background-color: #F1F1E6 !important;}
+</style>
+
+<div class="iblockDiv">
+	<div class="identmapdiv">
+		<span class="indentmaptext">{% t "map_of_identity" %}</span>
+		<span class="identmapinfo">{% t "identity_map_text" %}</span>
+	</div>
+
+	<div class="tellmorediv">
+		<span class="tellmoretext">{% t "tell_us_more" %}</span>
+		<span class="tellmoreinfo">{% t "tell_us_more_text" %}</span>
+		<br><br>
+		<a class="sendusbutton" >
+			<span class="sendusbuttontext">{% t "text_us_button" %}</span></a>
+	</div>
+</div>
+
+<div class="iiblockDiv">
+	<div class="aboutprojectdiv">
+		<span class="aboutprojectheader">{% t "about_project_header_block" %}</span><br>
+		<span class="aboutprojecttext">{{about_project.project_info|truncatechars:500}}</span><br>
+		<a class="projectinfodetail" href="{% url 'about_project' lang=lang %}">{% t "detail" %} </a>&nbsp
+		<img src="{% static '/icons/Iconrightarrow.png' %}">
+		<img class="aboutprojectimg" src="{% static about_project.post_img_first %}">
+	</div>
+	<center><div class="line"></div></center>
+
+
+
+	<div class="historydiv">
+		<span class="historyheader">{% t "history_block_header" %}</span>
+		<div class="allstaticmobile" style="display: none;">
+			<span class="allstaticmobiletext">{% t "all_static" %}</span>
+		</div><br>
+		<div class="historychild">
+			<img class="historyimg" src="{% static last_post_history.post_img %}">
+			<span class="historychildtext">{{last_post_history.post_title}}
+			<br>
+			<span class="historychildtextinfo">{{last_post_history.post_text|truncatechars:120 }}
+			</span></span>
+		</div>
+
+		<div class="historychild">
+			<img class="historyimg" src="{% static lastsec_post_history.post_img %}">
+			<span class="historychildtext">
+				{{lastsec_post_history.post_title}}
+				<br>
+				<span class="historychildtextinfo">{{lastsec_post_history.post_text|truncatechars:120}}</span>
+				<a class="allstatic" href="{% url 'history' lang=lang %}">{% t "all_static" %}
+					<img src="{% static '/icons/Iconrightarrow.png' %}"></a>
+			</span>
+		</div>
+	<center><div class="line2"></div></center>
+	</div>
+	<div class="culturediv">
+		<span class="cultureheader">{% t "culture_block_header" %}</span>
+		<div class="allstaticmobile" style="display: none;">
+			<span class="allstaticmobiletext">{% t "all_static" %}</span>
+		</div><br>
+		<div class="historychild">
+			<img class="cultureimg" src="{% static last_post_culture.post_img %}">
+			<span class="culutrechildtext">{{last_post_culture.post_title}}
+			<br>
+			<span class="historychildtextinfo">{{last_post_culture.post_text|truncatechars:120}}
+			</span></span>
+		</div>
+		<div class="historychild">
+			<img class="cultureimg" src="{% static lastsec_post_culture.post_img %}">
+			<span class="culutrechildtext">
+				{{lastsec_post_culture.post_title}}
+			<br>
+			<span class="historychildtextinfo">
+				{{lastsec_post_culture.post_text|truncatechars:120}}<br>
+				<a class="allstatic" href="{% url 'culture' lang=lang %}" style="margin-top:50px !important">{% t "all_static" %}
+					<img src="{% static '/icons/Iconrightarrow.png' %}"></a></span></span>
+		</div>
+
+	</div> <br>
+<br>
+<center><div class="line3"></div></center>
+<div class="fullsizedivvideos">
+	<div class="videosdiv">
+
+		<span class="videosheader">{% t "videos_block_header" %}</span>
+
+		<a class="allvideosbutton">
+			<center><span class="allvideo">{% t "all_video_button" %}</span></center></a>
+			<br>
+
+		<center><br>
+
+		<div class="videodiv1" style="float: left;">
+			<span class="centeryellowdot">
+				<img class="pause" src="{% static '/icons/Iconvideo.png' %}"></span>
+				<img src="{% static '/icons/Icontime.png' %}" class="undervideotime">
+				<span class="videotimecounter">1:26</span>
+				<span class="undervideotext"> გორის ძველი არქიტექტურული სახე </span>
+		</div> 
+				<div class="loadvideodot1"></div>
+				<div class="loadvideodot2"></div>
+				<div class="loadvideodot3"></div>
+
+		<div class="videodiv2">
+			<span class="centeryellowdot">
+				<img class="pause" src="{% static '/icons/Iconvideo.png' %}"></span>
+				<img src="{% static '/icons/Icontime.png' %}" class="undervideotime">
+				<span class="videotimecounter">5:15</span>
+				<span class="undervideotext"> გორის ძველი არქიტექტურული სახე </span>
+		</div>
+
+		<div class="videodiv3" style="float: right;">
+			<span class="centeryellowdot">
+				<img class="pause" src="{% static '/icons/Iconvideo.png' %}"></span>
+				<img src="{% static '/icons/Icontime.png' %}" class="undervideotime">
+				<span class="videotimecounter">3:00</span>
+				<span class="undervideotext"> გორის ძველი არქიტექტურული სახე </span>
+		</div>
+
+		</center>
+	</div>
+	<div class="tellusmoremobile">
+		<span class="tellusmoremobiletext">{% t "tell_us_more" %}</span>
+	</div><br><br>
+</div>
+
+
+</div>
+
+
+
+{% endblock %}

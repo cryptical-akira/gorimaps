@@ -1,0 +1,18 @@
+@font-face{
+  src: url(../fonts/FiraGO-Regular.ttf);
+  font-family: FiraGO;
+}
+@font-face{
+  src: url(../fonts/FiraGO-SemiBold.ttf);
+  font-family: firagosemibold;
+}
+@font-face{
+  src: url(../fonts/LGVAnastasia-Regular.ttf);
+  font-family: LGVAnastasia;
+}
+
+body {
+  background: #F1F1E6;
+   overflow-x: hidden;
+}
+

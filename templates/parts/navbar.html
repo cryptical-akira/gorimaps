@@ -1,0 +1,72 @@
+{% load static %}
+{% load i18n %}
+{% load transl_extras %}
+
+
+<nav class="navbar">
+
+    <link rel="stylesheet" href="{% static '/css/navbar.css' %}">
+    <a class="navheader" href="{% url 'index_page' lang=lang %}">{% t "new_identity_of_gori" %}</a>
+
+    <a class="menuitem1" href="{% url 'about_project' lang=lang %}">{% t "about_project" %}</a>
+    <a class="menuitem2" href="{% url 'history' lang=lang %}">{% t "history" %}</a>
+    <a class="menuitem3" href="{% url 'culture' lang=lang %}">{% t "culture" %}</a>
+    <a class="menuitem4" href="{% url 'architect' lang=lang %}">{% t "architect" %}</a>
+    <a class="menuitem5" href="">{% t "humans" %}</a>
+    <a class="menuitem6" href="">{% t "textus" %}</a>
+
+    <div class="search">
+        <img class="searchIcon" src="{% static '/icons/Iconsearch.png' %}">
+    </div>
+
+    <div class="langBar" onclick="myFunction()">
+            {% if lang == 'ka' %}
+            ქართული
+            {% else %}
+            English
+            {%endif%}&nbsp&nbsp&nbsp&nbsp<img class="angle"src="{% static '/icons/Iconarrow.png' %}">
+<!--         <span class="textSpanForLang">
+        ქართული
+    </span> -->
+      <div id="myDropdown" class="dropdown-content">
+   <center> <a href="{% if lang == 'ka' %}
+            ../en
+            {% else %}
+            ../ka
+            {%endif%}" class="secondlanguage" style="color: #848177;">            
+    {% if lang == 'ka' %}
+            English
+            {% else %}
+            ქართული
+            {%endif%}</a></center>
+    </div>
+    </div>
+    
+    <div class="map"><img class="iconmap" src="{% static '/icons/Iconmap.png' %}"></div>
+    <div class="menu"><img class="iconmenu" src="{% static '/icons/Iconmenu.png' %}"></div>
+
+
+
+</nav>
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.langBar')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>

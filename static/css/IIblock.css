@@ -1,0 +1,877 @@
+.iiblockDiv{
+
+}
+
+.aboutprojectdiv{
+width: 1398px;
+height: 428.65px;
+margin-left: 13.6%;
+overflow-wrap: break-word;
+padding-top: 74px;
+
+}
+
+.aboutprojectheader{
+/* პროექტის შესახებ */
+
+position: block;
+width: 291px;
+height: 41px;
+
+font-family: 'LGVAnastasia';
+font-style: normal;
+font-weight: 400;
+font-size: 64px;
+line-height: 41px;
+
+color: #F6C042;
+}
+
+.aboutprojecttext{
+position: block;
+overflow-wrap: break-word;
+display: inline-block;
+width: 40%;
+height: 182px;
+padding-top: 35px;
+
+font-family: 'FiraGO';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 26px;
+
+/* or 162% */
+
+color: #3E3A2B;
+
+
+}
+
+.aboutprojectimg{
+position: absolute;
+object-fit: cover;
+width: 547px;
+height: 356.64px;
+left: 57%;
+top: 1314px;
+
+background: url(image.png);
+}
+
+.projectinfodetail{
+text-decoration: none;
+position: block;
+width: 101px;
+height: 24px;
+display: inline-block;
+padding-top: 65px;
+
+font-family: 'FiraGO';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 21px;
+
+/* or 131% */
+
+color: #848177;
+}
+
+.projectinforightarrow{
+display: inline-block;
+padding-top: 10px;
+border: 1.5px solid #F6C042;
+transform: matrix(1, 0, 0, -1, 0, 0);
+}
+.line{
+position: block;
+width: 73%;
+height: 0px;
+
+border: 1px solid #CCCCB7;
+}
+
+
+
+
+
+
+
+.historychildtextinfo{
+position: inline-block;
+display: inline-block;
+padding-top: 12px;
+
+font-family: 'FiraGO';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 26px;
+
+/* or 162% */
+
+color: #3E3A2B;
+}
+
+
+
+.allstatic{
+	/* ყველა სტატია */
+  position: relative;
+  display: inline-block;
+  margin-top: 50px;
+  text-decoration: none;
+  right: 250px;
+
+font-family: 'FiraGO';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+
+
+/* identical to box height, or 131% */
+
+color: #848177;
+
+}
+.centerformobile{
+	display: none;
+}
+.videosdiv{
+width: 1398px;
+height: 536.71px;
+display: inline-block;
+margin-top: 117px;
+margin-left: 13.6%;
+}
+
+
+
+.allvideosbutton{
+display: inline-block;
+float:  right;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+gap: 10px;
+
+width: 154px;
+height: 56px;
+
+background: #F6C042;
+border-radius: 10px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+}
+
+.allvideo{
+/* ყველა ვიდეო */
+
+font-family: 'LGVAnastasia';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 20px;
+display: inline-block;
+padding-top: 16px;
+
+/* or 62% */
+text-align: center;
+
+color: #3E3A2B;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+.videodiv1{
+position: block;
+width: 406px;
+margin-top: 33px;
+height: 264.71px;
+display: inline-block;
+background: #3E3A2B;
+border-radius: 12px;
+}
+
+.videodiv2{
+position: block;
+width: 406px;
+margin-top: 33px;
+height: 264.71px;
+display: inline-block;
+background: #3E3A2B;
+border-radius: 12px;
+}
+.videodiv3{
+position: block;
+width: 406px;
+margin-top: 33px;
+height: 264.71px;
+display: inline-block;
+background: #3E3A2B;
+border-radius: 12px;
+}
+
+.centeryellowdot{
+display: block;
+width: 64px;
+margin-top: 100px;
+height: 64px;
+border-radius: 50%;
+
+background: #F6C042;
+}
+
+.pause{
+	position: block;
+	padding-top: 22px;
+	padding-left: 2px;
+	display: inline-block;
+border-radius: 1px;
+}
+
+.undervideotext{
+  position: relative;
+  display: inline-block;
+  margin-top: 125px;
+  right: 15px;
+
+font-family: 'FiraGO';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 34px;
+
+/* identical to box height, or 170% */
+
+color: #3E3A2B;
+}
+
+
+.videotimecounter{
+	position: relative;
+	top: 110px;
+  right: 165px;
+font-family: 'FiraGO';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 22px;
+
+/* or 138% */
+
+color: #848177;
+}
+
+.undervideotime{
+	position: relative;
+font-family: 'FiraGO';
+top: 115px;
+right: 170px;
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 22px;
+
+/* or 138% */
+
+color: #848177;
+}
+
+@media only screen and (min-width: 1331px) and (max-width: 1615px) {
+	.line2{
+position: block !important;
+width: 90% !important;
+height: 0px;
+margin-top: 52px;
+
+border: 1px solid #CCCCB7;
+}
+	.line3{
+position: block !important;
+width: 90% !important;
+height: 0px;
+margin-top: 52px;
+
+border: 1px solid #CCCCB7;
+}
+	.culturediv{
+position: block;
+display: inline-block;
+width: 680px;
+margin-left: 28%;
+height: 549.68px;
+margin-top: 20px;
+
+}
+.historydiv{
+	margin-left: 28% !important;
+}
+.videosdiv{
+	padding-top: 0;
+}
+}
+
+
+@media only screen and (min-width: 1331px) {
+	.tellusmoremobile{
+		display: none;
+	}
+	.videosheader{
+
+width: 498px;
+height: 56px;
+
+font-family: 'LGVAnastasia';
+font-style: normal;
+font-weight: 400;
+font-size: 64px;
+line-height: 48px;
+
+/* or 75% */
+
+color: #3E3A2B;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+		.culturediv{
+position: block;
+display: inline-block;
+width: 680px;
+height: 549.68px;
+
+}
+
+.cultureheader{
+	/* კულტურა */
+
+position: block;
+width: 139px;
+height: 41px;
+display: inline-block;
+padding-top: 72px;
+
+font-family: 'LGVAnastasia';
+font-style: normal;
+font-weight: 400;
+font-size: 64px;
+line-height: 41px;
+
+color: #3E3A2B;
+}
+
+.cultureimg{
+	margin-top: 44px;
+position: block;
+object-fit: cover;
+display: inline-block;
+width: 230px;
+height: 161.48px;
+}
+
+.culutrechildtext{
+		position: block;
+	display: inline-block;
+width: 422px;
+margin-top: 44px;
+margin-right: 10px;
+height: 68px;
+float: right;
+
+font-family: 'FiraGO';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 34px;
+
+/* or 170% */
+
+color: #3E3A2B;
+}
+.historyimg{
+margin-top: 44px;
+object-fit: cover;
+position: block;
+display: inline-block;
+width: 230px;
+height: 161.48px;
+}
+
+	.historychild{
+	height: 225px;
+	display: block;
+}
+
+	.historydiv{
+position: block;
+display: inline-block;
+width: 680px;
+height: 549.68px;
+margin-left: 14.6%;
+
+}
+
+.historyheader{
+	/* ისტორია */
+
+position: block;
+width: 139px;
+height: 41px;
+display: inline-block;
+padding-top: 72px;
+
+font-family: 'LGVAnastasia';
+font-style: normal;
+font-weight: 400;
+font-size: 64px;
+line-height: 41px;
+
+color: #3E3A2B;
+}
+.historychildtext{
+	position: block;
+	display: inline-block;
+width: 422px;
+margin-top: 44px;
+height: 68px;
+float: right;
+
+font-family: 'FiraGO';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 34px;
+
+/* or 170% */
+
+color: #3E3A2B;
+}
+
+}
+
+ @media only screen and (max-width: 1330px) {
+ 	.tellusmoremobiletext{
+ 		/* მოგვიყევით მეტი */
+width: auto;
+height: 32px;
+float: left;
+
+font-family: 'LGVAnastasia';
+font-style: normal;
+font-weight: 400;
+font-size: 38px;
+line-height: 28px;
+
+/* or 74% */
+
+color: #D6CBA4;
+ 	}
+ 	.tellusmoremobile{
+ 		display: block;
+ 		width: 375px;
+height: 248px;
+
+background-color: #FEFEF8;
+ 	}
+ 	.fullsizedivvideos{
+ 		margin-top: 36px;
+ 	}
+ 	.allvideo{
+/* ყველა ვიდეო */
+
+width: 62px;
+height: 14px;
+padding-top: 6px;
+font-family: 'LGVAnastasia';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 12px;
+text-align: center;
+
+color: #3E3A2B;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+ 	.allvideosbutton{
+display: inline-block;
+float:  right;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+gap: 10px;
+
+width: 78px;
+height: 26px;
+
+background: #F6C042;
+border-radius: 6px;
+}
+ 	.loadvideodot1{
+ 		position: relative;
+ 		width: 12px;
+height: 12px;
+display: inline-block;
+border-radius: 50%;
+top: 80px;
+right: 11px;
+
+background: #D6CBA4;
+}
+ 	.loadvideodot2{
+ 		position: relative;
+ 		width: 12px;
+height: 12px;
+display: inline-block;
+border-radius: 50%;
+top: 80px;
+
+background: #D6CBA4;
+ 	}
+ 	.loadvideodot3{
+	position: relative;
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	top: 80px;
+	left: 10px;
+
+	background: /*#F6C042*/ #D6CBA4;
+ 	}
+ 	.undervideotext{
+  position: relative;
+  display: inline-block;
+  margin-top: 85px;
+
+font-family: 'FiraGO';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 24px;
+
+/* identical to box height, or 150% */
+
+color: #3E3A2B;
+}
+ 	.centeryellowdot{
+display: block;
+width: 64px;
+margin-top: 80px;
+height: 64px;
+border-radius: 50%;
+
+background: #F6C042;
+}
+
+.videotimecounter{
+	position: relative;
+	top: 77px;
+  right: 135px;
+font-family: 'FiraGO';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 22px;
+
+/* or 138% */
+
+color: #848177;
+}
+
+ 	.undervideotime{
+	position: relative;
+font-family: 'FiraGO';
+top: 83px;
+right: 135px;
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 22px;
+
+/* or 138% */
+
+color: #848177;
+}
+ 	.fullsizedivvideos{
+ 		position: block;
+display: inline-block;
+width: 100%;
+text-align: center;
+height: 500px;
+ align-items: center;
+ 	}
+
+ 	.videosheader{
+
+width: 90px;
+height: 32px;
+
+display: inline-block;
+margin-right: 153px;
+font-family: 'LGVAnastasia';
+font-style: normal;
+font-weight: 400;
+font-size: 38px;
+line-height: 28px;
+
+/* or 74% */
+
+color: #3E3A2B;
+
+}
+
+ 	.centerformobile{
+ 		display: block !important;
+ 	}
+ 	.videosdiv{
+ 		width: 335px;
+ 		margin: auto;
+ 		height: 420px;
+ 	}
+ 	.videodiv1{
+ 		width: 335px;
+ 		height: 218px;
+ 		margin-top: 0;
+ 	}
+ 	.videodiv2{
+ 		display: none;
+ 	}
+ 	.videodiv3{
+ 		display: none;
+ 	}
+  .identmapdiv{
+  	display: none;
+  }
+  .tellmorediv{
+  	display: none;
+  }
+  .aboutprojectdiv{
+  	display: none;
+  }
+  .allstatic{
+  	display: none;
+  }
+  .historychildtextinfo{
+  	display: none;
+  }
+  .historychildtext{
+  	width: 193px;
+height: 72px;
+	position: relative;
+	bottom: 20px;
+	display: inline-block;
+		font-family: 'FiraGO';
+		font-style: normal;
+		font-weight: 600;
+		font-size: 16px;
+		line-height: 24px;
+
+		/* or 150% */
+
+		color: #3E3A2B;
+  }
+  .historydiv{
+position: block;
+display: inline-block;
+width: 100%;
+text-align: center;
+height: 320px;
+ align-items: center;
+}
+
+.historyheader{
+	/* ისტორია */
+
+position: block;
+width: 139px;
+height: 41px;
+padding-right: 100px;
+padding-bottom: 10px;
+margin: auto;
+display: inline-block;
+padding-top: 72px;
+
+font-family: 'LGVAnastasia';
+font-style: normal;
+font-weight: 400;
+font-size: 38px;
+line-height: 28px;
+
+/* or 74% */
+
+color: #3E3A2B;
+}
+.historychild{
+	height: 110px;
+	display: block;
+	  margin: auto;
+
+	width: 350px;
+}
+
+.historyimg{
+width: 122px;
+object-fit: cover;
+height: 88px;
+}
+.allstaticmobile{
+
+display: inline-block !important;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+gap: 10px;
+
+position: block;
+width: 78px;
+height: 26px;
+
+background: #F6C042;
+border-radius: 6px;
+}
+.allstaticmobiletext{
+	width: 62px;
+height: 14px;
+display: block !important;
+
+font-family: 'LGVAnastasia';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 12px;
+margin-left: 8px;
+margin-top: 6px;
+
+color: #3E3A2B;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+.cultureheader{
+	/* კულტურა */
+
+position: block;
+width: 139px;
+height: 41px;
+padding-right: 100px;
+padding-bottom: 10px;
+margin: auto;
+display: inline-block;
+padding-top: 72px;
+
+font-family: 'LGVAnastasia';
+font-style: normal;
+font-weight: 400;
+font-size: 38px;
+line-height: 28px;
+
+/* or 74% */
+
+color: #3E3A2B;
+}
+	.culturediv{
+position: block;
+display: inline-block;
+width: 100%;
+text-align: center;
+height: 320px;
+ align-items: center;
+}
+
+.culutrechildtext{
+  	width: 193px;
+height: 72px;
+	position: relative;
+	bottom: 20px;
+	display: inline-block;
+		font-family: 'FiraGO';
+		font-style: normal;
+		font-weight: 600;
+		font-size: 16px;
+		line-height: 24px;
+
+		/* or 150% */
+
+		color: #3E3A2B;
+}
+.cultureimg{
+	object-fit: cover;
+width: 122px;
+height: 88px;
+}
+.line2{
+position: block !important;
+width: 90%;
+height: 0px;
+margin-top: 10px;
+
+border: 1px solid #CCCCB7;
+}
+.line3{
+position: block !important;
+width: 90%;
+height: 0px;
+
+border: 1px solid #CCCCB7;
+}
+}
+
+@media only screen and (max-width: 1665px) and (min-width: 1331px) {
+
+	.videodiv3{
+		display: none;
+	}
+	.allvideosbutton{
+		display: inline-block;
+		float:  right;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		gap: 10px;
+		margin-right: 50px;
+
+		width: 154px;
+		height: 56px;
+
+		background: #F6C042;
+		border-radius: 10px;
+
+		/* Inside auto layout */
+		flex: none;
+		order: 1;
+		flex-grow: 0;
+	}
+	.videosdiv{
+width: 900px;
+height: 536.71px;
+display: inline-block;
+margin-top: 117px;
+margin-left: 20%;
+}
+
+.line{
+	width: 90%;
+}
+
+}

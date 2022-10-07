@@ -1,0 +1,137 @@
+.iblockDiv{
+width: 101%;
+height: 1100px;
+top: 140px;
+background-color: #FEFEF8;
+}
+
+.indentmaptext{
+	/* იდენტობის რუკა */
+
+position: block;
+display: inline-block;
+width: 254px;
+height: 41px;
+
+padding-top: 72px;
+
+font-family: 'LGVAnastasia';
+font-style: normal;
+font-weight: 400;
+font-size: 64px;
+line-height: 41px;
+
+color: #3E3A2B;
+}
+
+.tellmoretext{
+/* მოგვყევით მეტი */
+
+position: block;
+width: 263px;
+height: 41px;
+white-space: nowrap;
+
+font-family: 'LGVAnastasia';
+font-style: normal;
+font-weight: 400;
+font-size: 64px;
+line-height: 41px;
+
+color: #D6CBA4;
+}
+
+.identmapinfo{
+position: block;
+overflow-wrap: break-word;
+display: inline-block;
+width: 89%;
+height: 130px;
+padding-top: 44px;
+
+
+font-family: 'FiraGo';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 26px;
+
+/* or 162% */
+
+color: #848177;
+}
+
+.identmapdiv{
+	position: block;
+	display: inline-block;
+width: 36%;
+height: 400px;
+margin-left: 13.6%;
+overflow-wrap: break-word;
+}
+
+.tellmorediv{
+float: right;
+padding-top: 72px;
+padding-right: 18%;
+width: 24%;
+height: 210.63px;
+}
+
+.tellmoreinfo{
+position: block;
+display: inline-block;
+width: 100%;
+height: 52px;
+padding-top: 35px;
+
+
+font-family: 'FiraGO';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 26px;
+
+/* or 162% */
+
+color: #848177;
+}
+
+.sendusbutton{
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+gap: 10px;
+
+position: absolute;
+width: 154px;
+height: 56px;
+background: #F6C042;
+border-radius: 10px;
+}
+
+.sendusbuttontext{
+/* მოგვწერეთ */
+
+width: 90px;
+height: 24px;
+
+font-family: 'LGVAnastasia';
+font-style: normal;
+font-weight: 400;
+font-size: 33px;
+line-height: 20px;
+
+/* or 62% */
+text-align: center;
+
+color: #3E3A2B;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
