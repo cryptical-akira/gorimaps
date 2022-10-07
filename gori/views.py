@@ -5,7 +5,8 @@ from .models import History, Culture, Architect, AboutProjectDonors
 
 #for index page
 def index_wout_lang(request)
-	return render(request, 'index.html')
+	response = redirect('ka/')
+	return response
 
 def index_page(request, lang):
 	aboutproject = AboutProjectDonors.objects.last()
