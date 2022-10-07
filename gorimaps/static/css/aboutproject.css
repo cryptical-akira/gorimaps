@@ -1,0 +1,149 @@
+.projectimgdiv{
+	width: 30%;
+	height: 900px;
+	display: inline-block;
+	float: right;
+	margin-top: 96px;
+		margin-right: 13.6%;
+
+
+}
+
+.about_project_img1{
+	position: block;
+	object-fit: cover;
+width: 100%;
+height: 356.64px;
+float: right;
+}
+.about_project_img2{
+	position: block;
+	margin-top: 36px;
+	object-fit: cover;
+width: 100%;
+height: 356.64px;
+float: right;
+}
+
+.supportsecondtext{
+display: block;
+margin-top: 36px;
+height: 78px;
+
+font-family: 'FiraGO';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 26px;
+
+/* or 162% */
+
+color: #3E3A2B;
+}
+
+.supportsecondheader{
+/* მხარდამჭერები */
+
+display: block;
+width: 226px;
+height: 41px;
+margin-top: 96px;
+
+font-family: 'LGVAnastasia';
+font-style: normal;
+font-weight: 400;
+font-size: 64px;
+line-height: 41px;
+
+color: #F6C042;
+
+
+}
+
+.supportsinproject{
+	display: block;
+	margin-top: 47px;
+	width: 100%;
+}
+
+.donors_text_info{
+	display: block;
+height: 52px;
+margin-top: 36px;
+
+font-family: 'FiraGO';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 26px;
+
+/* or 162% */
+
+color: #3E3A2B;
+
+
+}
+
+.donors_text_design{
+	width: 176px;
+height: 41px;
+
+display: block;
+margin-top: 90px;
+
+font-family: 'LGVAnastasia';
+font-style: normal;
+font-weight: 400;
+font-size: 64px;
+line-height: 41px;
+
+color: #F6C042;
+}
+
+.about_project_text_div{
+	display: block;
+	width: ;
+height: auto;
+margin-top: 36px;
+}
+.about_project_text{
+
+display: block;
+font-family: 'FiraGO';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 26px;
+
+/* or 162% */
+
+color: #3E3A2B;
+}
+
+.aboutproject{
+	display: inline-block;
+	margin-top: 96px;
+	margin-left: 13%;
+	margin-bottom: 95px;
+	width: 35%;
+}
+
+.about_project_header{
+/* პროექტის შესახებ */
+
+position: block;
+width: 291px;
+height: 41px;
+left: 262px;
+top: 236px;
+
+font-family: 'LGVAnastasia';
+font-style: normal;
+font-weight: 400;
+font-size: 64px;
+line-height: 41px;
+
+color: #F6C042;
+
+
+}

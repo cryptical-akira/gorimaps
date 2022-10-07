@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+{% load transl_extras %}
+
+<style>
+	.menuitem4{
+		text-decoration: underline !important;
+	}
+
+</style>
+
+<span class="historypageheader">გორის არქიტექტურა</span>
+
+
+{% for post in posts %}
+
+<div class="historypostdivs">
+	<div class="historyposttextsdiv">
+	<span class="historypostheader"> {{post.post_title}}</span>
+	<span class="historypostinfo">{{post.post_text|truncatechars:350 }}</span>
+	</div>
+	<img src="{% static post.post_img %}" class="hitorypostsimgs">
+</div>
+{% endfor %}
+
+<br><br><br><br><br><br>
+
+{% endblock %}
