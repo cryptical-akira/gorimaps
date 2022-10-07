@@ -36,7 +36,7 @@
 	<div class="historydiv">
 		<span class="historyheader">{% t "history_block_header" %}</span>
 		<div class="allstaticmobile" style="display: none;">
-			<span class="allstaticmobiletext">{% t "all_static" %}</span>
+			<a class="allstaticmobiletext" href="{% url 'history' lang=lang %}">{% t "all_static" %}</a>
 		</div><br>
 		<div class="historychild">
 			<img class="historyimg" src="{% static last_post_history.post_img %}">
@@ -61,7 +61,7 @@
 	<div class="culturediv">
 		<span class="cultureheader">{% t "culture_block_header" %}</span>
 		<div class="allstaticmobile" style="display: none;">
-			<span class="allstaticmobiletext">{% t "all_static" %}</span>
+			<a class="allstaticmobiletext" href="{% url 'culture' lang=lang %}">{% t "all_static" %}</a>
 		</div><br>
 		<div class="historychild">
 			<img class="cultureimg" src="{% static last_post_culture.post_img %}">
@@ -124,9 +124,12 @@
 
 		</center>
 	</div>
+	<center>
 	<div class="tellusmoremobile">
-		<span class="tellusmoremobiletext">{% t "tell_us_more" %}</span>
-	</div><br><br>
+		<span class="tellusmoremobiletext">{% t "tell_us_more" %}</span><br><br><br>
+		<span class="tellusmoremobiletextinfo">თუ თქვენ გაქვთ ინფრომაცია რომელსაც აქვს ისტორიული ღირებულება, გთხოვთ დაგვიკავშირდეთ და მოგვიყვეთ,</span><br>
+		<div class="tellusmorebuttonmobile">მოგვწერეთ</div>
+	</div></center><br><br>
 </div>
 
 

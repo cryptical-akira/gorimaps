@@ -462,11 +462,57 @@ color: #3E3A2B;
 }
 
  @media only screen and (max-width: 1330px) {
+ 
+ 	.tellusmorebuttonmobile{
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 16px 36px;
+gap: 10px;
+display: block;
+margin-top: 92px;
+width: 70%;
+
+font-family: 'LGVAnastasia';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 20px;
+
+/* or 62% */
+text-align: center;
+
+color: #3E3A2B;
+
+background: #F6C042;
+border-radius: 10px;
+ 	}
+ 	.tellusmoremobiletextinfo{
+ 		width: 90%;
+height: 66px;
+margin-top: 16px;
+display: block;
+margin-left: 20px;
+float: left;
+
+font-family: 'FiraGO';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 22px;
+
+/* or 157% */
+
+color: #848177;
+ 	}
  	.tellusmoremobiletext{
  		/* მოგვიყევით მეტი */
 width: auto;
 height: 32px;
 float: left;
+display: block;
+margin-top: 26px;
+margin-left: 20px;
 
 font-family: 'LGVAnastasia';
 font-style: normal;
@@ -758,6 +804,7 @@ border-radius: 6px;
 height: 14px;
 display: block !important;
 
+text-decoration: none;
 font-family: 'LGVAnastasia';
 font-style: normal;
 font-weight: 400;
