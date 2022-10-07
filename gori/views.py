@@ -4,7 +4,7 @@ from django.http import HttpResponse
 from .models import History, Culture, Architect, AboutProjectDonors
 
 #for index page
-def index_wout_lang(request)
+def index_wout_lang(request):
 	response = redirect('ka/')
 	return response
 
