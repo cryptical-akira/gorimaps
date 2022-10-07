@@ -1,1 +1,1 @@
-web: guicorn reportersprj.wsgi --log-file -
+web: gunicorn gorimaps.wsgi
