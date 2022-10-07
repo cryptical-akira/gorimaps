@@ -9,7 +9,7 @@ background: white;
 .navheader{
 /* გორის ახალი იდენტობა */
 
-position: absolute;
+position: block !important;
 width: 247px;
 height: 28px;
 top: 56px;
@@ -292,11 +292,10 @@ transform: matrix(-1, 0, 0, 1, 0, 0);
 }
 .iconmap{
 
-position: absolute;
-left: 28%;
-right: 8.33%;
-top: 25%;
-bottom: 8.33%;
+position: block;
+display: block;
+margin-left: 28%;
+margin-top: 25%;
 }
 
 .menu{
@@ -306,11 +305,10 @@ bottom: 8.33%;
 .iconmenu{
   /* Icon */
 
-  position: absolute;
-  left: 30%;
-  right: 12.5%;
-  top: 35%;
-  bottom: 25%;
+  position: block;
+  display: inline-block;
+  margin-top: 17px;
+  margin-left: 15px;
 }
 @media only screen and (min-width: 1700px) {
   .navheader{
@@ -454,13 +452,13 @@ height: 126px;
   .navheader{
   /* გორის ახალი იდენტობა */
 
-  position: absolute;
+  position: block;
   width: 116px;
-  display: block;
+  display: inline-block;
   height: 56px;
   left: 0;
   right: 0; 
-  margin-top: 20px;
+  margin-top: 36px;
   margin-left: 20px;
   margin-right: auto; 
   top: 20px;
@@ -525,34 +523,31 @@ height: 126px;
 
   display: inline-block;
 
-  position: absolute;
+  position: block;
   width: 48px;
   height: 48px;
-  left: 0; 
-  right: 0; 
-  margin-left: 60%;
-  margin-right: auto; 
-  top: 46px;
+ 
 
+  float: right;
+  margin-top: 46px;
+  margin-right: 20px;
   background: #FEFEF8;
   border-radius: 10px;
   }
 
   .menu{
-  display: inline;
+  display: inline-block;
 
-  position: absolute;
+margin-right: 20px;
+  position: block;
   width: 48px;
   height: 48px;
-  left: 0; 
-  right: 0; 
-  margin-left: 80%; 
-  top: 46px;
+  margin-top: 46px;
+
+  float: right;
 
   background: #F6C042;
   border-radius: 10px;
-  }
-  .iconmenu{
   }
 
 }
