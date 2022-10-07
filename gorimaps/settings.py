@@ -100,9 +100,9 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 STATICFILES_DIRS = [
-    (BASE_DIR / 'static'),
+    os.path.join(BASE_DIR, 'static')
 ]
-MEDIA_ROOT = BASE_DIR / 'static'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'static')
 
 LANGUAGE_CODE = 'en'
 TIME_ZONE = 'UTC'
@@ -133,7 +133,7 @@ LOCALE_PATHS = (PROJ_DIR_OLDSTYLE + '/locale', )
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
-STATIC_URL = BASE_DIR / 'static/'
+STATIC_URL = 'static/'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
