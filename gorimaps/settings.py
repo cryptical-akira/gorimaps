@@ -48,7 +48,8 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'gorimaps.urls'
 
-print(PROJ_DIR_OLDSTYLE)
+print(BASE_DIR)
+print(os.listdir())
 
 TEMPLATES = [
     {
