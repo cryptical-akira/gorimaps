@@ -51,8 +51,8 @@ ROOT_URLCONF = 'gorimaps.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(PROJ_DIR_OLDSTYLE, 'gorimaps/templates'),
-            os.path.join(PROJ_DIR_OLDSTYLE, 'gorimaps/templates'),],
+        'DIRS': [os.path.join(PROJ_DIR_OLDSTYLE, 'templates'),
+            os.path.join(PROJ_DIR_OLDSTYLE, 'templates'),],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
