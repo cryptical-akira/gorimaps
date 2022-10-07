@@ -10,9 +10,10 @@ background: white;
 /* გორის ახალი იდენტობა */
 
 position: block !important;
+display: inline-block;
 width: 247px;
 height: 28px;
-top: 56px;
+margin-top: 56px;
 
 font-family: 'LGVAnastasia';
 font-style: normal;
@@ -313,7 +314,8 @@ margin-top: 25%;
 @media only screen and (min-width: 1700px) {
   .navheader{
   /* გორის ახალი იდენტობა */
-  left: 262px;
+  display: inline-block;
+  margin-left: 13% !important;
   }
   .menuitem1{
   /* პროექტის შესახებ */
@@ -357,7 +359,7 @@ margin-top: 25%;
 @media only screen and (max-width: 1699px) and (min-width: 1451px) {
   .navheader{
   /* გორის ახალი იდენტობა */
-  left: 10%;
+  margin-left: 8% !important;
   }
   .menuitem1{
   /* პროექტის შესახებ */
@@ -401,7 +403,7 @@ margin-top: 25%;
 @media only screen and (max-width: 1450px) and (min-width: 1296px) {
   .navheader{
   /* გორის ახალი იდენტობა */
-  left: 5%;
+  margin-left: 5%;
   }
   .menuitem1{
   /* პროექტის შესახებ */
