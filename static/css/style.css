@@ -11,8 +11,10 @@
   font-family: LGVAnastasia;
 }
 
-body {
+body, html {
   background: #F1F1E6;
    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
 }
 

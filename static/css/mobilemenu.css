@@ -1,0 +1,137 @@
+.overlay {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color:#F6C042;
+  background-color: #F6C042;
+  overflow-y: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  display: block;
+  transition: 0.3s;
+}
+
+
+ .closebtn {
+position: absolute;
+
+width: 31px;
+height: 31px;
+left: 79%;
+top: 45px;
+
+background: #FEFEF8;
+border-radius: 10px;
+}
+.iconmenuclose{
+  position: absolute;
+  top: 17px;
+  left: 17px;
+}
+
+.mobilemenusearchtext{
+  position: absolute;
+width: 92px;
+height: 24px;
+right: 65%;
+top: 25%;
+
+font-family: 'FiraGO';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 24px;
+
+/* identical to box height, or 171% */
+
+color: #FEFEF8;
+
+
+}
+
+.mobilemenusearchicon{
+  position: absolute;
+left: 88%;
+right: 12.5%;
+top: 25%;
+bottom: 12.5%;
+}
+
+.mobilemenusearchbar{
+  position: absolute;
+width: 89%;
+height: 48px;
+left: 5.3%;
+top: 152.17px;
+
+background: #E4B340;
+border-radius: 10px;
+}
+
+.line6{
+
+position: absolute;
+width: 375px;
+height: 0px;
+left: 0px;
+top: 126.17px;
+
+border: 1px solid #D3A230;
+}
+
+.mobilemenuheader{
+  position: absolute;
+  width: 116px;
+  display: block;
+  height: 56px;
+  left: 0;
+  right: 0; 
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: auto; 
+  top: 20px;
+
+  font-family: 'LGVAnastasia';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 38px;
+  line-height: 28px;
+
+  /* or 74% */
+
+  color: #FEFEF8;
+}
+
+.mobilemenuitem{
+  width: 204px;
+height: 32px;
+left: 85.5px;
+top: 244.17px;
+
+font-family: 'LGVAnastasia';
+font-style: normal;
+font-weight: 400;
+font-size: 38px;
+line-height: 27px;
+
+/* or 71% */
+text-align: center;
+
+color: #3E3A2B;
+}
