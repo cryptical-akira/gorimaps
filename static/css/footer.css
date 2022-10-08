@@ -1,4 +1,4 @@
-@media only screen and (min-width: 1331px) {
+@media only screen and (min-width: 1336px) {
 
 	.contactinfo{
 	/* +995 322 2 92 15 14 */
@@ -172,7 +172,10 @@
 
 		color: #848177;
 	}
-	.underDiv{
+	.mobilefooter{
+		display: none;
+	}
+		.underDiv{
 	position: block;
 	width: 100%;
 	height: 48px;
@@ -182,10 +185,171 @@
 	background: #EDE7D6;
 	transform: matrix(1, 0, 0, -1, 0, 0);
 	}
-}
-
-@media only screen and (max-width: 1330px) {
-	.footerDiv{
+	.mobileunderDiv{
 		display: none;
 	}
 }
+
+@media only screen and (max-width: 1335px) {
+	.mobilefooterallright{
+		width: 335px;
+		height: 18px;
+		font-family: 'FiraGo';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 20px;
+		display: block;
+		margin-top: 12px;
+		margin-left: 20px;
+		color: #848177;
+	}
+
+	.mobileunderdivheader{
+		width: 324px;
+		height: 25px;
+		font-family: 'LGVAnastasia';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 38px;
+		line-height: 25px;
+		display: block;
+		padding-top: 16px;
+		margin-left: 20px;
+
+		color: #848177;
+	}
+
+		.mobileunderDiv{
+	position: block;
+	width: 100%;
+	height: 94px;
+	left: 0px;
+	top: 3413.04px;
+
+	background: #EDE7D6;
+	}
+	.footersupports{
+		width: 320px;
+		display: block;
+		height: 30px;
+		margin-top: 18px;
+	}
+	.footersupportsiconsidfi{
+		width: 120px;
+		display: inline-block;
+		float: right;
+		margin-top;
+	}
+	.footersupportsiconszinc{
+		width: 98px;
+		display: inline-block;
+		float: ;
+		margin-top: px;
+	}
+	.footersupportsiconsusaid{
+		width: 79px;
+		display: inline-block;
+		float: left;
+	}
+	.mobilefooteraboutproject{
+		width: 280px;
+height: 60px;
+display: block;
+margin-top: 36px;
+
+font-family: 'FiraGO';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+
+/* or 143% */
+
+color: #848177;
+
+
+	}
+	.footercontactinfo{
+		position: absolute;
+		display: inline-block;
+		margin-top: 10px;
+		width: 132px;
+height: 26px;
+font-family: 'FiraGO';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 26px;
+
+/* identical to box height, or 162% */
+text-decoration-line: underline;
+
+color: #848177;
+	}
+	.footercontacticons{
+display: inline-block;
+padding-top: 14px;
+	}
+
+	.footercontactyldivs{
+			width: 48px;
+	height: 48px;
+	margin-top: 25px;
+	margin-right: 245px;
+
+	border-radius: 10px;
+		display: block;
+		background-color: #F6C042;
+	}
+	.mobilefootercontactus{
+		width: 150px;
+height: 25px;
+display: block;
+padding-right: 155px;
+padding-top: 36px;
+
+font-family: 'LGVAnastasia';
+font-style: normal;
+font-weight: 400;
+font-size: 38px;
+line-height: 25px;
+
+/* identical to box height */
+
+color: #848177;
+	}
+	.socialicons{
+		display: inline-block;
+		margin-top: 26px;
+		margin-right: 27px;
+	}
+	.footerDiv{
+		display: none;
+	}
+	.mobilefooter{
+		display: block;
+		width: 100%;
+		height: 525.61px;
+
+		background-color:  #FEFEF8;
+	}
+	.mobilefooterfindus{
+width: 94px;
+height: 25px;
+padding-right: 220px;
+display: block;
+padding-top: 20px;
+
+font-family: 'LGVAnastasia';
+font-style: normal;
+font-weight: 400;
+font-size: 38px;
+line-height: 25px;
+
+/* identical to box height */
+
+color: #848177;
+	}
+}
+
