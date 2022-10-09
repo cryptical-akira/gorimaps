@@ -50,6 +50,15 @@ def history(request, lang):
 
 	return render(request, 'history.html', {'lang':lang, 'posts':all_post})
 
+def history_detail_view(request, id, lang):
+    try:
+        history = History.objects.get(id=id)
+    except History.DoesNotExist:
+        raise Http404('Book does not exist')
+
+    return render(request, 'history_detail.html', context={'lang':lang, 'history': history})
+
+
 
 #for culture page
 def culture(request, lang):
@@ -61,6 +70,14 @@ def culture(request, lang):
 
 	return render(request, 'culture.html', {'lang':lang, 'posts':all_post})
 
+def culture_detail_view(request, id, lang):
+    try:
+        history = Culture.objects.get(id=id)
+    except History.DoesNotExist:
+        raise Http404('Book does not exist')
+
+    return render(request, 'culture_detail.html', context={'lang':lang, 'history': history})
+
 
 #for architect page
 def architect(request, lang):
@@ -71,3 +88,11 @@ def architect(request, lang):
 		all_post.insert(0, i)
 
 	return render(request, 'architect.html', {'lang':lang, 'posts':all_post})
+
+def architect_detail_view(request, lang, id):
+    try:
+        history = Architect.objects.get(id=id)
+    except History.DoesNotExist:
+        raise Http404('Book does not exist')
+
+    return render(request, 'architect_detail.html', context={'lang':lang, 'history': history})

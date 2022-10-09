@@ -66,6 +66,12 @@ line-height: 41px;
 
 color: #F6C042;
 }
+@media only screen and (min-width: 1297px){
+.historymobile{
+	display: none;
+}
+
+}
 @media only screen and (max-width: 1296px){
 .historydekstop{display: none;}
 .historypostsmobile{

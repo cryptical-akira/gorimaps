@@ -15,6 +15,7 @@
 
 {% for post in posts %}
 
+<a href="{% url 'culture-detail' lang=lang id=post.id %}">
 <div class="historypostdivs">
 	<div class="historyposttextsdiv">
 	<span class="historypostheader"> {{post.post_title}}</span>
@@ -22,6 +23,7 @@
 	</div>
 	<img src="{% static post.post_img %}" class="hitorypostsimgs">
 </div>
+</a>
 {% endfor %}
 </div>
 

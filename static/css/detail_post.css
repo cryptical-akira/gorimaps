@@ -1,0 +1,144 @@
+.post_title{
+	color: black;
+	width: 100%;
+	margin-top: 38px;
+	display: block;
+
+	font-family: 'FiraGO';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 34px;
+	line-height: 40px;
+}
+.post_text{
+	display: block;
+	width: 682px;
+	font-weight: 400;
+	font-style: normal;
+	line-height: 32px;
+	margin-top: 32px;
+	font-family: 'FiraGO';
+	font-size:  20px;
+}
+.post_line{
+	width: 682px;
+	height: 0px;
+	display: block;
+	margin-top: 36px;
+	border: 1px solid #D9D9BB;
+}
+
+.post_social_divs{
+	margin-top: 32px;
+	margin-left: 16px;
+	display: inline-block;
+	width: 48px;
+	height: 48px;
+	border-radius: 50%;
+	background-color: #FEFEF8;
+}
+
+.post_tell_us_more{
+	display: block;
+	width: 686px;
+	margin-top: 64px;
+	height: 306px;
+
+	background-color: #FEFEF8;
+}
+
+.post_tell_use_more_header{
+ 		/* მოგვიყევით მეტი */
+	width: auto;
+	height: 32px;
+	float: left;
+	display: block;
+	margin-top: 48px;
+	margin-left: 48px;
+
+	font-family: 'LGVAnastasia';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 64px;
+	line-height: 41px;
+
+	/* or 74% */
+
+	color: #D6CBA4;
+}
+
+.post_tell_us_more_button{
+align-items: center;
+display: block;
+margin-top: 26px;
+width: 154px;
+margin-left: 48px;
+height: 56px;
+
+font-family: 'LGVAnastasia';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 20px;
+
+/* or 62% */
+text-align: center;
+
+color: #3E3A2B;
+
+background: #F6C042;
+border-radius: 10px;
+}
+
+.post_tell_us_more_text{
+	width: 544px;
+	height: 52px;
+	display: block;
+	margin-top: 35px;
+	margin-left: 48px;
+	font-family: 'FiraGO';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 26px;
+	color: #848177;
+}
+
+.post_go_back{
+	display: block;
+	margin-top: 64px;
+	color: #848177;
+	font-family: 'FiraGO';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+}
+
+.post_first_block{
+	width: 682px;
+	display: inline-block;
+	margin-left: 7%;
+}
+
+.post_second_block{
+	display: inline-block;
+	float: right;
+	width: 30%;
+	margin-right: 8%;
+	margin-top: 306px;
+}
+
+.post_img{
+	display: block;
+	width: 100%;
+}
+
+.post_author{
+	margin-top: 24px;
+	display: block;
+	font-style: normal;
+	font-family: 'FiraGO';
+	line-height: 19px;
+	font-weight: 400;
+	color: #96967C;
+}
