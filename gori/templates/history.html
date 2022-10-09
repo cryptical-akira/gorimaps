@@ -18,7 +18,7 @@
 
 {% for post in posts %}
 
-<a href="{% url 'history-detail' lang=lang id=post.id %}">
+<a href="/history/{{pist.id}}/{{lang}}">
 <div class="historypostdivs">
 	<div class="historyposttextsdiv">
 	<span class="historypostheader"> {{post.post_title}}</span>
