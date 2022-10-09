@@ -376,6 +376,7 @@ line-height: 41px;
 color: #3E3A2B;
 }
 .historychildtext{
+	
 	position: block;
 	display: inline-block;
 width: 422px;
@@ -810,6 +811,7 @@ color: #3E3A2B;
   .historychildtext{
 
   	width: 193px;
+  	margin-left: 10px;
 		height: 100px;
 	float: right;
 
@@ -884,7 +886,7 @@ color: #3E3A2B;
 	height: 110px;
 	display: block;
 	  margin: auto;
-	width: 315px;
+	width: 325px;
 }
 
 .historyimg{
@@ -942,6 +944,7 @@ height: 320px;
 
 .culutrechildtext{
   	width: 193px;
+  	margin-left: 10px;
 		height: 100px;
 	float: right;
 

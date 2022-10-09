@@ -66,3 +66,31 @@ line-height: 41px;
 
 color: #F6C042;
 }
+@media only screen and (max-width: 1296px){
+.historydekstop{display: none;}
+.historypostsmobile{
+	width: 122px;
+	height: 88px;
+	float: left;
+	object-fit: cover;
+}
+.mobileposts{
+	width: 350px;
+	height: 88px !important;
+	display: block;
+	margin-top: 30px;
+}
+.historymobilepostsheader{
+	float: right;
+	text-align: left;
+	margin-top: 5px;
+	width: 60%;
+	font-family: 'FiraGO';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 24px;
+
+	color: #3E3A2B;
+}
+}

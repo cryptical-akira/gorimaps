@@ -11,6 +11,8 @@
 </style>
 
 
+
+<div class="historydekstop">
 <span class="historypageheader">ისტორია</span>
 
 
@@ -24,7 +26,21 @@
 	<img src="{% static post.post_img %}" class="hitorypostsimgs">
 </div>
 {% endfor %}
+</div>
 
+<center>
+
+<div class="historymobile">
+	<span class="aboutprojectmobileheader" style="margin-right: 250px;">ისტორია</span>
+	{% for post in posts %}
+	<div class="mobileposts">
+		<img src="{% static post.post_img %}" class="historypostsmobile">
+		<span class="historymobilepostsheader">{{post.post_title}} </span>
+	</div>
+	{% endfor %}
+</div>
+
+
+</center>
 <br><br><br><br><br><br>
-
 {% endblock %}

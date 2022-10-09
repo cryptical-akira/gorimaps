@@ -40,7 +40,7 @@
 		</div><br>
 		<div class="historychild">
 			<img class="historyimg" src="{% static last_post_history.post_img %}">
-			<span class="historychildtext">{{last_post_history.post_title}}
+			<span class="historychildtext" style="text-align: left;">{{last_post_history.post_title}}
 			<br>
 			<span class="historychildtextinfo">{{last_post_history.post_text|truncatechars:120 }}
 			</span></span>
@@ -48,7 +48,7 @@
 
 		<div class="historychild">
 			<img class="historyimg" src="{% static lastsec_post_history.post_img %}">
-			<span class="historychildtext">
+			<span class="historychildtext" style="text-align: left;">
 				{{lastsec_post_history.post_title}}
 				<br>
 				<span class="historychildtextinfo">{{lastsec_post_history.post_text|truncatechars:120}}</span>
@@ -64,14 +64,14 @@
 		</div><br>
 		<div class="historychild">
 			<img class="cultureimg" src="{% static last_post_culture.post_img %}">
-			<span class="culutrechildtext">{{last_post_culture.post_title}}
+			<span class="culutrechildtext" style="text-align: left;">{{last_post_culture.post_title}}
 			<br>
 			<span class="historychildtextinfo">{{last_post_culture.post_text|truncatechars:120}}
 			</span></span>
 		</div>
 		<div class="historychild">
 			<img class="cultureimg" src="{% static lastsec_post_culture.post_img %}">
-			<span class="culutrechildtext">
+			<span class="culutrechildtext" style="text-align: left;">
 				{{lastsec_post_culture.post_title}}
 			<br>
 			<span class="historychildtextinfo">
