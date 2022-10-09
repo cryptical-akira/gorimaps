@@ -303,90 +303,15 @@ margin-top: 52px;
 
 border: 1px solid #CCCCB7;
 }
-	.culturediv{
-position: block;
-display: inline-block;
-width: 680px;
-margin-left: 28%;
-height: 549.68px;
-margin-top: 20px;
 
-}
-.historydiv{
-	margin-left: 28% !important;
-}
+
 .videosdiv{
 	padding-top: 0;
 }
 }
 
-@media only screen and (min-width: 1616px) {
-	.culturediv{
-		margin-left: 20px;
-	}
-}
-
-@media only screen and (min-width: 1331px) {
-	.tellusmoremobile{
-		display: none;
-	}
-	.videosheader{
-
-width: 498px;
-height: 56px;
-
-font-family: 'LGVAnastasia';
-font-style: normal;
-font-weight: 400;
-font-size: 64px;
-line-height: 48px;
-
-/* or 75% */
-
-color: #3E3A2B;
-
-
-/* Inside auto layout */
-flex: none;
-order: 0;
-flex-grow: 0;
-}
-		.culturediv{
-position: block;
-display: inline-block;
-width: 680px;
-height: 549.68px;
-
-}
-
-.cultureheader{
-	/* კულტურა */
-
-position: block;
-width: 139px;
-height: 41px;
-display: inline-block;
-padding-top: 72px;
-
-font-family: 'LGVAnastasia';
-font-style: normal;
-font-weight: 400;
-font-size: 64px;
-line-height: 41px;
-
-color: #3E3A2B;
-}
-
-.cultureimg{
-	margin-top: 44px;
-position: block;
-object-fit: cover;
-display: inline-block;
-width: 230px;
-height: 161.48px;
-}
-
-.culutrechildtext{
+@media only screen and (min-width: 1620px) {
+	.culutrechildtext{
 		position: block;
 	display: inline-block;
 width: 422px;
@@ -405,21 +330,20 @@ line-height: 34px;
 
 color: #3E3A2B;
 }
-.historyimg{
-margin-top: 44px;
-object-fit: cover;
+
+		.culturediv{
 position: block;
 display: inline-block;
-width: 230px;
-height: 161.48px;
-}
+width: 680px;
+margin-left: 28%;
+height: 549.68px;
+margin-top: 20px;
 
-	.historychild{
-	height: 225px;
-	display: block;
 }
-
-	.historydiv{
+	.culturediv{
+		margin-left: 20px;
+	}
+		.historydiv{
 position: block;
 display: inline-block;
 width: 680px;
@@ -427,9 +351,15 @@ height: 549.68px;
 margin-left: 14.6%;
 
 }
+		.culturediv{
+position: block;
+display: inline-block;
+width: 680px;
+height: 549.68px;
 
-.historyheader{
-	/* ისტორია */
+}
+.cultureheader{
+	/* კულტურა */
 
 position: block;
 width: 139px;
@@ -463,6 +393,157 @@ line-height: 34px;
 
 color: #3E3A2B;
 }
+}
+
+@media only screen and (min-width: 1331px) and (max-width: 1620px) {
+	.historychildtext{
+	position: block;
+	display: inline-block;
+width: 55%;
+margin-top: 44px;
+height: 68px;
+float: right;
+
+font-family: 'FiraGO';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 34px;
+
+/* or 170% */
+
+color: #3E3A2B;
+}
+
+		.culutrechildtext{
+		position: block;
+	display: inline-block;
+width: 55%;
+margin-top: 44px;
+margin-right: 10px;
+height: 68px;
+float: right;
+
+font-family: 'FiraGO';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 34px;
+
+/* or 170% */
+
+color: #3E3A2B;
+}
+
+	.cultureheader{
+	/* კულტურა */
+
+position: block;
+width: 40px;
+height: 41px;
+display: inline-block;
+padding-top: 72px;
+
+font-family: 'LGVAnastasia';
+font-style: normal;
+font-weight: 400;
+font-size: 64px;
+line-height: 41px;
+
+color: #3E3A2B;
+}
+	@media only screen and (max-width: 1620px) and (min-width: 1455px){.historydiv{margin-left: 10%}}
+	@media only screen and (max-width: 1454px){.historydiv{margin-left: 6%}}
+			.historydiv{
+position: block;
+display: inline-block;
+width: 600px;
+height: 549.68px;
+
+}
+		.culturediv{
+position: block;
+margin-left: 3%;
+display: inline-block;
+width: 600px;
+height: 549.68px;
+
+}
+}
+
+@media only screen and (min-width: 1331px) {
+	.tellusmoremobile{
+		display: none;
+	}
+	.videosheader{
+
+width: 498px;
+height: 56px;
+
+font-family: 'LGVAnastasia';
+font-style: normal;
+font-weight: 400;
+font-size: 64px;
+line-height: 48px;
+
+/* or 75% */
+
+color: #3E3A2B;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+
+
+
+.cultureimg{
+	margin-top: 44px;
+position: block;
+object-fit: cover;
+display: inline-block;
+width: 230px;
+height: 161.48px;
+}
+
+
+.historyimg{
+margin-top: 44px;
+object-fit: cover;
+position: block;
+display: inline-block;
+width: 230px;
+height: 161.48px;
+}
+
+	.historychild{
+	height: 225px;
+	display: block;
+}
+
+
+
+.historyheader{
+	/* ისტორია */
+
+position: block;
+width: 139px;
+height: 41px;
+display: inline-block;
+padding-top: 72px;
+
+font-family: 'LGVAnastasia';
+font-style: normal;
+font-weight: 400;
+font-size: 64px;
+line-height: 41px;
+
+color: #3E3A2B;
+}
+
 
 }
 
@@ -881,13 +962,7 @@ height: 320px;
 width: 122px;
 height: 88px;
 }
-.line2{
-position: block !important;
-width: 90%;
-height: 0px;
 
-border: 1px solid #CCCCB7;
-}
 .line3{
 position: block !important;
 width: 90%;
