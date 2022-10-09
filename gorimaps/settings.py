@@ -48,15 +48,11 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'gorimaps.urls'
 
-print(BASE_DIR)
-print(os.listdir())
-TEMPLATE_DIRS = (
-    os.path.join(BASE_DIR, 'gorimaps/templates'),
-)
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR / 'gorimaps/templates'],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
