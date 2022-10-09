@@ -144,6 +144,83 @@ font-size: 64px;
 line-height: 41px;
 
 color: #F6C042;
+}
 
+@media only screen and (max-width: 1296px){
+	.aboutprojectdesktop{
+		display: none;
+	}
+	.aboutprojectmobileheader{
+		display: block;
+		margin-top: 36px;
+		margin-right: 130px;
+		height: 32px;
 
+		font-weight: 400;
+		font-family: 'LGVAnastasia';
+		font-style: normal;
+		font-size: 38px;
+		line-height: 28px;
+
+		color: #F6C042;
+	}
+
+	.aboutprojectimgmobile{
+		display: block;
+		margin-top: 24px;
+		width: 100%;
+		height: 244px;
+		object-fit: cover;
+	}
+	.aboutprojectmobileinfo{
+		width: 300px;
+		display: block;
+		margin-top: 26px;
+
+		font-family: 'FiraGO';
+		font-style: normal;
+		text-align: left;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 24px;
+
+		color: #3E3A2B;
+	}
+
+	.aboutprojectmobiledonors{
+
+		display: block;
+		margin-top: 32px;
+		margin-right: 250px;
+		margin-left: 10% !important;
+
+		font-family: 'LGVAnastasia';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 38px;
+		line-height: 28px;
+
+		color: #F6C042;
+	}
+
+	.aboutprojectmobiledonorsinfo{
+		width: 300px;
+		text-align: left;
+
+		display: block;
+		margin-top: 16px;
+
+		font-family: 'FiraGO';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 24px;
+
+		color: #3E3A2B;
+	}
+	.aboutprojectmobiledonorsimg{
+		width: 300px;
+		align-items: left;
+		align-content: left;
+	}
 }

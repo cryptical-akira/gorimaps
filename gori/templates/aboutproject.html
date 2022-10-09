@@ -10,6 +10,8 @@
 
 </style>
 
+
+<div class="aboutprojectdesktop">
 <div class="aboutproject">
 	<span class="about_project_header">{% t 'about_project' %}</span>
 	<div class="about_project_text_div">
@@ -35,6 +37,38 @@
 <img class="about_project_img1" src="{% static about_project.post_img_first %}"><br>
 <img class="about_project_img2" src="{% static about_project.post_img_second %}">
 </div>
+</div>
 
+
+<center>
+<div class="aboutprojectmobile">
+		<span class="aboutprojectmobileheader">პროექტის შესახებ</span>
+		<img class="aboutprojectimgmobile" src="{% static about_project.post_img_first %}">
+		<span class="aboutprojectmobileinfo">{{about_project.project_info}}</span>
+
+		<span class="aboutprojectmobiledonors">დონორები</span>
+		<span class="aboutprojectmobiledonorsinfo">{{about_project.donors_text}}</span>
+
+		<div class="aboutprojectmobiledonorsimg">
+		<a href="">
+			<img src="{% static '/icons/usaid.png' %}" style="display: block; margin-right: 100%; width: 113px; margin-top: 24px;">
+		</a>
+		<a href="">
+			<img src="{% static '/icons/zinc.png' %}" style="display: block; margin-right: 100%; width:141px;">
+		</a>
+		<a href="">
+			<img src="{% static '/icons/idfi.png' %}" style="display: block; margin-right: 100%; width: 170px;">
+		</a>
+		</div>
+		<img class="aboutprojectimgmobile" src="{% static about_project.post_img_second %}">
+
+		<span class="aboutprojectmobiledonors">დონორები</span>
+				<span class="aboutprojectmobiledonorsinfo">{{about_project.donors_text}}</span>
+
+			<br><br><br><br>
+
+
+</div>
+</center>
 
 {% endblock %}
