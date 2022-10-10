@@ -116,25 +116,6 @@ color: #3E3A2B;
 
 
 
-.allstatic{
-	/* ყველა სტატია */
-  position: relative;
-  display: inline-block;
-  margin-top: 50px;
-  text-decoration: none;
-  right: 250px;
-
-font-family: 'FiraGO';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-
-
-/* identical to box height, or 131% */
-
-color: #848177;
-
-}
 .centerformobile{
 	display: none;
 }
@@ -473,6 +454,26 @@ height: 549.68px;
 }
 
 @media only screen and (min-width: 1331px) {
+
+.allstatic{
+	/* ყველა სტატია */
+  position: relative;
+  display: inline-block;
+  margin-top: 50px;
+  text-decoration: none;
+  right: 0px;
+
+font-family: 'FiraGO';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+
+
+/* identical to box height, or 131% */
+
+color: #848177;
+
+}
 	.tellusmoremobile{
 		display: none;
 	}
@@ -549,6 +550,7 @@ color: #3E3A2B;
 }
 
  @media only screen and (max-width: 1330px) {
+
  
  	.tellusmorebuttonmobile{
 flex-direction: row;

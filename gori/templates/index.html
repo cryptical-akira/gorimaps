@@ -38,15 +38,15 @@
 		<div class="allstaticmobile" style="display: none;">
 			<a class="allstaticmobiletext" href="{% url 'history' lang=lang %}">{% t "all_static" %}</a>
 		</div><br>
-		<div class="historychild">
+		<a href="{% url 'history-detail' lang=lang id=last_post_history.id %}"><div class="historychild">
 			<img class="historyimg" src="{% static last_post_history.post_img %}">
 			<span class="historychildtext" style="text-align: left;">{{last_post_history.post_title}}
 			<br>
 			<span class="historychildtextinfo">{{last_post_history.post_text|truncatechars:120 }}
 			</span></span>
-		</div>
+		</div></a>
 
-		<div class="historychild">
+		<a href="{% url 'history-detail' lang=lang id=lastsec_post_history.id %}"><div class="historychild">
 			<img class="historyimg" src="{% static lastsec_post_history.post_img %}">
 			<span class="historychildtext" style="text-align: left;">
 				{{lastsec_post_history.post_title}}
@@ -55,21 +55,21 @@
 				<a class="allstatic" href="{% url 'history' lang=lang %}">{% t "all_static" %}
 					<img src="{% static '/icons/Iconrightarrow.png' %}"></a>
 			</span>
-		</div>
+		</div></a>
 	</div>
 	<div class="culturediv">
 		<span class="cultureheader">{% t "culture_block_header" %}</span>
 		<div class="allstaticmobile" style="display: none;">
 			<a class="allstaticmobiletext" href="{% url 'culture' lang=lang %}">{% t "all_static" %}</a>
 		</div><br>
-		<div class="historychild">
+		<a href="{% url 'culture-detail' lang=lang id=last_post_culture.id %}"><div class="historychild">
 			<img class="cultureimg" src="{% static last_post_culture.post_img %}">
 			<span class="culutrechildtext" style="text-align: left;">{{last_post_culture.post_title}}
 			<br>
 			<span class="historychildtextinfo">{{last_post_culture.post_text|truncatechars:120}}
 			</span></span>
 		</div>
-		<div class="historychild">
+		<a href="{% url 'culture-detail' lang=lang id=lastsec_post_culture.id %}"><div class="historychild">
 			<img class="cultureimg" src="{% static lastsec_post_culture.post_img %}">
 			<span class="culutrechildtext" style="text-align: left;">
 				{{lastsec_post_culture.post_title}}
@@ -78,7 +78,7 @@
 				{{lastsec_post_culture.post_text|truncatechars:120}}<br>
 				<a class="allstatic" href="{% url 'culture' lang=lang %}" style="margin-top:50px !important">{% t "all_static" %}
 					<img src="{% static '/icons/Iconrightarrow.png' %}"></a></span></span>
-		</div>
+		</div></a>
 
 	</div> <br>
 <br>
