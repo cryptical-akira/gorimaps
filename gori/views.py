@@ -54,7 +54,7 @@ def history_detail_view(request, id, lang):
     try:
         history = History.objects.get(id=id)
     except History.DoesNotExist:
-        raise Http404('Book does not exist')
+        raise Http404('Post does not exist')
 
     return render(request, 'history_detail.html', context={'lang':lang, 'history': history})
 
@@ -74,7 +74,7 @@ def culture_detail_view(request, id, lang):
     try:
         history = Culture.objects.get(id=id)
     except History.DoesNotExist:
-        raise Http404('Book does not exist')
+        raise Http404('Post does not exist')
 
     return render(request, 'culture_detail.html', context={'lang':lang, 'history': history})
 
@@ -93,6 +93,6 @@ def architect_detail_view(request, lang, id):
     try:
         history = Architect.objects.get(id=id)
     except History.DoesNotExist:
-        raise Http404('Book does not exist')
+        raise Http404('Post does not exist')
 
     return render(request, 'architect_detail.html', context={'lang':lang, 'history': history})

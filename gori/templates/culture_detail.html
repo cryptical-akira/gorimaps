@@ -3,10 +3,10 @@
 {% block content %}
 {% load transl_extras %}
 
-
+<div class="post_detail_desktop">
 <div class="post_first_block">
 
-<a class="post_go_back" href="{% url 'history' lang=lang %}">უკან დაბრუნება</a>
+<a class="post_go_back" href="{% url 'culture' lang=lang %}">უკან დაბრუნება</a>
 <span class="post_title">{{history}}</span>
 <div class="post_social_divs"></div>
 <div class="post_social_divs"></div>
@@ -24,5 +24,27 @@
 	<img src="{% static history.post_img %}" class="post_img">
 	<span class="post_author">ავტორი: {{history.post_author}}</span>
 </div>
+</div>
+<center>
+<div class="post_detail_mobile">
+<div class="post_first_block_mobile">
+	<a class="post_go_back_mobile" href="{% url 'culture' lang=lang %}">უკან დაბრუნება</a>
+	<span class="post_title_mobile">{{history}}</span>
+	<div class="post_social_divs_mobile"></div>
+	<div class="post_social_divs_mobile"></div>
+	<div class="post_social_divs_mobile"></div>
+	</div>
+	<img src="{% static history.post_img %}" class="post_img_mobile">
+	<div class="post_first_block_mobile">
+	<span class="post_text_mobile">{{history.post_text}}</span>
+	</div>
+	<div class="tellusmoremobile">
+		<span class="tellusmoremobiletext">{% t "tell_us_more" %}</span><br><br><br>
+		<span class="tellusmoremobiletextinfo">თუ თქვენ გაქვთ ინფრომაცია რომელსაც აქვს ისტორიული ღირებულება, გთხოვთ დაგვიკავშირდეთ და მოგვიყვეთ,</span><br>
+		<div class="tellusmorebuttonmobile">მოგვწერეთ</div>
+	</div>	
+
+</div>
+</center>
 <br><br><br><br><br>
 {% endblock %}

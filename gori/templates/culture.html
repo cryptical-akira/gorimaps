@@ -33,10 +33,12 @@
 <div class="historymobile">
 	<span class="aboutprojectmobileheader" style="margin-right: 250px;">კულტურა</span>
 	{% for post in posts %}
+	<a href="{% url 'culture-detail' lang=lang id=post.id %}">
 	<div class="mobileposts">
 		<img src="{% static post.post_img %}" class="historypostsmobile">
 		<span class="historymobilepostsheader">{{post.post_title}} </span>
 	</div>
+	</a>
 	{% endfor %}
 </div>
 
