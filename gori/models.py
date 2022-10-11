@@ -13,6 +13,9 @@ class History(models.Model):
     def __str__(self):
         return str(self.post_title)
 
+    def class_name(self):
+        return self.__class__.__name__
+
 class Culture(models.Model):
     post_title = models.ForeignKey(MultilanguageText, on_delete=models.CASCADE, related_name='posttitleculture', null=True)
     post_text = models.ForeignKey(MultilanguageTextField, on_delete=models.CASCADE, related_name='posttextculture', null=True)
@@ -20,6 +23,9 @@ class Culture(models.Model):
     post_img = models.ImageField(upload_to = "cultureimgs", null=True)
     def __str__(self):
         return str(self.post_title)
+
+    def class_name(self):
+        return self.__class__.__name__
         
 class Architect(models.Model):
     post_title = models.ForeignKey(MultilanguageText, on_delete=models.CASCADE, related_name='posttitlearchitect', null=True)
@@ -29,10 +35,11 @@ class Architect(models.Model):
     def __str__(self):
         return str(self.post_title)
 
+    def class_name(self):
+        return self.__class__.__name__
+
 class AboutProjectDonors(models.Model):
     project_info = models.ForeignKey(MultilanguageTextField, on_delete=models.CASCADE, related_name='aboutproject', null=True)
-    post_img_first = models.ImageField(upload_to = "aboutproject", null=True)
-    post_img_second = models.ImageField(upload_to = "aboutproject", null=True)
     donors_text = models.ForeignKey(MultilanguageTextField, on_delete=models.CASCADE, related_name='aboutprojectdonors', null=True)
     support_text = models.ForeignKey(MultilanguageTextField, on_delete=models.CASCADE, related_name='aboutprojectsupports', null=True)
     def __str__(self):

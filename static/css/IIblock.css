@@ -31,9 +31,10 @@ color: #F6C042;
 position: block;
 overflow-wrap: break-word;
 display: inline-block;
-width: 40%;
+width: 75%;
 height: 182px;
 padding-top: 35px;
+text-align: justify;
 
 font-family: 'FiraGO';
 font-style: normal;
@@ -65,7 +66,7 @@ position: block;
 width: 101px;
 height: 24px;
 display: inline-block;
-padding-top: 65px;
+padding-top: 35px;
 
 font-family: 'FiraGO';
 font-style: normal;
@@ -93,13 +94,9 @@ border: 1px solid #CCCCB7;
 }
 
 
-
-
-
-
-
 .historychildtextinfo{
 position: inline-block;
+text-align: justify;
 display: inline-block;
 padding-top: 12px;
 

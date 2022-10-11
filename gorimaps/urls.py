@@ -1,7 +1,7 @@
 from django.contrib import admin
 from django.urls import path, include, register_converter
 from gori.views import index_page, index_wout_lang, about_project, history, culture, architect
-from gori.views import history_detail_view, culture_detail_view, architect_detail_view
+from gori.views import history_detail_view, culture_detail_view, architect_detail_view, search
 from .converters import LanguagePathConverter
 
 
@@ -23,5 +23,7 @@ urlpatterns = [
 
     path('architect/<lang:lang>/', architect, name="architect"),
     path('architect/<int:id>/<lang:lang>/', architect_detail_view, name='architect-detail'),
+
+    path('search/<lang:lang>/', search, name='search')
 
 ]

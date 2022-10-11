@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+{% load transl_extras %}
+
+<span class="search_result">ძებნის შედეგები
+<span class="search_text">{{search_text}}</span>-სთვის</span>
+<span class="search_len">მოიძებნა {{ searched_posts|length }} ჩანაწერი</span>
+<div class="search_line"></div>
+
+<div class="search_block_desktop">
+{% for searched_post in searched_posts %}
+
+{% if searched_post.class_name == 'History' %}
+<a href="{% url 'history-detail' lang=lang id=searched_post.id %}">
+{% endif %}
+{% if searched_post.class_name == 'Culture' %}
+<a href="{% url 'culture-detail' lang=lang id=searched_post.id %}">
+{% endif %}
+{% if searched_post.class_name == 'Architect' %}
+<a href="{% url 'architect-detail' lang=lang id=searched_post.id %}">
+{% endif %}
+<div class="searched_post">
+<img src="{% static searched_post.post_img %}" class="searched_post_img">
+<div class="searched_post_text_side">
+<span class="searched_post_header">{{ searched_post.post_title }}</span>
+<span class="searched_post_text">{{ searched_post.post_text|truncatechars:90 }}</span>
+</div>
+</div>
+</a>
+{% endfor %}
+</div>
+<br><br><br><br><br>
+
+{% endblock %}

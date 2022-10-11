@@ -24,10 +24,10 @@
 <div class="iiblockDiv">
 	<div class="aboutprojectdiv">
 		<span class="aboutprojectheader">{% t "about_project_header_block" %}</span><br>
-		<span class="aboutprojecttext">{{about_project.project_info|truncatechars:500}}</span><br>
+		<span class="aboutprojecttext">{{about_project.project_info|truncatechars:800}}</span><br>
 		<a class="projectinfodetail" href="{% url 'about_project' lang=lang %}">{% t "detail" %} </a>&nbsp
 		<img src="{% static '/icons/Iconrightarrow.png' %}">
-		<img class="aboutprojectimg" src="{% static about_project.post_img_first %}">
+
 	</div>
 	<center><div class="line"></div></center>
 

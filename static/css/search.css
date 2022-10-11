@@ -1,0 +1,112 @@
+.search_result{
+	display: block;
+margin-top: 63px;
+margin-left: 13.6%;
+font-family: 'FiraGO';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 26px;
+
+/* identical to box height, or 162% */
+
+color: #3E3A2B;
+}
+
+.search_text{
+	display: inline-block;
+font-family: 'FiraGO';
+font-style: normal;
+font-weight: bold;
+text-decoration: underline;
+font-size: 16px;
+line-height: 26px;
+
+/* identical to box height, or 162% */
+
+color: black;
+}
+
+.search_len{
+	display: block;
+font-family: 'FiraGO';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 26px;
+margin-top: 12px;
+margin-left: 13.6%;
+
+/* identical to box height, or 162% */
+
+color: #3E3A2B;
+}
+
+.search_line{
+width: 80%;
+display: block;
+margin-left: 13.6%;
+margin-top: 24px;
+left: 261px;
+top: 292px;
+
+border: 1px solid #CCCCB7;
+}
+.search_block_desktop{
+	width: 90%;
+	display: block;
+	margin-left: 13.6%;
+}
+
+.searched_post{
+	width: 47%;
+	height: 171px;
+	display: inline-block;
+	margin-top: 50px;
+}
+
+.searched_post_img{
+	width: 240px;
+	object-fit: cover;
+	height: 171px;
+	float: left;
+}
+
+.searched_post_header{
+	margin-left:16px;
+	width: auto;
+	height: 68px;
+	display: block;
+font-family: 'FiraGO';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 25px;
+
+/* or 170% */
+
+color: #3E3A2B;
+}
+
+.searched_post_text_side{
+	height: auto;
+	max-height: 171px;
+	display: block;
+	width: 50%;
+	float: left;
+}
+
+.searched_post_text{
+	margin-left: 16px;
+	display: block;
+	max-height: 90px;
+	font-family: 'FiraGO';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 21px;
+
+/* or 162% */
+
+color: #3E3A2B;
+}

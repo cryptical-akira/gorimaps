@@ -312,6 +312,72 @@ margin-top: 25%;
   margin-left: 15px;
 }
 @media only screen and (min-width: 1700px) {
+  .linenavbar{
+  width: 620px;
+height: 0px;
+
+border: 1px solid #D6CBA4;
+}
+
+   ::placeholder {
+  font-family: 'FiraGO';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 34px;
+
+/* identical to box height, or 170% */
+
+color: #D6CBA4;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder {
+  font-family: 'FiraGO';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 34px;
+
+/* identical to box height, or 170% */
+
+color: #D6CBA4;
+}
+
+::-ms-input-placeholder {
+  font-family: 'FiraGO';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 34px;
+
+/* identical to box height, or 170% */
+
+color: #D6CBA4;
+}
+input[type=text], select {
+  width: 550px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+background: none !important;
+  border-radius: 4px;
+  box-sizing: border-box;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+  font-family: 'FiraGO';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 34px;
+
+/* identical to box height, or 170% */
+
+color: #D6CBA4;
+
+}
   .navheader{
   /* გორის ახალი იდენტობა */
   display: inline-block;
@@ -357,6 +423,72 @@ margin-top: 25%;
 }
 
 @media only screen and (max-width: 1699px) and (min-width: 1451px) {
+    .linenavbar{
+  width: 620px;
+height: 0px;
+
+border: 1px solid #D6CBA4;
+}
+
+   ::placeholder {
+  font-family: 'FiraGO';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 34px;
+
+/* identical to box height, or 170% */
+
+color: #D6CBA4;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder {
+  font-family: 'FiraGO';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 34px;
+
+/* identical to box height, or 170% */
+
+color: #D6CBA4;
+}
+
+::-ms-input-placeholder {
+  font-family: 'FiraGO';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 34px;
+
+/* identical to box height, or 170% */
+
+color: #D6CBA4;
+}
+input[type=text], select {
+  width: 550px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+background: none !important;
+  border-radius: 4px;
+  box-sizing: border-box;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+  font-family: 'FiraGO';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 34px;
+
+/* identical to box height, or 170% */
+
+color: #D6CBA4;
+
+}
   .navheader{
   /* გორის ახალი იდენტობა */
   margin-left: 8% !important;
@@ -401,6 +533,72 @@ margin-top: 25%;
 }
 
 @media only screen and (max-width: 1450px) and (min-width: 1296px) {
+  .linenavbar{
+  width: 620px;
+height: 0px;
+
+border: 1px solid #D6CBA4;
+}
+
+   ::placeholder {
+  font-family: 'FiraGO';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 34px;
+
+/* identical to box height, or 170% */
+
+color: #D6CBA4;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder {
+  font-family: 'FiraGO';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 34px;
+
+/* identical to box height, or 170% */
+
+color: #D6CBA4;
+}
+
+::-ms-input-placeholder {
+  font-family: 'FiraGO';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 34px;
+
+/* identical to box height, or 170% */
+
+color: #D6CBA4;
+}
+input[type=text], select {
+  width: 550px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+background: none !important;
+  border-radius: 4px;
+  box-sizing: border-box;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+  font-family: 'FiraGO';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 34px;
+
+/* identical to box height, or 170% */
+
+color: #D6CBA4;
+
+}
   .navheader{
   /* გორის ახალი იდენტობა */
   margin-left: 5%;
@@ -445,6 +643,64 @@ margin-top: 25%;
 }
 
 @media only screen and (max-width: 1295px) {
+   ::placeholder {
+font-family: 'FiraGO';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+
+/* identical to box height, or 171% */
+
+color: #FEFEF8;
+}
+
+:-ms-input-placeholder {
+  font-family: 'FiraGO';
+font-family: 'FiraGO';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+
+/* identical to box height, or 171% */
+
+color: #FEFEF8;
+}
+
+::-ms-input-placeholder {
+font-family: 'FiraGO';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+
+/* identical to box height, or 171% */
+
+color: #FEFEF8;
+}
+input[type=text], select {
+  width: 80%;
+ margin-top: 5px;
+  display: inline-block;
+background: none !important;
+  border-radius: 4px;
+  box-sizing: border-box;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+  font-family: 'FiraGO';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 34px;
+
+/* identical to box height, or 170% */
+
+color: white;
+
+}
   .navbar{
 position: block;
 width: 100%;
@@ -552,4 +808,58 @@ margin-right: 20px;
   border-radius: 10px;
   }
 
+}
+
+
+.searchheaderdesktop{
+  font-family: 'LGVAnastasia';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 41px;
+  text-align: center;
+
+  color: #F1F1E6;
+}
+
+
+.overlaysearch {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 9;
+  top: 0;
+  left: 0;
+  background: rgba(40, 40, 38, 0.9);
+  backdrop-filter: blur(10px);
+  overflow-x: hidden;
+  transition: 0s;
+}
+
+.overlaysearch-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlaysearch a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlaysearch a:hover, .overlaysearch a:focus {
+  color: #f1f1f1;
+}
+
+.overlaysearch .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
 }

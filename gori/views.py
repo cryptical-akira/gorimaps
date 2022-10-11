@@ -96,3 +96,66 @@ def architect_detail_view(request, lang, id):
         raise Http404('Post does not exist')
 
     return render(request, 'architect_detail.html', context={'lang':lang, 'history': history})
+
+
+#search page
+def search(request, lang):
+	try:
+		search_text = request.GET["search_text"]
+
+	except:
+		search_text = 'გორი'
+
+	history = History.objects.all()
+	culture = Culture.objects.all()
+	architect = Architect.objects.all()
+	searched_posts = []
+	if lang == 'ka':
+		for i in history:
+			if (search_text in i.post_text.text_ka) or (search_text in i.post_title.text_ka):
+				searched_posts.append(i)
+
+		for i in culture:
+			if (search_text in i.post_text.text_ka) or (search_text in i.post_title.text_ka):
+				searched_posts.append(i)
+
+		for i in architect:
+			if (search_text in i.post_text.text_ka) or (search_text in i.post_title.text_ka):
+				searched_posts.append(i)
+
+	if lang == 'en':
+		for i in history:
+			if (search_text in i.post_text.text_en) or (search_text in i.post_title.text_en):
+				searched_posts.append(i)
+
+		for i in culture:
+			if (search_text in i.post_text.text_en) or (search_text in i.post_title.text_en):
+				searched_posts.append(i)
+
+		for i in architect:
+			if (search_text in i.post_text.text_en) or (search_text in i.post_title.text_en):
+				searched_posts.append(i)
+
+
+
+	return render(request, 'search.html', {'lang':lang, 'search_text':search_text, 'searched_posts':searched_posts})
+
+# def search_no(request, lang):
+# 	print(request.GET["search_text"])
+# 	search_text = search
+# 	history = History.objects.all()
+# 	culture = Culture.objects.all()
+# 	architect = Architect.objects.all()
+# 	searched_posts = []
+
+# 	for i in history:
+# 		searched_posts.append(i)
+
+# 	for i in culture:
+# 		searched_posts.append(i)
+
+# 	for i in architect:
+# 		searched_posts.append(i)
+# 	print(searched_posts)
+
+# 	return render(request, 'search.html', {'lang':lang, 'searched_posts':searched_posts})

@@ -2,7 +2,6 @@
 {% load i18n %}
 {% load transl_extras %}
 
-
 <nav class="navbar">
 
     <link rel="stylesheet" href="{% static '/css/navbar.css' %}">
@@ -15,9 +14,24 @@
     <a class="menuitem5" href="">{% t "humans" %}</a>
     <a class="menuitem6" href="">{% t "textus" %}</a>
 
-    <div class="search">
-        <img class="searchIcon" src="{% static '/icons/Iconsearch.png' %}">
+<div id="myNavSearch" class="overlaysearch">
+  <div class="overlaysearch-content">
+    <center>
+      <span class="searchheaderdesktop">ვებგვერდზე ძიება</span>
+      <form action="/search/{{lang}}">
+          <input type="text" id="search_text" name="search_text" placeholder="ვებ გვერდზე ძიება..." style="margin-top:77px">
+          <button type="submit" style="background-color: transparent;background-repeat: no-repeat;border: none;cursor: pointer;">
+            <img src="{% static '/icons/Iconmobilesearch.png' %}" ></button>
+      <div class="linenavbar"></div></form>
+
+    </center>
+  </div>
+</div>
+    <span style="font-size:30px;cursor:pointer" onclick="openNavSearch()">
+      <div class="search" onclick="myFunction()" onclick="openNavSearch()">
+        <img class="searchIcon" src="{% static '/icons/Iconsearch.png' %}" >
     </div>
+    </span>
 
     <div class="langBar" onclick="myFunction()">
             {% if lang == 'ka' %}
@@ -56,8 +70,12 @@
       <div class="line6"></div>
       <center>
         <div class="mobilemenusearchbar">
-            <span class="mobilemenusearchtext">ძებნა საიტზე</span>
-            <img src="{% static '/icons/Iconmobilesearch.png' %}" class="mobilemenusearchicon">
+          <form action="/search/{{lang}}">
+          <input type="text" id="search_text" name="search_text" placeholder="ვებ გვერდზე ძიება...">
+          <button type="submit" style="background-color: transparent;background-repeat: no-repeat;border: none;cursor: pointer;">
+            <img src="{% static '/icons/Iconmobilesearch.png' %}" style="margin-top: 12px; display: inline-block;" class="Iconmobilesearch"></button>
+            <div class="linenavbar"></div>
+          </form>
         </div>
       </center>
       <div class="overlay-content"> 
@@ -121,5 +139,18 @@ function openNav() {
 
 function closeNav() {
   document.getElementById("myNav").style.height = "0%";
+}
+
+function searchFun() {
+  document.alert('dsa');
+}
+</script>
+<script>
+function openNavSearch() {
+  document.getElementById("myNavSearch").style.width = "100%";
+}
+
+function closeNavSearch() {
+  document.getElementById("myNavSearch").style.width = "0%";
 }
 </script>
