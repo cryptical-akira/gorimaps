@@ -1,0 +1,227 @@
+.contact_us_header_desktop{font-family: 'LGV Anastasia';
+font-family: 'LGVAnastasia';
+font-style: normal;
+font-weight: 400;
+font-size: 64px;
+line-height: 41px;
+display: block;
+margin-top: 64px;
+margin-left: 13.6%;
+
+color: #F6C042;
+}
+
+
+.contact_us_text_desktop{
+	width: 500px;
+height: 52px;
+display: block;
+margin-left: 13.6%;
+margin-top: 31px;
+font-family: 'FiraGO';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 26px;
+
+/* or 162% */
+
+color: #848177;
+}
+
+.contact_input{
+	width: 22%;
+	display: block;
+	margin-left: 13.6%;
+	margin-top: 48px;
+height: 64px;
+padding-left: 19px;
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 26px;
+color: black;
+
+background: #FEFEF8;
+border: 1px solid #EDE7D6;
+border-radius: 12px;
+}
+
+.contact_input_big{
+	  padding: 24px 25px;
+	top: 392px;
+	left: 43%;
+	position: absolute;
+	height: 255px;
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+margin-top: 15px;
+line-height: 26px;
+color: black;
+	width: 35%;
+	background: #FEFEF8;
+border: 1px solid #EDE7D6;
+border-radius: 12px;
+}
+.contact_input_big::placeholder{
+	font-family: 'FiraGO';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+margin-top: 15px;
+line-height: 26px;
+color: #848177;
+margin-left: 14px;
+}
+
+.contact_input::placeholder{
+	font-family: 'FiraGO';
+	position: absolute;
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 26px;
+color: #848177;
+}
+
+.contact_send_button{
+	display: flex;
+flex-direction: row;
+margin-right: 20%;
+margin-top: 37px;
+justify-content: center;
+align-items: center;
+font-family: 'LGVAnastasia';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 20px;
+
+/* or 62% */
+text-align: center;
+
+color: #3E3A2B;
+
+
+width: 210px;
+height: 56px;
+float: right;
+
+background: #F6C042;
+border-radius: 10px;
+	border: none;
+	cursor: pointer;
+}
+
+.contact_remove_button{
+	border: none;
+	cursor: pointer;
+flex-direction: row;
+justify-content: center;
+margin-top: 37px;
+margin-right: 25px;
+align-items: center;
+gap: 10px;
+font-family: 'LGVAnastasia';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 20px;
+
+/* or 62% */
+text-align: center;
+
+color: #3E3A2B;
+
+
+width: 126px;
+height: 56px;
+float: right;
+background: #D6CBA4;
+border-radius: 10px;
+}
+
+.contact_line_desktop{
+	width: 70%;
+	margin-left: 13.6%;
+height: 0px;
+display: block;
+
+
+border: 1px solid #CCCCB7;
+}
+
+.contact_us_contact_us{
+font-family: 'LGVAnastasia';
+font-style: normal;
+display: inline-block;
+font-weight: 400;
+font-size: 64px;
+line-height: 41px;
+
+color: #F6C042;}
+
+.contact_us_contact_i_div{
+	width: 450px;
+	display: inline-block;
+	margin-top: 64px;
+	margin-left: 13.6%;
+	float: left;
+}
+.contact_us_contact_ii_div{
+	width: 400px;
+	display: inline-block;
+	margin-left: 20px;
+	float: left;
+	margin-top: 64px;
+}
+
+.contact_us_contact_child_div{
+	display: inline-block;
+	width: 47%;
+	height: 49px;
+	margin-top: 44px;
+}
+
+.contact_us_contact_child_icon_div{
+	width: 48px;
+	height: 48px;
+	background-color: #F6C042;
+	border-radius: 10px;
+	float: left;
+	display: inline-block;
+}
+
+
+.contacticon{
+	position: absolute;
+}
+
+.contact_us_contact_name{
+	font-family: 'FiraGO';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+margin-left: 16px;
+/* or 114% */
+align-items: center;
+float: left;
+color: #3E3A2B;
+}
+
+.contact_us_contact_info{
+	font-family: 'FiraGO';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 26px;
+
+margin-left: 16px;
+/* or 162% */
+align-items: center;
+text-decoration-line: underline;
+
+color: #848177;
+}

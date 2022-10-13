@@ -159,3 +159,9 @@ def search(request, lang):
 # 	print(searched_posts)
 
 # 	return render(request, 'search.html', {'lang':lang, 'searched_posts':searched_posts})
+
+
+#text us page
+
+def text_us(request, lang):
+	return render(request, 'textus.html', {'lang':lang})

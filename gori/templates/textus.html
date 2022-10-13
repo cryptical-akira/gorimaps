@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+{% load transl_extras %}
+
+<span class="contact_us_header_desktop">მოგვწერეთ</span>
+<span class="contact_us_text_desktop">თუ თქვენ გაქვთ ინფრომაცია რომელსაც აქვს ისტორიული ღირებულება, გთხოვთ დაგვიკავშირდეთ და მოგვიყვეთ,</span>
+
+<form style="margin-top:80px">
+	<input type="" name=""class="contact_input" placeholder="თქვენი სახელი">
+	<input type="" name=""class="contact_input" placeholder="ტელეფონი">
+	<input type="" name=""class="contact_input" placeholder="თემა">
+	<textarea type="" name=""class="contact_input_big" placeholder="გზავნილი"></textarea>
+
+	
+	<button class="contact_send_button">გაგზავნა</button>
+</form><button class="contact_remove_button">წაშლა</button>
+<br><br><br><br><br><br><br><br>
+<div class="contact_line_desktop"></div>
+
+<div class="contact_us_contact_i_div">
+	<span class="contact_us_contact_us">დაგვიკავშირდით</span>
+	<div class="contact_us_contact_child_div">
+		<div class="contact_us_contact_child_icon_div"><img style="margin-top: 12px; margin-left: 12px" src="{% static '/icons/Iconphone.png' %}"></div>
+		<span class="contact_us_contact_name">ტელეფონი</span><br>
+		<span class="contact_us_contact_info">+995 322 2 92 15 14</span>
+	</div>
+	<div class="contact_us_contact_child_div">
+		<div class="contact_us_contact_child_icon_div"><img src="{% static '/icons/Iconemail.png' %}" style="margin-top: 14px; margin-left: 14px"></div>
+		<span class="contact_us_contact_name">ელ. ფოსტა</span><br>
+		<span class="contact_us_contact_info">info@idfi.ge</span>
+	</div>
+</div>
+<div class="contact_us_contact_ii_div">
+	<span class="contact_us_contact_us">გვიპოვეთ</span><br><br>
+		<a href="https://www.facebook.com/IDFI.official">
+			<img class="socialicons" src="{% static '/icons/fb.png' %}"></a>
+		
+		<a href="https://twitter.com/IDFIGeorgia" style="margin-left:16px">
+			<img class="socialicons" src="{% static '/icons/tw.png' %}"></a>
+		<a style="margin-left:16px">
+		<img class="socialicons" src="{% static '/icons/yt.png' %}"></a>
+
+		<a style="margin-left:16px">
+		<img class="socialicons" src="{% static '/icons/ig.png' %}"></a>
+</div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+{% endblock %}
