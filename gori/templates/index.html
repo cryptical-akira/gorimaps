@@ -20,18 +20,36 @@
 			<span class="sendusbuttontext">{% t "text_us_button" %}</span></a>
 	</div>
 
-<iframe src="https://snazzymaps.com/embed/429468" width="100%" height="600px" style="border:none;"></iframe>
+<iframe src="https://snazzymaps.com/embed/429468" width="100%" height="450px" style="margin-top:40px;"></iframe>
 <script
     src="https://maps.googleapis.com/maps/api/js?v=3.50&key=AIzaSyBQAuKvUDilNX3uXRm29S-Mx7A7ylN5SYk&callback" async defer>
 </script>
+<center>
+<span class="under_map_text_first"><img src="{% static '/icons/Icongps.png' %}" style="display:inline-block; position: absolute;"> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspობიექტების სანახავად გადაადგილდით რუკაზე</span>
+<span class="under_map_text_second"><img src="{% static '/icons/Iconundermap.png' %}" style="display:inline-block; position: absolute;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspმონიშნულ ობიექტებზე დაკლიკვით თქვენ ნახავთ დეტალურ ინფორმაციას</span>
+</center>
 
-
+</div>
+<div class="iblockDivMobile">
+	<center>
+		<div class="identmapdivmobile">
+		<span class="indentmaptextmobile" style="float: left; margin-left: 7%">{% t "map_of_identity" %}</span><br><br><br><br>
+		<span class="identmapinfomobile" style="text-align:left">{% t "identity_map_text" %}</span>
+	</div></center>
+	<iframe src="https://snazzymaps.com/embed/429468" width="100%" height="450px" style="margin-top:40px;"></iframe>
+<script
+    src="https://maps.googleapis.com/maps/api/js?v=3.50&key=AIzaSyBQAuKvUDilNX3uXRm29S-Mx7A7ylN5SYk&callback" async defer>
+</script>
+<center><br>
+<span class="under_map_text_first_mobile"> ობიექტების სანახავად გადაადგილდით რუკაზე</span><br>
+<span class="under_map_text_first_mobile">მონიშნულ ობიექტებზე დაკლიკვით თქვენ ნახავთ დეტალურ ინფორმაციას</span>
+</center><br><br>
 </div>
 
 <div class="iiblockDiv">
 	<div class="aboutprojectdiv">
 		<span class="aboutprojectheader">{% t "about_project_header_block" %}</span><br>
-		<span class="aboutprojecttext">{{about_project.project_info|truncatechars:800}}</span><br>
+		<span class="aboutprojecttext">{{about_project.project_info|truncatechars:1000}}</span><br>
 		<a class="projectinfodetail" href="{% url 'about_project' lang=lang %}">{% t "detail" %} </a>&nbsp
 		<img src="{% static '/icons/Iconrightarrow.png' %}">
 

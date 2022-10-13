@@ -1,8 +1,91 @@
 .iblockDiv{
 width: 108%;
-height: 1100px;
+height: auto;
 top: 140px;
 background-color: #FEFEF8;
+}
+.indentmaptextmobile{
+	display: none;
+}
+.identmapinfomobile{display: none;}
+.iblockDivMobile{display: none;}
+.under_map_text_first_mobile{
+	width: 80%;
+	text-align: left;
+		font-family: 'FiraGO';
+	display: block;
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 21px;
+
+/* or 131% */
+
+color: #848177;
+}
+@media only screen and (max-width: 1331px) {
+	.iblockDivMobile{display: block; background-color: white;}
+	.iblockDiv{
+	display: none;
+	}
+	.indentmaptextmobile{
+margin-top: 35px;
+display: block;
+font-family: 'LGVAnastasia';
+font-style: normal;
+font-weight: 400;
+font-size: 38px;
+line-height: 28px;
+display: block;
+/* or 74% */
+
+color: #3E3A2B;
+}
+.identmapinfomobile{
+	width: 87%;
+	display: block;
+font-family: 'FiraGO';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+
+/* or 150% */
+
+color: #848177;
+}
+}
+
+
+
+.under_map_text_first{
+	font-family: 'FiraGO';
+	display: inline-block;
+	margin-top: 47px;
+	margin-bottom: 47px;
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 21px;
+
+/* or 131% */
+
+color: #848177;
+}
+.under_map_text_second{
+	font-family: 'FiraGO';
+	display: inline-block;
+	margin-left: 5.2%;
+	margin-top: 47px;
+	margin-bottom: 47px;
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 21px;
+
+/* or 131% */
+
+color: #848177;
 }
 
 .indentmaptext{

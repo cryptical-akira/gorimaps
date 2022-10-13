@@ -681,7 +681,7 @@ color: #FEFEF8;
 }
 input[type=text], select {
   width: 80%;
- margin-top: 5px;
+ margin-top: 0px;
   display: inline-block;
 background: none !important;
   border-radius: 4px;
