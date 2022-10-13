@@ -3,6 +3,8 @@
 {% block content %}
 {% load transl_extras %}
 
+
+<div class="text_us_desktop">
 <span class="contact_us_header_desktop">მოგვწერეთ</span>
 <span class="contact_us_text_desktop">თუ თქვენ გაქვთ ინფრომაცია რომელსაც აქვს ისტორიული ღირებულება, გთხოვთ დაგვიკავშირდეთ და მოგვიყვეთ,</span>
 
@@ -44,6 +46,55 @@
 		<a style="margin-left:16px">
 		<img class="socialicons" src="{% static '/icons/ig.png' %}"></a>
 </div>
+</div>
+
+<div class="text_us_mobile">
+<center>
+<span class="contact_us_header_mobile">მოგვწერეთ</span>
+<span class="contact_us_text_mobile">თუ თქვენ გაქვთ ინფრომაცია რომელსაც აქვს ისტორიული ღირებულება, გთხოვთ დაგვიკავშირდეთ და მოგვიყვეთ,</span>
+<form style="margin-top:26px">
+	<input type="" name=""class="contact_input_mobile" placeholder="თქვენი სახელი">
+	<input type="" name=""class="contact_input_mobile" placeholder="ტელეფონი">
+	<input type="" name=""class="contact_input_mobile" placeholder="თემა">
+	<textarea type="" name=""class="contact_input_big_mobile" placeholder="გზავნილი"></textarea>
+
+	
+	<button class="contact_remove_button_mobile">წაშლა</button>
+<button class="contact_send_button_mobile">გაგზავნა</button>
+</form>
+<span class="contact_contactus_mobile">დაგვიკავშირდით</span>
+<div class="mobilecontactusline"></div>
+<div style="width:300px">
+	<div class="contact_us_contact_child_div" style="width:200px !important; float: left;">
+		<div class="contact_us_contact_child_icon_div"><img style="margin-top: 12px; margin-left: 1px" src="{% static '/icons/Iconphone.png' %}"></div>
+		<span class="contact_us_contact_name">ტელეფონი</span><br>
+		<span class="contact_us_contact_info">+995 322 2 92 15 14</span>
+	</div><br><br><br><br><br>
+		<div class="contact_us_contact_child_div" style="width:160px !important; float: left;">
+		<div class="contact_us_contact_child_icon_div"><img style="margin-top: 14px; margin-left: 2px" src="{% static '/icons/Iconemail.png' %}"></div>
+		<span class="contact_us_contact_name"> &nbspელ. ფოსტა</span><br>
+		<span class="contact_us_contact_info">info@idfi.ge</span>
+	</div>
+	</div><br><br><br><br>
+	<span class="contact_contactus_mobile">დაგვიკავშირდით</span>
+<div class="mobilecontactusline"></div><br>
+<div style="width:300px">
+	<a href="https://www.facebook.com/IDFI.official" style="float: left;">
+			<img class="" src="{% static '/icons/fb.png' %}"></a>
+		
+		<a href="https://twitter.com/IDFIGeorgia" style="float: left; margin-left: 16px;">
+			<img class="" src="{% static '/icons/tw.png' %}"></a>
+		<a style="float: left;margin-left: 16px;">
+		<img class="" src="{% static '/icons/yt.png' %}"></a>
+
+		<a style="float: left;margin-left: 16px;">
+		<img class="" src="{% static '/icons/ig.png' %}"></a>
+
+</div>
+</div>
+</center>
+</div>
+
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 {% endblock %}
