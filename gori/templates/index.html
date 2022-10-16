@@ -37,8 +37,8 @@
     src="https://maps.googleapis.com/maps/api/js?v=3.50&key=AIzaSyBQAuKvUDilNX3uXRm29S-Mx7A7ylN5SYk&callback" async defer>
 </script>
 <center>
-<span class="under_map_text_first"><img src="{% static '/icons/Icongps.png' %}" style="display:inline-block; position: absolute;"> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspობიექტების სანახავად გადაადგილდით რუკაზე</span>
-<span class="under_map_text_second"><img src="{% static '/icons/Iconundermap.png' %}" style="display:inline-block; position: absolute;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspმონიშნულ ობიექტებზე დაკლიკვით თქვენ ნახავთ დეტალურ ინფორმაციას</span>
+<span class="under_map_text_first"><img src="{% static '/icons/Icongps.png' %}" style="display:inline-block; position: absolute;"> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp{% t 'undermaptextf' %}</span>
+<span class="under_map_text_second"><img src="{% static '/icons/Iconundermap.png' %}" style="display:inline-block; position: absolute;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp{% t 'undermaptexts' %}</span>
 </center>
 
 </div>
@@ -57,8 +57,8 @@
     src="https://maps.googleapis.com/maps/api/js?v=3.50&key=AIzaSyBQAuKvUDilNX3uXRm29S-Mx7A7ylN5SYk&callback" async defer>
 </script>
 <center><br>
-<span class="under_map_text_first_mobile"> ობიექტების სანახავად გადაადგილდით რუკაზე</span><br>
-<span class="under_map_text_first_mobile">მონიშნულ ობიექტებზე დაკლიკვით თქვენ ნახავთ დეტალურ ინფორმაციას</span>
+<span class="under_map_text_first_mobile"> {% t 'undermaptextf' %}</span><br>
+<span class="under_map_text_first_mobile">{% t 'undermaptexts' %}</span>
 </center><br><br>
 </div>
 

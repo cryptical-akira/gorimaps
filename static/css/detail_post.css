@@ -164,7 +164,24 @@ background: #FEFEF8;
 
 	color: #D6CBA4;
 }
+.post_tell_use_more_headeren{
+ 		/* მოგვიყევით მეტი */
+	width: auto;
+	height: 32px;
+	float: left;
+	display: block;
+	margin-top: 48px;
+	margin-left: 45px;
 
+	font-family: 'BarlowCondensedBold';
+	font-style: normal;
+	font-size: 55px;
+	line-height: 41px;
+
+	/* or 74% */
+
+	color: #D6CBA4;
+}
 .post_tell_us_more_button{
 align-items: center;
 display: block;
@@ -187,7 +204,28 @@ color: #3E3A2B;
 background: #F6C042;
 border-radius: 10px;
 }
+.post_tell_us_more_buttonen{
+align-items: center;
+display: block;
+margin-top: 26px;
+width: 154px;
+margin-left: 48px;
+height: 56px;
 
+font-family: 'BarlowCondensedBold';
+font-style: normal;
+font-weight: 400;
+font-size: 27px;
+line-height: 20px;
+
+/* or 62% */
+text-align: center;
+
+color: #3E3A2B;
+
+background: #F6C042;
+border-radius: 10px;
+}
 .post_tell_us_more_text{
 	width: 544px;
 	height: 52px;

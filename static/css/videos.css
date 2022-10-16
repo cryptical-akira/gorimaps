@@ -14,7 +14,21 @@ line-height: 41px;
 
 color: #F6C042;
 }
+.videos_headeren{
+width: 149px;
+height: 41px;
+display: block;
+margin-left: 13.6%;
+margin-top: 64px;
 
+
+font-family: 'BarlowCondensedBold';
+font-style: normal;
+font-size: 60px;
+line-height: 41px;
+
+color: #F6C042;
+}
 .videodivpage{
 position: block;
 width: 406px;

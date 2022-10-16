@@ -3,9 +3,10 @@
 {% block content %}
 {% load transl_extras %}
 
-<span class="search_result">ძებნის შედეგები
+<div class="historydekstop">
+<span class="search_result">{% t 'sresult' %}
 <span class="search_text">{{search_text}}</span>-სთვის</span>
-<span class="search_len">მოიძებნა {{ searched_posts|length }} ჩანაწერი</span>
+<span class="search_len">{% t 'finded' %} {{ searched_posts|length }} {% t 'res' %}</span>
 <div class="search_line"></div>
 
 <div class="search_block_desktop">
@@ -23,13 +24,42 @@
 <div class="searched_post">
 <img src="{% static searched_post.post_img %}" class="searched_post_img">
 <div class="searched_post_text_side">
-<span class="searched_post_header">{{ searched_post.post_title }}</span>
-<span class="searched_post_text">{{ searched_post.post_text|truncatechars:90 }}</span>
+<span class="searched_post_header">{{ searched_post.post_title|truncatechars:35 }}</span>
+<span class="searched_post_text" style="margin-top:15px">{{ searched_post.post_text|truncatechars:50}}</span>
 </div>
 </div>
 </a>
 {% endfor %}
 </div>
+</div>
+<center>
+
+<div class="historymobile">
+
+	{% if lang == 'ka' %}
+	<span class="aboutprojectmobileheader" style="margin-right: 170px;">{% t 'sresult' %}</span>
+	{% else %}
+	<span class="aboutprojectmobileheaderen" style="margin-right: 170px;">{% t 'sresult' %}</span>
+	{% endif %}
+	{% for searched_post in searched_posts %}
+	{% if searched_post.class_name == 'History' %}
+	<a href="{% url 'history-detail' lang=lang id=searched_post.id %}">
+	{% endif %}
+	{% if searched_post.class_name == 'Culture' %}
+	<a href="{% url 'culture-detail' lang=lang id=searched_post.id %}">
+	{% endif %}
+	{% if searched_post.class_name == 'Architect' %}
+	<a href="{% url 'architect-detail' lang=lang id=searched_post.id %}">
+	{% endif %}
+	<div class="mobileposts">
+		<img src="{% static searched_post.post_img %}" class="historypostsmobile">
+		<span class="historymobilepostsheader">{{searched_post.post_title|truncatechars:40}} </span>
+	</div>
+	</a>
+	{% endfor %}
+</div>
+
+</center>
 <br><br><br><br><br>
 
 {% endblock %}

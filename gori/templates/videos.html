@@ -5,8 +5,11 @@
 
 <div class="videos_desktop">
 
-<span class="videos_header">ვიდეოები</span>
-
+{% if lang == 'ka' %}
+<span class="videos_header">{% t 'videos_block_header' %}</span>
+{% else %}
+<span class="videos_headeren">{% t 'videos_block_header' %}</span>
+{% endif %}
 <center>
 <div class="videosdivonpage">
 {% for video in videos %}

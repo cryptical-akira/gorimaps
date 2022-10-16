@@ -9,9 +9,13 @@
 		{% else %}
 		<span class="footerheaderen">{% t "new_identity_of_gori" %}</span>
 		{% endif %}
-		<span class="allright">ყველა უფლება დაცულია © 2022</span>
-		<span class="supporttext">პროექტის ფინანსური მხარდაჭერები არიან USAID და ZINC Network. პლატფორმა შექმნილია IDFI-ის მიერ.</span>
-		<img class="supports" src="{% static '/icons/supporters.png' %}">
+		<span class="allright">{% t 'allrightreserved' %}</span>
+		<span class="supporttext">{% t 'financialsupportertext' %}</span>
+	<div class="supportsinproject" style="margin-top: 0;">
+		<a href=""><img src="{% static '/icons/usaid.png' %}" style="width: 22%; float: left;"></a>
+		<a href=""><img src="{% static '/icons/zinc.png' %}" style="width: 27%; float: left; margin-left: 5%;"></a>
+		<a href=""><img src="{% static '/icons/idfi.png' %}" style="width: 32.5%; float: left; margin-left: 5%;"></a>
+	</div>
 	</div>
 	<div class="secondblockfooter">
 		{% if lang == 'ka' %}
@@ -22,7 +26,7 @@
 		<a href="https://www.facebook.com/IDFI.official"><img class="socialicons" src="{% static '/icons/fb.png' %}"></a>
 		<a href="https://twitter.com/IDFIGeorgia"><img class="socialicons" src="{% static '/icons/tw.png' %}"></a>
 		<img class="socialicons" src="{% static '/icons/yt.png' %}">
-		<img class="socialicons" src="{% static '/icons/ig.png' %}">
+		<a href="https://www.instagram.com/idfi.ge/"><img class="socialicons" src="{% static '/icons/ig.png' %}"></a>
 		{% if lang == 'ka' %}
 		<span class="contuctusfooter">{% t 'contact_us' %}</span>
 		{% else %}
@@ -53,7 +57,7 @@
 			<img class="socialicons" src="{% static '/icons/fb.png' %}"></a>
 		<a href="https://twitter.com/IDFIGeorgia"><img class="socialicons" src="{% static '/icons/tw.png' %}"></a>
 		<img class="socialicons" src="{% static '/icons/yt.png' %}">
-		<img class="socialicons" src="{% static '/icons/ig.png' %}">
+		<a href="https://www.instagram.com/idfi.ge/"><img class="socialicons" src="{% static '/icons/ig.png' %}"></a>
 		{% if lang == 'ka' %}
 		<span class="mobilefootercontactus">{% t 'contact_us' %}</span>
 		{% else %}
@@ -69,9 +73,7 @@
 				<a class="footercontactinfo" style="margin-left: 
 				32px;"href = "mailto:gorimaps@idfi.ge">gorimaps@idfi.ge</a>
 		</div>
-		<span class="mobilefooteraboutproject">პროექტის ფინანსური მხარდაჭერები არიან
-		USAID და ZINC Network. პლატფორმა შექმნილია
-		IDFI-ის მიერ.</span>
+		<span class="mobilefooteraboutproject">{% t 'financialsupportertext' %}</span>
 		<div class="footersupports">
 		<a href="https://www.usaid.gov/">
 			<img class="footersupportsiconsusaid" src="{% static '/icons/usaid.png' %}"></a>
@@ -90,6 +92,6 @@
 	{% else %}
 	<span class="mobileunderdivheaderen">{% t "new_identity_of_gori" %}</span>
 	{% endif %}
-	<span class="mobilefooterallright">ყველა უფლება დაცულია © 2022</span>
+	<span class="mobilefooterallright">{% t 'allrightreserved' %}</span>
 </div>
 

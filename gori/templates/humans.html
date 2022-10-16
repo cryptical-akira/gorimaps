@@ -5,7 +5,11 @@
 
 
 <div class="humans_desktop">
-<span class="humans_header_desktop">გამოჩენილი ადამიანები</span>
+{% if lang == 'ka' %}
+<span class="humans_header_desktop">{% t 'ppeople' %}</span>
+{% else %}
+<span class="humans_header_desktopen">{% t 'ppeople' %}</span>
+{% endif %}
 
 {% for human in humans %}
 <a href="{% url 'humans_detail' lang=lang id=human.id %}">
@@ -24,13 +28,13 @@
 <center>
 
 <div class="humans_mobile">
-	<span class="humans_mobile_header">გამოჩენილი ადამიანები</span>
+	<span class="humans_mobile_header">{% t 'ppeople' %}</span>
 	{% for human in humans %}
 	<a href="{% url 'humans_detail' lang=lang id=human.id %}">
 	<div class="humans_mobile_posts">
 		<span class="humans_mobile_post_header">{{human.post_title}}</span>
 		<img src="{% static human.post_img %}" class="humans_post_img_mobile">
-		<span class="get_more_mobile_post">გაიგე მეტი</span>
+		<span class="get_more_mobile_post">{% t 'learnmore' %}</span>
 
 	</div>
 	</a>

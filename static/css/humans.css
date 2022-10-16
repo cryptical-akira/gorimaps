@@ -9,7 +9,16 @@ margin-top: 64px;
 margin-left: 13.6%;
 color: #3E3A2B;
 }
-
+.humans_header_desktopen{
+font-family: 'BarlowCondensedBold';
+font-style: normal;
+font-size: 60px;
+line-height: 41px;
+display: block;
+margin-top: 64px;
+margin-left: 13.6%;
+color: #3E3A2B;
+}
 .humans_post_desktop_div{
 	width: 72.8%;
 	display: block;
