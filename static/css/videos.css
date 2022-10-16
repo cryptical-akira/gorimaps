@@ -1,0 +1,74 @@
+.videos_header{
+width: 149px;
+height: 41px;
+display: block;
+margin-left: 13.6%;
+margin-top: 64px;
+
+
+font-family: 'LGVAnastasia';
+font-style: normal;
+font-weight: 400;
+font-size: 64px;
+line-height: 41px;
+
+color: #F6C042;
+}
+
+.videodivpage{
+position: block;
+width: 406px;
+height: 264.71px;
+display: inline-block;
+background: #3E3A2B;
+border-radius: 12px;
+}
+.videodivpagemobile{
+position: block;
+width: 370px;
+height: 230px;
+display: inline-block;
+background: #3E3A2B;
+border-radius: 12px;
+}
+.videosdivonpage{
+	width: 80%;
+	margin-right: 90px;
+}
+.videopageundertext{
+	font-family: 'FiraGO';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 34px;
+
+/* identical to box height, or 170% */
+
+color: #3E3A2B;
+}
+.onepost{
+	width: 406px;
+	height: 400px;
+	display: inline-block;
+	float: left;
+	margin-top: 33px;
+
+	margin-left: 90px;
+}
+.onepostmobile{
+	width: 100%;
+	height: auto;
+	margin-top: 40px;
+	display: block;
+}
+.video_mobile{
+	display: none;
+}
+@media only screen and (max-width: 1339px){
+ .videos_desktop{
+ 	display: none;
+ }
+ .video_mobile{
+ 	display: block !important;
+ }
+}

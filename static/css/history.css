@@ -66,6 +66,20 @@ line-height: 41px;
 
 color: #3E3A2B;
 }
+.historypageheaderen{
+	width: 350px;
+height: 41px;
+display: block;
+margin-top: 64px;
+margin-left: 13.6%;
+
+font-family: 'BarlowCondensedBold';
+font-style: normal;
+font-size: 60px;
+line-height: 41px;
+
+color: #3E3A2B;
+}
 @media only screen and (min-width: 1297px){
 .historymobile{
 	display: none;

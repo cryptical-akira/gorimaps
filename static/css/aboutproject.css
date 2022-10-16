@@ -59,11 +59,28 @@ color: #F6C042;
 
 
 }
+.supportsecondheaderen{
+/* მხარდამჭერები */
+
+display: block;
+width: 226px;
+height: 41px;
+margin-top: 96px;
+
+font-family: 'BarlowCondensedBold';
+font-style: normal;
+font-size: 60px;
+line-height: 41px;
+
+color: #F6C042;
+
+
+}
 
 .supportsinproject{
 	display: block;
-	margin-top: 47px;
 	width: 100%;
+	margin-top: 70px;
 }
 
 .donors_text_info{
@@ -95,6 +112,20 @@ font-family: 'LGVAnastasia';
 font-style: normal;
 font-weight: 400;
 font-size: 64px;
+line-height: 41px;
+
+color: #F6C042;
+}
+.donors_text_designen{
+	width: 176px;
+height: 41px;
+
+display: block;
+margin-top: 90px;
+
+font-family: 'BarlowCondensedBold';
+font-style: normal;
+font-size: 60px;
 line-height: 41px;
 
 color: #F6C042;
@@ -146,6 +177,22 @@ line-height: 41px;
 
 color: #F6C042;
 }
+.about_project_headeren{
+/* პროექტის შესახებ */
+
+position: block;
+width: 291px;
+height: 41px;
+left: 262px;
+top: 236px;
+
+font-family: 'BarlowCondensedBold';
+font-style: normal;
+font-size: 60px;
+line-height: 41px;
+
+color: #F6C042;
+}
 @media only screen and (min-width: 1297px){
 .aboutprojectmobile{display: none;}
 }
@@ -167,7 +214,32 @@ color: #F6C042;
 
 		color: #F6C042;
 	}
+	.aboutprojectmobileheaderen{
+		display: block;
+		margin-top: 36px;
+		margin-right: 130px;
+		height: 32px;
 
+		font-family: 'BarlowCondensedBold';
+		font-style: normal;
+		font-size: 32px;
+		line-height: 28px;
+
+		color: #F6C042;
+	}
+	.aboutprojectmobileheaderen{
+		display: block;
+		margin-top: 36px;
+		margin-right: 130px;
+		height: 32px;
+
+		font-family: 'BarlowCondensedBold';
+		font-style: normal;
+		font-size: 32px;
+		line-height: 28px;
+
+		color: #F6C042;
+	}
 	.aboutprojectimgmobile{
 		display: block;
 		margin-top: 24px;
@@ -202,6 +274,20 @@ color: #F6C042;
 		font-style: normal;
 		font-weight: 400;
 		font-size: 38px;
+		line-height: 28px;
+
+		color: #F6C042;
+	}
+		.aboutprojectmobiledonorsen{
+
+		display: block;
+		margin-top: 32px;
+		margin-right: 250px;
+		margin-left: 10% !important;
+
+		font-family: 'BarlowCondensedBold';
+		font-style: normal;
+		font-size: 32px;
 		line-height: 28px;
 
 		color: #F6C042;

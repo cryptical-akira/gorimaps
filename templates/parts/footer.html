@@ -1,19 +1,33 @@
 {% load static %}
+{% load i18n %}
+{% load transl_extras %}
 
 <div class="footerDiv">
 	<div class="firstblockfooter">
-		<span class="footerheader">გორის ახალი იდენტობა</span>
+		{% if lang == 'ka' %}
+		<span class="footerheader">{% t "new_identity_of_gori" %}</span>
+		{% else %}
+		<span class="footerheaderen">{% t "new_identity_of_gori" %}</span>
+		{% endif %}
 		<span class="allright">ყველა უფლება დაცულია © 2022</span>
 		<span class="supporttext">პროექტის ფინანსური მხარდაჭერები არიან USAID და ZINC Network. პლატფორმა შექმნილია IDFI-ის მიერ.</span>
 		<img class="supports" src="{% static '/icons/supporters.png' %}">
 	</div>
 	<div class="secondblockfooter">
-		<span class="findusfooter">გვიპოვეთ</span>
+		{% if lang == 'ka' %}
+		<span class="findusfooter">{% t 'find_us' %}</span>
+		{% else %}
+		<span class="findusfooteren">{% t 'find_us' %}</span>
+		{% endif %}
 		<a href="https://www.facebook.com/IDFI.official"><img class="socialicons" src="{% static '/icons/fb.png' %}"></a>
 		<a href="https://twitter.com/IDFIGeorgia"><img class="socialicons" src="{% static '/icons/tw.png' %}"></a>
 		<img class="socialicons" src="{% static '/icons/yt.png' %}">
 		<img class="socialicons" src="{% static '/icons/ig.png' %}">
-		<span class="contuctusfooter">დაგვიკავშირდით</span>
+		{% if lang == 'ka' %}
+		<span class="contuctusfooter">{% t 'contact_us' %}</span>
+		{% else %}
+		<span class="contuctusfooteren">{% t 'contact_us' %}</span>
+		{% endif %}
 		<div class="footercontactyldivs">
 			<img class="contacticons" src="{% static '/icons/Iconphone.png' %}">
 			<a class="contactinfo" href="tel:+995-322-2-92-15-14">+995 322 2 92 15 14</a>
@@ -30,14 +44,21 @@
 
 <div class="mobilefooter">
 	<center>
-		<span class="mobilefooterfindus">გვიპოვეთ</span>
+		{% if lang == 'ka' %}
+		<span class="mobilefooterfindus">{% t 'find_us' %}</span>
+		{% else %}
+		<span class="mobilefooterfindusen">{% t 'find_us' %}</span>
+		{% endif %}
 		<a href="https://www.facebook.com/IDFI.official">
 			<img class="socialicons" src="{% static '/icons/fb.png' %}"></a>
 		<a href="https://twitter.com/IDFIGeorgia"><img class="socialicons" src="{% static '/icons/tw.png' %}"></a>
 		<img class="socialicons" src="{% static '/icons/yt.png' %}">
 		<img class="socialicons" src="{% static '/icons/ig.png' %}">
-
-		<span class="mobilefootercontactus">დაგვიკავშირდით</span>
+		{% if lang == 'ka' %}
+		<span class="mobilefootercontactus">{% t 'contact_us' %}</span>
+		{% else %}
+		<span class="mobilefootercontactusen">{% t 'contact_us' %}</span>
+		{% endif %}
 
 		<div class="footercontactyldivs">
 			<img class="footercontacticons" src="{% static '/icons/Iconphone.png' %}">
@@ -64,7 +85,11 @@
 
 <div class="underDiv"></div>
 <div class="mobileunderDiv">
-	<span class="mobileunderdivheader">გორის ახალი იდენტობა</span>
+	{% if lang == 'ka' %}
+	<span class="mobileunderdivheader">{% t "new_identity_of_gori" %}</span>
+	{% else %}
+	<span class="mobileunderdivheaderen">{% t "new_identity_of_gori" %}</span>
+	{% endif %}
 	<span class="mobilefooterallright">ყველა უფლება დაცულია © 2022</span>
 </div>
 

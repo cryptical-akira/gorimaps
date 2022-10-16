@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+{% load transl_extras %}
+
+
+<div class="humans_desktop">
+<span class="humans_header_desktop">გამოჩენილი ადამიანები</span>
+
+{% for human in humans %}
+<a href="{% url 'humans_detail' lang=lang id=human.id %}">
+<div class="humans_post_desktop_div">
+	<div class="humans_post_desktop_iblock">
+		<span class="humans_post_desktop_header">{{human.post_title}}
+		</span>
+		<span class="humans_post_desktop_info">{{human.post_text|truncatechars:300}}</span>
+	</div>
+	<img src="{% static human.post_img %}" class="humans_post_img_desktop">
+</div>
+</div>
+</a>
+{% endfor %}
+
+<center>
+
+<div class="humans_mobile">
+	<span class="humans_mobile_header">გამოჩენილი ადამიანები</span>
+	{% for human in humans %}
+	<a href="{% url 'humans_detail' lang=lang id=human.id %}">
+	<div class="humans_mobile_posts">
+		<span class="humans_mobile_post_header">{{human.post_title}}</span>
+		<img src="{% static human.post_img %}" class="humans_post_img_mobile">
+		<span class="get_more_mobile_post">გაიგე მეტი</span>
+
+	</div>
+	</a>
+	{% endfor %}
+</div>
+
+</center>
+<br><br><br><br><br>
+{% endblock %}

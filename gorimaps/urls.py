@@ -1,7 +1,7 @@
 from django.contrib import admin
 from django.urls import path, include, register_converter
-from gori.views import index_page, index_wout_lang, about_project, history, culture, architect
-from gori.views import history_detail_view, culture_detail_view, architect_detail_view, search, text_us
+from gori.views import index_page, index_wout_lang, about_project, history, culture, architect, humans, videos
+from gori.views import history_detail_view, culture_detail_view, architect_detail_view, search, text_us, humans_detail
 from .converters import LanguagePathConverter
 
 
@@ -27,5 +27,10 @@ urlpatterns = [
     path('search/<lang:lang>/', search, name='search'),
 
     path('text-us/<lang:lang>/', text_us, name='text_us'),
+
+    path('humans/<lang:lang>/', humans, name='humans'),
+    path('humans/<int:id>/<lang:lang>/', humans_detail, name='humans_detail'),
+
+    path('videos/<lang:lang>/', videos, name='videos'),
 
 ]

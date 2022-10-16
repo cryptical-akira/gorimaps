@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+{% load transl_extras %}
+
+<div class="videos_desktop">
+
+<span class="videos_header">ვიდეოები</span>
+
+<center>
+<div class="videosdivonpage">
+{% for video in videos %}
+<div class="onepost">
+<div class="videodivpage">
+	<iframe width="100%" height="264px" src="{{video.video_src}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
+	<span class="videotimecounter">
+		<img src="{% static '/icons/Icontime.png' %}" class="undervideotime">{{video.minutes}}:{{video.seconds}}</span>
+	<span class="videopageundertext">{{video.video_title}}</span>
+</div></div>
+{% endfor %}
+</div>
+</center>
+</div>
+<center>
+<div class="video_mobile">
+	{% for video in videos %}
+<div class="onepostmobile">
+<div class="videodivpagemobile">
+	<iframe width="100%" height="230px" src="{{video.video_src}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
+	<span class="videotimecounter">
+		<img src="{% static '/icons/Icontime.png' %}" class="undervideotime">{{video.minutes}}:{{video.seconds}}</span>
+	<span class="videopageundertext">{{video.video_title}}</span>
+</div></div>
+{% endfor %}
+<br><br><br></div></center>
+
+{% endblock %}

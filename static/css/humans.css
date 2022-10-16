@@ -1,0 +1,134 @@
+.humans_header_desktop{
+font-family: 'LGVAnastasia';
+font-style: normal;
+font-weight: 400;
+font-size: 64px;
+line-height: 41px;
+display: block;
+margin-top: 64px;
+margin-left: 13.6%;
+color: #3E3A2B;
+}
+
+.humans_post_desktop_div{
+	width: 72.8%;
+	display: block;
+	height: 410px;
+	margin: auto;
+	margin-top: 75px;
+}
+
+.humans_post_img_desktop{
+	width: 403.5px;
+	height: 100%;
+	display: inline-block;
+	float: right;
+	object-fit: cover;
+}
+
+.humans_post_desktop_iblock{
+	width: 55%;
+	display: inline-block;
+	float: left;
+	height: 400px;
+
+}
+
+.humans_post_desktop_header{
+	font-family: 'FiraGO';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 36px;
+	line-height: 52px;
+
+	display: inline-block;
+	float: left;
+	/* or 144% */
+
+	color: #F6C042;
+}
+
+.humans_post_desktop_info{
+	display: inline-block;
+	margin-top: 40px;
+	font-family: 'FiraGO';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 32px;
+
+	/* or 160% */
+
+	color: #3E3A2B;
+}
+.humans_mobile{
+	display: none;
+}
+
+@media only screen and (max-width: 1296px){
+	.humans_desktop{
+		display: none !important;
+	}
+	.humans_post_desktop_div{
+		display: none;
+	}
+	.humans_mobile{
+		display: block !important;
+	}
+	.humans_mobile_header{
+		font-family: 'LGVAnastasia';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 38px;
+		display: block;
+		margin-right: 30%;
+		margin-top: 36px;
+		line-height: 28px;
+
+		/* or 74% */
+
+		color: #F6C042;
+	} 
+	.humans_mobile_posts{
+		width: 320px;
+		height: 84px;
+		margin-top: 26px;
+	}
+	.humans_mobile_post_header{
+		display: inline-block;
+		float: left;
+		text-align: left;
+		font-family: 'FiraGO';
+		font-style: normal;
+		font-weight: 600;
+		font-size: 16px;
+		line-height: 24px;
+		width: 65%;
+
+		/* or 150% */
+
+		color: #3E3A2B;
+	}
+	.humans_post_img_mobile{
+		object-fit: cover;
+		width: 84px;
+		height: 84px;
+		float: right;
+	}
+	.get_more_mobile_post{
+		font-family: 'FiraGO';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 21px;
+		float: left;
+
+		/* or 175% */
+		display: flex;
+		margin-top: 5px;
+		align-items: center;
+
+		color: #848177;
+	}
+
+}

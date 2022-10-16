@@ -24,6 +24,28 @@ text-decoration: none;
 
 color: #3E3A2B;
 }
+.navheaderen{
+/* გორის ახალი იდენტობა */
+
+position: block !important;
+display: inline-block;
+width: auto;
+
+height: 28px;
+margin-top: 50px;
+
+font-family: 'BarlowCondensed';
+font-style: normal;
+font-weight: 600;
+font-size: 34px;
+line-height: 41px;
+text-decoration: none;
+
+/* identical to box height */
+text-transform: uppercase;
+
+color: #3E3A2B;
+}
 
 .menuitem1{
 /* პროექტის შესახებ */
@@ -383,6 +405,11 @@ color: #D6CBA4;
   display: inline-block;
   margin-left: 13% !important;
   }
+  .navheaderen{
+  /* გორის ახალი იდენტობა */
+  display: inline-block;
+  margin-left: 13% !important;
+  }
   .menuitem1{
   /* პროექტის შესახებ */
   left: 628px;
@@ -493,6 +520,10 @@ color: #D6CBA4;
   /* გორის ახალი იდენტობა */
   margin-left: 8% !important;
   }
+  .navheaderen{
+  /* გორის ახალი იდენტობა */
+  margin-left: 8% !important;
+  }
   .menuitem1{
   /* პროექტის შესახებ */
   left: 505px;
@@ -600,6 +631,10 @@ color: #D6CBA4;
 
 }
   .navheader{
+  /* გორის ახალი იდენტობა */
+  margin-left: 5%;
+  }
+  .navheaderen{
   /* გორის ახალი იდენტობა */
   margin-left: 5%;
   }
@@ -728,6 +763,29 @@ height: 126px;
   line-height: 28px;
 
   /* or 74% */
+
+  color: #3E3A2B;
+  }
+  .navheaderen{
+  /* გორის ახალი იდენტობა */
+
+  position: block !important;
+  display: inline-block;
+  width: 160px;
+
+  height: 28px;
+  margin-top: 28px;
+  margin-left: 20px;
+
+  font-family: 'BarlowCondensed';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 34px;
+  line-height: 35px;
+  text-decoration: none;
+
+  /* identical to box height */
+  text-transform: uppercase;
 
   color: #3E3A2B;
   }

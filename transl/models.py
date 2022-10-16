@@ -5,8 +5,8 @@ from django.core.exceptions import ValidationError
 
 
 class MultilanguageTextAbstract(models.Model):
-    text_en = models.CharField(default='', max_length=64)
-    text_ka = models.CharField(default='', max_length=64)
+    text_en = models.CharField(default='', max_length=120)
+    text_ka = models.CharField(default='', max_length=120)
     # unique=True
     slug = models.SlugField(null=True, blank=True, max_length=40, 
         default='transl_slug')

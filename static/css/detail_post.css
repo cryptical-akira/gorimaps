@@ -44,7 +44,7 @@ font-family: 'FiraGO';
 font-style: normal;
 font-weight: 400;
 font-size: 16px;
-text-align: left;
+text-align: justify;
 line-height: 24px;
 
 /* or 150% */
@@ -57,17 +57,24 @@ color: #3E3A2B;
 .post_img_mobile{
 	width: 100%;
 	height: 274px;
-	object-fit: cover;
+	object-fit: contain;
 	margin-top: 36px;
 }
-
+.post_img_mobile_human{
+	float: right;
+	width: 80px;
+	height: 80px;
+	margin-right: 8%;
+	display: inline-block;
+	object-fit: contain;
+	margin-top: 36px;
+}
 .post_social_divs_mobile{
 	width: 36px;
 height: 36px;
 display: inline-block;
 border-radius: 50%;
 float: left;
-margin-left: 20px;
 
 background: #FEFEF8;
 }

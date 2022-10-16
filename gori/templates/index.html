@@ -8,16 +8,28 @@
 
 <div class="iblockDiv">
 	<div class="identmapdiv">
+		{% if lang == 'ka' %}
 		<span class="indentmaptext">{% t "map_of_identity" %}</span>
+		{% else %}
+		<span class="indentmaptexten">{% t "map_of_identity" %}</span>
+		{% endif %}
 		<span class="identmapinfo">{% t "identity_map_text" %}</span>
 	</div>
 
 	<div class="tellmorediv">
+		{% if lang == 'ka' %}
 		<span class="tellmoretext">{% t "tell_us_more" %}</span>
+		{% else %}
+		<span class="tellmoretexten">{% t "tell_us_more" %}</span>
+		{% endif %}
 		<span class="tellmoreinfo">{% t "tell_us_more_text" %}</span>
 		<br><br>
-		<a class="sendusbutton" >
+		<a class="sendusbutton" href="{% url 'text_us' lang=lang %}">
+			{% if lang == 'ka' %}
 			<span class="sendusbuttontext">{% t "text_us_button" %}</span></a>
+			{% else %}
+			<span class="sendusbuttontexten">{% t "text_us_button" %}</span></a>
+			{% endif %}
 	</div>
 
 <iframe src="https://snazzymaps.com/embed/429468" width="100%" height="450px" style="margin-top:40px;"></iframe>
@@ -33,7 +45,11 @@
 <div class="iblockDivMobile">
 	<center>
 		<div class="identmapdivmobile">
-		<span class="indentmaptextmobile" style="float: left; margin-left: 7%">{% t "map_of_identity" %}</span><br><br><br><br>
+		{% if lang == 'ka' %}
+		<span class="indentmaptextmobile" style="float: left; margin-left: 7%">{% t "map_of_identity" %}</span>
+		{% else %}
+		<span class="indentmaptextmobileen" style="float: left; margin-left: 6.5%">{% t "map_of_identity" %}</span>
+		{% endif %} <br><br><br><br>
 		<span class="identmapinfomobile" style="text-align:left">{% t "identity_map_text" %}</span>
 	</div></center>
 	<iframe src="https://snazzymaps.com/embed/429468" width="100%" height="450px" style="margin-top:40px;"></iframe>
@@ -48,7 +64,11 @@
 
 <div class="iiblockDiv">
 	<div class="aboutprojectdiv">
+		{% if lang == 'ka' %}
 		<span class="aboutprojectheader">{% t "about_project_header_block" %}</span><br>
+		{% else %}
+		<span class="aboutprojectheaderen">{% t "about_project_header_block" %}</span><br>
+		{% endif %}
 		<span class="aboutprojecttext">{{about_project.project_info|truncatechars:1000}}</span><br>
 		<a class="projectinfodetail" href="{% url 'about_project' lang=lang %}">{% t "detail" %} </a>&nbsp
 		<img src="{% static '/icons/Iconrightarrow.png' %}">
@@ -59,13 +79,21 @@
 
 
 	<div class="historydiv" >
+		{% if lang == 'ka' %}
 		<span class="historyheader">{% t "history_block_header" %}</span>
+		{% else %}
+		<span class="historyheaderen">{% t "history_block_header" %}</span>
+		{% endif %}
 		<div class="allstaticmobile" style="display: none;">
+		{% if lang == 'ka' %}
 			<a class="allstaticmobiletext" href="{% url 'history' lang=lang %}">{% t "all_static" %}</a>
+		{% else %}
+			<a class="allstaticmobiletexten" href="{% url 'history' lang=lang %}">{% t "all_static" %}</a>
+		{% endif %}
 		</div><br>
 		<a href="{% url 'history-detail' lang=lang id=last_post_history.id %}"><div class="historychild">
 			<img class="historyimg" src="{% static last_post_history.post_img %}">
-			<span class="historychildtext" style="text-align: left;">{{last_post_history.post_title}}
+			<span class="historychildtext" style="text-align: left;">{{last_post_history.post_title|truncatechars:50}}
 			<br>
 			<span class="historychildtextinfo">{{last_post_history.post_text|truncatechars:120 }}
 			</span></span>
@@ -74,7 +102,7 @@
 		<a href="{% url 'history-detail' lang=lang id=lastsec_post_history.id %}"><div class="historychild">
 			<img class="historyimg" src="{% static lastsec_post_history.post_img %}">
 			<span class="historychildtext" style="text-align: left;">
-				{{lastsec_post_history.post_title}}
+				{{lastsec_post_history.post_title|truncatechars:50}}
 				<br>
 				<span class="historychildtextinfo">{{lastsec_post_history.post_text|truncatechars:120}}</span>
 				<a class="allstatic" href="{% url 'history' lang=lang %}">{% t "all_static" %}
@@ -83,13 +111,21 @@
 		</div></a>
 	</div>
 	<div class="culturediv">
+		{% if lang == 'ka' %}
 		<span class="cultureheader">{% t "culture_block_header" %}</span>
+		{% else %}
+		<span class="cultureheaderen">{% t "culture_block_header" %}</span>
+		{% endif %}
 		<div class="allstaticmobile" style="display: none;">
-			<a class="allstaticmobiletext" href="{% url 'culture' lang=lang %}">{% t "all_static" %}</a>
+		{% if lang == 'ka' %}
+			<a class="allstaticmobiletext" href="{% url 'history' lang=lang %}">{% t "all_static" %}</a>
+		{% else %}
+			<a class="allstaticmobiletexten" href="{% url 'history' lang=lang %}">{% t "all_static" %}</a>
+		{% endif %}
 		</div><br>
 		<a href="{% url 'culture-detail' lang=lang id=last_post_culture.id %}"><div class="historychild">
 			<img class="cultureimg" src="{% static last_post_culture.post_img %}">
-			<span class="culutrechildtext" style="text-align: left;">{{last_post_culture.post_title}}
+			<span class="culutrechildtext" style="text-align: left;">{{last_post_culture.post_title|truncatechars:50}}
 			<br>
 			<span class="historychildtextinfo">{{last_post_culture.post_text|truncatechars:120}}
 			</span></span>
@@ -97,7 +133,7 @@
 		<a href="{% url 'culture-detail' lang=lang id=lastsec_post_culture.id %}"><div class="historychild">
 			<img class="cultureimg" src="{% static lastsec_post_culture.post_img %}">
 			<span class="culutrechildtext" style="text-align: left;">
-				{{lastsec_post_culture.post_title}}
+				{{lastsec_post_culture.post_title|truncatechars:50}}
 			<br>
 			<span class="historychildtextinfo">
 				{{lastsec_post_culture.post_text|truncatechars:120}}<br>
@@ -111,48 +147,62 @@
 <div class="fullsizedivvideos">
 	<div class="videosdiv">
 
-		<span class="videosheader">{% t "videos_block_header" %}</span>
+		{% if lang == 'ka' %}
+			<span class="videosheader">{% t "videos_block_header" %}</span>
+		{% else %}
+			<span class="videosheaderen">{% t "videos_block_header" %}</span>
+		{% endif %}
+		
 
-		<a class="allvideosbutton">
+		<a class="allvideosbutton" href="{% url 'videos' lang=lang %}">
+			{% if lang == 'ka' %}
 			<center><span class="allvideo">{% t "all_video_button" %}</span></center></a>
+			{% else %}
+			<center><span class="allvideoen">{% t "all_video_button" %}</span></center></a>
+			{% endif %}
 			<br>
 
 		<center><br>
 
 		<div class="videodiv1" style="float: left;">
-			<span class="centeryellowdot">
-				<img class="pause" src="{% static '/icons/Iconvideo.png' %}"></span>
-				<img src="{% static '/icons/Icontime.png' %}" class="undervideotime">
-				<span class="videotimecounter">1:26</span>
-				<span class="undervideotext"> გორის ძველი არქიტექტურული სახე </span>
+				<iframe width="100%" height="264px" src="{{firstvideo.video_src}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
+				<span class="videotimecounter">
+					<img src="{% static '/icons/Icontime.png' %}" class="undervideotime">{{firstvideo.minutes}}:{{firstvideo.seconds}}</span>
+				<span class="undervideotext">{{firstvideo.video_title}}</span>
 		</div> 
 				<div class="loadvideodot1"></div>
 				<div class="loadvideodot2"></div>
 				<div class="loadvideodot3"></div>
 
 		<div class="videodiv2">
-			<span class="centeryellowdot">
-				<img class="pause" src="{% static '/icons/Iconvideo.png' %}"></span>
-				<img src="{% static '/icons/Icontime.png' %}" class="undervideotime">
-				<span class="videotimecounter">5:15</span>
-				<span class="undervideotext"> გორის ძველი არქიტექტურული სახე </span>
+				<iframe width="100%" height="264px" src="{{secondvideo.video_src}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
+				<span class="videotimecounter">
+					<img src="{% static '/icons/Icontime.png' %}" class="undervideotime">{{secondvideo.minutes}}:{{secondvideo.seconds}}</span>
+				<span class="undervideotext">{{secondvideo.video_title}}</span>
 		</div>
 
 		<div class="videodiv3" style="float: right;">
-			<span class="centeryellowdot">
-				<img class="pause" src="{% static '/icons/Iconvideo.png' %}"></span>
-				<img src="{% static '/icons/Icontime.png' %}" class="undervideotime">
-				<span class="videotimecounter">3:00</span>
-				<span class="undervideotext"> გორის ძველი არქიტექტურული სახე </span>
+				<iframe width="100%" height="264px" src="{{thirdsvideo.video_src}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
+				<span class="videotimecounter">
+					<img src="{% static '/icons/Icontime.png' %}" class="undervideotime">{{thirdsvideo.minutes}}:{{thirdsvideo.seconds}}</span>
+				<span class="undervideotext">{{thirdsvideo.video_title}}</span>
 		</div>
 
 		</center>
 	</div>
 	<center>
 	<div class="tellusmoremobile">
+		{% if lang == 'ka' %}
 		<span class="tellusmoremobiletext">{% t "tell_us_more" %}</span><br><br><br>
-		<span class="tellusmoremobiletextinfo">თუ თქვენ გაქვთ ინფრომაცია რომელსაც აქვს ისტორიული ღირებულება, გთხოვთ დაგვიკავშირდეთ და მოგვიყვეთ,</span><br>
-		<div class="tellusmorebuttonmobile">მოგვწერეთ</div>
+		{% else %}
+		<span class="tellusmoremobiletexten">{% t "tell_us_more" %}</span><br><br><br>
+		{% endif %}
+		<span class="tellusmoremobiletextinfo">{% t "contact_us_index" %}</span><br>
+		{% if lang == 'ka' %}
+		<a href="{% url 'text_us' lang=lang %}" style="text-decoration: none;"><div class="tellusmorebuttonmobile">{% t 'text_us_button' %}</div></a>
+		{% else %}
+		<a href="{% url 'text_us' lang=lang %}" style="text-decoration: none;"><div class="tellusmorebuttonmobileen">{% t 'text_us_button' %}</div></a>
+		{% endif %}
 	</div></center><br><br>
 </div>
 

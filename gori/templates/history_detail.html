@@ -21,7 +21,13 @@
 	</div>
 </div>
 <div class="post_second_block">
+
+	{% if history.post_videos is not None %}
+	<iframe width="100%" height="315" src="{{history.post_videos}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+	{% else %}
 	<img src="{% static history.post_img %}" class="post_img">
+	{% endif %}
 	<span class="post_author">ავტორი: {{history.post_author}}</span>
 </div>
 </div>
@@ -29,21 +35,35 @@
 <div class="post_detail_mobile">
 <div class="post_first_block_mobile">
 	<a class="post_go_back_mobile" href="{% url 'history' lang=lang %}">უკან დაბრუნება</a>
-	<span class="post_title_mobile">{{history}}</span>
-	<div class="post_social_divs_mobile"></div>
-	<div class="post_social_divs_mobile"></div>
-	<div class="post_social_divs_mobile"></div>
+	<span class="post_title_mobile">{{history}}<br><br>
+	<div class="post_social_divs_mobile">
+		<img src="{% static '/icons/Iconlink.png' %}" style="width: 13.86px; height: 13.86px; margin-left: 11.07px; margin-top: 10px;"></div>
+	<div class="post_social_divs_mobile" style="margin-left: 20px">
+		<img src="{% static '/icons/Vectorfb.png' %}" style="width: 15px; height: auto; margin-left: 10.5px; margin-top: 10.5px;"></div>
+	<div class="post_social_divs_mobile" style="margin-left: 20px">
+		<img src="{% static '/icons/vectortwshare.png' %}" style="width: 15px; height: auto; margin-left: 10.5px; margin-top: 12.5px;"></div></span>
 	</div>
+	{% if history.post_videos is not None %}
+	<iframe width="100%" height="315" src="{{history.post_videos}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="margin-top:30px;"></iframe>
+
+	{% else %}
 	<img src="{% static history.post_img %}" class="post_img_mobile">
+	{% endif %}
 	<div class="post_first_block_mobile">
 	<span class="post_text_mobile">{{history.post_text}}</span>
 	</div>
 	<div class="tellusmoremobile">
+		{% if lang == 'ka' %}
 		<span class="tellusmoremobiletext">{% t "tell_us_more" %}</span><br><br><br>
-		<span class="tellusmoremobiletextinfo">თუ თქვენ გაქვთ ინფრომაცია რომელსაც აქვს ისტორიული ღირებულება, გთხოვთ დაგვიკავშირდეთ და მოგვიყვეთ,</span><br>
-		<div class="tellusmorebuttonmobile">მოგვწერეთ</div>
-	</div>	
-
+		{% else %}
+		<span class="tellusmoremobiletexten">{% t "tell_us_more" %}</span><br><br><br>
+		{% endif %}
+		<span class="tellusmoremobiletextinfo">{% t "contact_us_index" %}</span><br>
+		{% if lang == 'ka' %}
+		<a href="{% url 'text_us' lang=lang %}" style="text-decoration: none;"><div class="tellusmorebuttonmobile">{% t 'text_us_button' %}</div></a>
+		{% else %}
+		<a href="{% url 'text_us' lang=lang %}" style="text-decoration: none;"><div class="tellusmorebuttonmobileen">{% t 'text_us_button' %}</div></a>
+		{% endif %}
 </div>
 </center>
 <br><br><br><br><br>

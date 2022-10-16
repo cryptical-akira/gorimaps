@@ -57,6 +57,23 @@
 
 	color: #848177;
 	}
+	.contuctusfooteren{
+	/* დაგვიკავშირდით */
+
+	width: 173px;
+	height: 28px;
+
+	display: block;
+	margin-top: 35px;
+
+	font-family: 'BarlowCondensedBold';
+	font-style: normal;
+	font-size: 40px;
+	line-height: 28px;
+
+	color: #848177;
+	}
+
 
 	.socialicons{
 		display: inline-block;
@@ -74,6 +91,22 @@
 	font-style: normal;
 	font-weight: 400;
 	font-size: 44px;
+	line-height: 28px;
+
+	color: #848177;
+
+
+	}
+	.findusfooteren{
+	/* გვიპოვეთ */
+
+	display: block;
+	width: 109px;
+	height: 28px;
+
+	font-family: 'BarlowCondensedBold';
+	font-style: normal;
+	font-size: 40px;
 	line-height: 28px;
 
 	color: #848177;
@@ -152,6 +185,7 @@
 	}
 	.footerDiv{
 	position: block;
+	float: left;
 	width: 100%;
 	height: 320px;
 	background: #FEFEF8;
@@ -172,11 +206,27 @@
 
 		color: #848177;
 	}
+	.footerheaderen{
+		/* გორის ახალი იდენტობა */
+		display: inline-block;
+
+
+		width: auto;
+		height: 28px;
+
+		font-family: 'BarlowCondensedBold';
+		font-style: normal;
+		font-size: 40px;
+		line-height: 28px;
+
+		color: #848177;
+	}
 	.mobilefooter{
 		display: none;
 	}
 		.underDiv{
 	position: block;
+	float: right;
 	width: 100%;
 	height: 48px;
 	left: 0px;
@@ -212,6 +262,19 @@
 		font-style: normal;
 		font-weight: 400;
 		font-size: 38px;
+		line-height: 25px;
+		display: block;
+		padding-top: 16px;
+		margin-left: 20px;
+
+		color: #848177;
+	}
+	.mobileunderdivheaderen{
+		width: 324px;
+		height: 25px;
+		font-family: 'BarlowCondensedBold';
+		font-style: normal;
+		font-size: 32px;
 		line-height: 25px;
 		display: block;
 		padding-top: 16px;
@@ -321,6 +384,22 @@ line-height: 25px;
 
 color: #848177;
 	}
+	.mobilefootercontactusen{
+		width: 150px;
+height: 25px;
+display: block;
+padding-right: 175px;
+padding-top: 36px;
+
+font-family: 'BarlowCondensedBold';
+font-style: normal;
+font-size: 32px;
+line-height: 25px;
+
+/* identical to box height */
+
+color: #848177;
+	}
 	.socialicons{
 		display: inline-block;
 		margin-top: 26px;
@@ -347,6 +426,22 @@ font-family: 'LGVAnastasia';
 font-style: normal;
 font-weight: 400;
 font-size: 38px;
+line-height: 25px;
+
+/* identical to box height */
+
+color: #848177;
+	}
+	.mobilefooterfindusen{
+width: 94px;
+height: 25px;
+padding-right: 220px;
+display: block;
+padding-top: 20px;
+
+font-family: 'BarlowCondensedBold';
+font-style: normal;
+font-size: 32px;
 line-height: 25px;
 
 /* identical to box height */

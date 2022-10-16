@@ -10,6 +10,14 @@
   src: url(../fonts/LGVAnastasia-Regular.ttf);
   font-family: LGVAnastasia;
 }
+@font-face{
+  src: url(../fonts/BarlowCondensed-Medium.ttf);
+  font-family: BarlowCondensed;
+}
+@font-face{
+  src: url(../fonts/BarlowCondensed-Bold.ttf);
+  font-family: BarlowCondensedBold;
+}
 
 body {
   background: #F1F1E6;

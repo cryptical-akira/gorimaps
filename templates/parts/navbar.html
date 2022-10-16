@@ -5,13 +5,17 @@
 <nav class="navbar">
 
     <link rel="stylesheet" href="{% static '/css/navbar.css' %}">
+    {% if lang == 'ka' %}
     <a class="navheader" href="{% url 'index_page' lang=lang %}">{% t "new_identity_of_gori" %}</a>
+    {% else %}
+    <a class="navheaderen" href="{% url 'index_page' lang=lang %}">{% t "new_identity_of_gori" %}</a>
+    {% endif %}
 
     <a class="menuitem1" href="{% url 'about_project' lang=lang %}">{% t "about_project" %}</a>
     <a class="menuitem2" href="{% url 'history' lang=lang %}">{% t "history" %}</a>
     <a class="menuitem3" href="{% url 'culture' lang=lang %}">{% t "culture" %}</a>
     <a class="menuitem4" href="{% url 'architect' lang=lang %}">{% t "architect" %}</a>
-    <a class="menuitem5" href="">{% t "humans" %}</a>
+    <a class="menuitem5" href="{% url 'humans' lang=lang %}">{% t "humans" %}</a>
     <a class="menuitem6" href="{% url 'text_us' lang=lang %}">{% t "textus" %}</a>
 
 <div id="myNavSearch" class="overlaysearch">
@@ -86,7 +90,7 @@
         <a href="{% url 'history' lang=lang %}" class="mobilemenuitem">ისტორია</a>
         <a href="{% url 'culture' lang=lang %}" class="mobilemenuitem">კულტურა</a>
         <a href="{% url 'architect' lang=lang %}" class="mobilemenuitem">არქიტექტურა</a>
-        <a href="#" class="mobilemenuitem">ადამიანები</a>
+        <a href="{% url 'humans' lang=lang %}" class="mobilemenuitem">ადამიანები</a>
         <a href="{% url 'text_us' lang=lang %}" class="mobilemenuitem">მოგვწერეთ</a>
         </center>
       </div>

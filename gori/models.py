@@ -9,7 +9,8 @@ class History(models.Model):
     post_title = models.ForeignKey(MultilanguageText, on_delete=models.CASCADE, related_name='posttitle', null=True)
     post_text = models.ForeignKey(MultilanguageTextField, on_delete=models.CASCADE, related_name='posttext', null=True)
     post_author = models.ForeignKey(MultilanguageText, on_delete=models.CASCADE, related_name='postauthor', null=True)
-    post_img = models.ImageField(upload_to = "historyimgs", null=True)
+    post_videos = models.ForeignKey(MultilanguageTextField, on_delete=models.CASCADE, related_name='historyvideo', null=True, blank=True)
+    post_img = models.ImageField(upload_to = "historyimgs", null=True, blank=True)
     def __str__(self):
         return str(self.post_title)
 
@@ -20,7 +21,8 @@ class Culture(models.Model):
     post_title = models.ForeignKey(MultilanguageText, on_delete=models.CASCADE, related_name='posttitleculture', null=True)
     post_text = models.ForeignKey(MultilanguageTextField, on_delete=models.CASCADE, related_name='posttextculture', null=True)
     post_author = models.ForeignKey(MultilanguageText, on_delete=models.CASCADE, related_name='postauthorculture', null=True)
-    post_img = models.ImageField(upload_to = "cultureimgs", null=True)
+    post_videos = models.ForeignKey(MultilanguageTextField, on_delete=models.CASCADE, related_name='culturevideo', null=True, blank=True)
+    post_img = models.ImageField(upload_to = "cultureimgs", null=True, blank=True)
     def __str__(self):
         return str(self.post_title)
 
@@ -31,7 +33,8 @@ class Architect(models.Model):
     post_title = models.ForeignKey(MultilanguageText, on_delete=models.CASCADE, related_name='posttitlearchitect', null=True)
     post_text = models.ForeignKey(MultilanguageTextField, on_delete=models.CASCADE, related_name='posttextarchitect', null=True)
     post_author = models.ForeignKey(MultilanguageText, on_delete=models.CASCADE, related_name='postauthorarchitect', null=True)
-    post_img = models.ImageField(upload_to = "architectimgs", null=True)
+    post_videos = models.ForeignKey(MultilanguageTextField, on_delete=models.CASCADE, related_name='architectvideo', null=True, blank=True)
+    post_img = models.ImageField(upload_to = "architectimgs", null=True, blank=True)
     def __str__(self):
         return str(self.post_title)
 
@@ -44,3 +47,18 @@ class AboutProjectDonors(models.Model):
     support_text = models.ForeignKey(MultilanguageTextField, on_delete=models.CASCADE, related_name='aboutprojectsupports', null=True)
     def __str__(self):
         return str('About Project')
+
+class Human(models.Model):
+    post_title =  models.ForeignKey(MultilanguageTextField, on_delete=models.CASCADE, related_name='humans', null=True)
+    post_text =  models.ForeignKey(MultilanguageTextField, on_delete=models.CASCADE, related_name='huamnstext', null=True)
+    post_img = models.ImageField(upload_to = "humansimg", null=True, blank=True)
+    def __str__(self):
+        return str(self.post_title)
+
+class Video(models.Model):
+    video_title =  models.ForeignKey(MultilanguageTextField, on_delete=models.CASCADE, related_name='videos', null=True)
+    video_src = models.ForeignKey(MultilanguageTextField, on_delete=models.CASCADE, related_name='videossrc', null=True)
+    minutes = models.IntegerField(null=True)
+    seconds = models.IntegerField(null=True)
+    def __str__(self):
+        return str(self.video_title)

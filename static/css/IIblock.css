@@ -26,6 +26,24 @@ line-height: 41px;
 
 color: #F6C042;
 }
+.aboutprojectheaderen{
+/* პროექტის შესახებ */
+
+position: block;
+width: 291px;
+height: 41px;
+
+font-family: 'BarlowCondensedBold';
+font-style: normal;
+font-size: 48px;
+line-height: 58px;
+
+/* identical to box height */
+
+color: #F6C042;
+
+
+}
 
 .aboutprojecttext{
 position: block;
@@ -168,6 +186,28 @@ flex: none;
 order: 0;
 flex-grow: 0;
 }
+.allvideoen{
+/* ყველა ვიდეო */
+
+font-family: 'BarlowCondensedBold';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 20px;
+display: inline-block;
+padding-top: 16px;
+
+/* or 62% */
+text-align: center;
+
+color: #3E3A2B;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+}
 
 .videodiv1{
 position: block;
@@ -218,9 +258,7 @@ border-radius: 1px;
 
 .undervideotext{
   position: relative;
-  display: inline-block;
-  margin-top: 125px;
-  right: 15px;
+  display: block;
 
 font-family: 'FiraGO';
 font-style: normal;
@@ -235,9 +273,10 @@ color: #3E3A2B;
 
 
 .videotimecounter{
-	position: relative;
-	top: 110px;
-  right: 165px;
+	position: block;
+	display: block;
+  margin-top: 4px;
+  margin-right: 300px;
 font-family: 'FiraGO';
 font-style: normal;
 font-weight: 400;
@@ -250,10 +289,10 @@ color: #848177;
 }
 
 .undervideotime{
-	position: relative;
+	display: block;
+margin-left: 10px;
+position: absolute;
 font-family: 'FiraGO';
-top: 115px;
-right: 170px;
 font-style: normal;
 font-weight: 400;
 font-size: 16px;
@@ -356,6 +395,23 @@ line-height: 41px;
 
 color: #3E3A2B;
 }
+.cultureheaderen{
+	/* კულტურა */
+
+position: block;
+width: 139px;
+height: 41px;
+display: inline-block;
+padding-top: 72px;
+
+font-family: 'BarlowCondensedBold';
+font-style: normal;
+font-weight: 400;
+font-size: 60px;
+line-height: 41px;
+
+color: #3E3A2B;
+}
 .historychildtext{
 	
 	position: block;
@@ -434,6 +490,23 @@ line-height: 41px;
 
 color: #3E3A2B;
 }
+	.cultureheaderen{
+	/* კულტურა */
+
+position: block;
+width: 40px;
+height: 41px;
+display: inline-block;
+padding-top: 72px;
+
+font-family: 'BarlowCondensedBold';
+font-style: normal;
+font-weight: 400;
+font-size: 60px;
+line-height: 41px;
+
+color: #3E3A2B;
+}
 	@media only screen and (max-width: 1620px) and (min-width: 1455px){.historydiv{margin-left: 10%}}
 	@media only screen and (max-width: 1454px){.historydiv{margin-left: 6%}}
 			.historydiv{
@@ -498,7 +571,27 @@ flex: none;
 order: 0;
 flex-grow: 0;
 }
+	.videosheaderen{
 
+width: 498px;
+height: 56px;
+
+font-family: 'BarlowCondensedBold';
+font-style: normal;
+font-weight: 400;
+font-size: 64px;
+line-height: 48px;
+
+/* or 75% */
+
+color: #3E3A2B;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+}
 
 
 
@@ -545,7 +638,23 @@ line-height: 41px;
 
 color: #3E3A2B;
 }
+.historyheaderen{
+	/* ისტორია */
 
+position: block;
+width: 139px;
+height: 41px;
+display: inline-block;
+padding-top: 72px;
+
+font-family: 'BarlowCondensedBold';
+font-style: normal;
+font-weight: 400;
+font-size: 60px;
+line-height: 41px;
+
+color: #3E3A2B;
+}
 
 }
 
@@ -576,8 +685,32 @@ color: #3E3A2B;
 background: #F6C042;
 border-radius: 10px;
  	}
+ 	.tellusmorebuttonmobileen{
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 16px 36px;
+gap: 10px;
+display: block;
+margin-top: 92px;
+width: 70%;
+
+font-family: 'BarlowCondensedBold';
+font-style: normal;
+font-size: 28px;
+line-height: 20px;
+
+/* or 62% */
+text-align: center;
+
+color: #3E3A2B;
+
+background: #F6C042;
+border-radius: 10px;
+ 	}
  	.tellusmoremobiletextinfo{
  		width: 90%;
+ 		text-align: justify;
 height: 66px;
 margin-top: 16px;
 display: block;
@@ -607,6 +740,24 @@ font-family: 'LGVAnastasia';
 font-style: normal;
 font-weight: 400;
 font-size: 38px;
+line-height: 28px;
+
+/* or 74% */
+
+color: #D6CBA4;
+ 	}
+ 	 	.tellusmoremobiletexten{
+ 		/* მოგვიყევით მეტი */
+width: auto;
+height: 32px;
+float: left;
+display: block;
+margin-top: 26px;
+margin-left: 20px;
+
+font-family: 'BarlowCondensedBold';
+font-style: normal;
+font-size: 32px;
 line-height: 28px;
 
 /* or 74% */
@@ -644,6 +795,28 @@ flex: none;
 order: 0;
 flex-grow: 0;
 }
+ 	.allvideoen{
+/* ყველა ვიდეო */
+
+width: 62px;
+height: 14px;
+padding-top: 6px;
+font-family: 'BarlowCondensedBold';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 12px;
+text-align: center;
+
+color: #3E3A2B;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
 
  	.allvideosbutton{
 display: inline-block;
@@ -695,8 +868,9 @@ background: #D6CBA4;
  	.undervideotext{
   position: relative;
   display: inline-block;
-  margin-top: 85px;
-  margin-left: 18px;
+  margin-top: 5px;
+  margin-left: 4px;
+  float: left;
 
 font-family: 'FiraGO';
 font-style: normal;
@@ -719,18 +893,7 @@ background: #F6C042;
 }
 
 .videotimecounter{
-	position: relative;
-	top: 77px;
-  right: 135px;
-font-family: 'FiraGO';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 22px;
-
-/* or 138% */
-
-color: #848177;
+	display: none;
 }
 
  	.undervideotime{
@@ -764,6 +927,24 @@ height: 32px;
 display: inline-block;
 margin-right: 153px;
 font-family: 'LGVAnastasia';
+font-style: normal;
+font-weight: 400;
+font-size: 38px;
+line-height: 28px;
+
+/* or 74% */
+
+color: #3E3A2B;
+
+}
+ 	.videosheaderen	{
+
+width: 90px;
+height: 32px;
+
+display: inline-block;
+margin-right: 153px;
+font-family: 'BarlowCondensedBold';
 font-style: normal;
 font-weight: 400;
 font-size: 38px;
@@ -861,6 +1042,28 @@ line-height: 28px;
 
 color: #3E3A2B;
 }
+.cultureheaderen{
+	/* კულტურა */
+
+position: block;
+width: 0;
+height: 41px;
+padding-right: 80px;
+padding-bottom: 10px;
+margin: auto;
+display: inline-block !important;
+padding-top: 40px;
+
+font-family: 'BarlowCondensedBold';
+font-style: normal;
+font-weight: 400;
+font-size: 35px;
+line-height: 28px;
+
+/* or 74% */
+
+color: #3E3A2B;
+}
 .historyheader{
 	/* ისტორია */
 
@@ -878,6 +1081,30 @@ font-family: 'LGVAnastasia';
 font-style: normal;
 font-weight: 400;
 font-size: 38px;
+line-height: 28px;
+
+/* or 74% */
+
+color: #3E3A2B;
+}
+
+.historyheaderen{
+	/* ისტორია */
+
+position: block;
+width: 0;
+height: 41px;
+padding-right: 80px;
+
+padding-bottom: 10px;
+margin: auto;
+display: inline-block;
+padding-top: 72px;
+
+font-family: 'BarlowCondensedBold';
+font-style: normal;
+font-weight: 400;
+font-size: 35px;
 line-height: 28px;
 
 /* or 74% */
@@ -919,6 +1146,28 @@ display: block !important;
 
 text-decoration: none;
 font-family: 'LGVAnastasia';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 12px;
+margin-left: 8px;
+margin-top: 6px;
+
+color: #3E3A2B;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+.allstaticmobiletexten{
+	width: 62px;
+height: 14px;
+display: block !important;
+
+text-decoration: none;
+font-family: 'BarlowCondensedBold';
 font-style: normal;
 font-weight: 400;
 font-size: 18px;

@@ -13,21 +13,31 @@
 
 <div class="aboutprojectdesktop">
 <div class="aboutproject">
+	{% if lang == 'ka' %}
 	<span class="about_project_header">{% t 'about_project' %}</span>
+	{% else %}
+	<span class="about_project_headeren">{% t 'about_project' %}</span>
+	{% endif %}
 	<div class="about_project_text_div">
 		<span class="about_project_text">{{about_project.project_info}}</span>
 	</div>
-	<span class="donors_text_design">დონორები</span>
+	{% if lang == 'ka' %}
+	<span class="donors_text_design">{% t 'donors' %}</span>
+	{% else %}
+	<span class="donors_text_designen">{% t 'donors' %}</span>
+	{% endif %}
 	<span class="donors_text_info">{{about_project.donors_text}}</span>
 	
 	<div class="supportsinproject">
-		<a href=""><img src="{% static '/icons/usaid.png' %}" style="width: 23%;  margin-left: auto;
-  margin-right: auto;"></a>
-		<a href=""><img src="{% static '/icons/zinc.png' %}" style="width: 28%; margin-left: 8%"></a>
-		<a href=""><img src="{% static '/icons/idfi.png' %}" style="width: 33%; float: right;"></a>
-	</div>
-
-	<span class="supportsecondheader">მხარდამჭერები</span>
+		<a href=""><img src="{% static '/icons/usaid.png' %}" style="width: 15%; float: left;"></a>
+		<a href=""><img src="{% static '/icons/zinc.png' %}" style="width: 17%; float: left; margin-left: 5%;"></a>
+		<a href=""><img src="{% static '/icons/idfi.png' %}" style="width: 21%; float: left; margin-left: 5%;"></a>
+	</div><br>
+	{% if lang == 'ka' %}
+	<span class="supportsecondheader">{% t 'supports' %}</span>
+	{% else %}
+	<span class="supportsecondheaderen">{% t 'supports' %}</span>
+	{% endif %}
 	<span class="supportsecondtext">{{about_project.support_text}}</span>
 
 
@@ -38,10 +48,19 @@
 
 <center>
 <div class="aboutprojectmobile">
-		<span class="aboutprojectmobileheader">პროექტის შესახებ</span>
+		{% if lang == 'ka' %}
+		<span class="aboutprojectmobileheader">{% t 'about_project' %}</span>
+		{% else %}
+		<span class="aboutprojectmobileheaderen">{% t 'about_project' %}</span>
+		{% endif %}
+		
 		<span class="aboutprojectmobileinfo">{{about_project.project_info}}</span>
 
-		<span class="aboutprojectmobiledonors">დონორები</span>
+		{% if lang == 'ka' %}
+		<span class="aboutprojectmobiledonors">{% t 'donors' %}</span>
+		{% else %}
+		<span class="aboutprojectmobiledonorsen">{% t 'donors' %}</span>
+		{% endif %}
 		<span class="aboutprojectmobiledonorsinfo">{{about_project.donors_text}}</span>
 
 		<div class="aboutprojectmobiledonorsimg">
@@ -55,9 +74,11 @@
 			<img src="{% static '/icons/idfi.png' %}" style="display: block; margin-right: 100%; width: 170px;">
 		</a>
 		</div>
-		<img class="aboutprojectimgmobile" src="{% static about_project.post_img_second %}">
-
-		<span class="aboutprojectmobiledonors">დონორები</span>
+		{% if lang == 'ka' %}
+		<span class="aboutprojectmobiledonors">{% t 'supports' %}</span>
+		{% else %}
+		<span class="aboutprojectmobiledonorsen">{% t 'supports' %}</span>
+		{% endif %}
 				<span class="aboutprojectmobiledonorsinfo">აქ თქვენ შეგიძლიათ გაეცნოთ ისტორიულ მოვლენებს,აქ თქვენ შეგიძლიათ გაეცნოთ ისტორიულ მოვლენებს,აქ თქვენ შეგიძლიათ გაეცნოთ ისტორიულ მოვლენებს,აქ თქვენ შეგიძლიათ გაეცნოთ ისტორიულ მოვლენებს,აქ თქვენ შეგიძლიათ გაეცნოთ ისტორიულ მოვლენებს.</span>
 
 			<br><br><br><br>

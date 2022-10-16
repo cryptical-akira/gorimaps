@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect
 from django.http import HttpResponse
 
-from .models import History, Culture, Architect, AboutProjectDonors
+from .models import History, Culture, Architect, AboutProjectDonors, Human, Video
 
 #for index page
 def index_wout_lang(request):
@@ -9,6 +9,9 @@ def index_wout_lang(request):
 	return response
 
 def index_page(request, lang):
+	firstvideo = Video.objects.get(id = 1)
+	secondvideo = Video.objects.get(id = 2)
+	thirdsvideo = Video.objects.get(id = 3)
 	aboutproject = AboutProjectDonors.objects.last()
 	allposthistory = History.objects.all()
 	allpostculture = Culture.objects.all()
@@ -32,7 +35,10 @@ def index_page(request, lang):
 		'lastsec_post_history':lastsec_post_history,
 		'last_post_culture':last_post_culture,
 		'lastsec_post_culture':lastsec_post_culture,
-		'about_project':aboutproject,})
+		'about_project':aboutproject,
+		'firstvideo':firstvideo,
+		'secondvideo':secondvideo,
+		'thirdsvideo':thirdsvideo})
 
 
 #for about page
@@ -164,4 +170,42 @@ def search(request, lang):
 #text us page
 
 def text_us(request, lang):
+	if request.method == 'POST':
+		print(request.POST)
 	return render(request, 'textus.html', {'lang':lang})
+
+
+#humans page
+def humans(request, lang):
+	allpost = Human.objects.all()
+	all_post = []
+	for i in allpost:
+		all_post.insert(0, i)
+	return render(request, 'humans.html', {'lang':lang, 'humans':all_post})
+
+
+def humans_detail(request, lang, id):
+	allpost = Human.objects.all()
+	all_post = []
+	for i in allpost:
+		if i.id == id:
+			continue
+			
+		all_post.insert(0, i)
+
+	try:
+		human = Human.objects.get(id=id)
+	except History.DoesNotExist:
+		raise Http404('Post does not exist')
+
+	return render(request, 'humans_detail.html', context={'lang':lang, 'human': human,'humans':all_post})
+
+
+#videos page
+def videos(request, lang):
+	allpost = Video.objects.all()
+	
+	all_post = []
+	for i in allpost:
+		all_post.insert(0, i)
+	return render(request, 'videos.html', {'lang':lang, 'videos':all_post})

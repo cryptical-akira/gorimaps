@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+{% load transl_extras %}
+
+
+<div class="humans_desktop">
+<div class="post_first_block">
+
+<a class="post_go_back" href="{% url 'humans' lang=lang %}">უკან დაბრუნება</a>
+<span class="post_title">{{human}}</span>
+<div class="post_social_divs"></div>
+<div class="post_social_divs"></div>
+<div class="post_social_divs"></div>
+<div class="post_line"></div>
+<span class="post_text">{{human.post_text}}</span>
+
+	<div class="post_tell_us_more">
+		<span class="post_tell_use_more_header">{% t "tell_us_more" %}</span><br><br><br><br>
+		<span class="post_tell_us_more_text">თუ თქვენ გაქვთ ინფრომაცია რომელსაც აქვს ისტორიული ღირებულება, გთხოვთ დაგვიკავშირდეთ და მოგვიყვეთ,</span><br>
+		<div class="post_tell_us_more_button"><span style="display: inline-block; margin-top:16px">მოგვწერეთ</span></div>
+	</div>
+</div>
+<div class="post_second_block">
+	<img src="{% static histhumanory.post_img %}" class="post_img">
+
+</div>
+</div>
+<center>
+<div class="post_detail_mobile">
+<div class="post_first_block_mobile">
+	<a class="post_go_back_mobile" href="{% url 'humans' lang=lang %}">უკან დაბრუნება</a>
+	<span class="post_title_mobile" style="height: auto; width:60%; float:left; margin-left:10px">{{human}}</span>
+	<img src="{% static human.post_img %}" class="post_img_mobile_human">
+	</div><br><br><br><br><br><br>
+	<div class="post_first_block_mobile">
+	<span class="post_text_mobile" style="margin-top:35px">{{human.post_text}}</span>
+	
+
+<div class="post_social_divs" style="margin-top:0; float:left"></div>
+<div class="post_social_divs" style="margin-top:0; float:left"></div>
+<div class="post_social_divs" style="margin-top:0; float:left"></div><br><br>
+</div>
+</div><div class="post_line"></div>
+	{% for human in humans %}
+	<a href="{% url 'humans_detail' lang=lang id=human.id %}">
+	<div class="humans_mobile_posts">
+		<span class="humans_mobile_post_header">{{human.post_title}}</span>
+		<img src="{% static human.post_img %}" class="humans_post_img_mobile">
+		<span class="get_more_mobile_post">გაიგე მეტი</span>
+
+	</div>
+	</a>
+	{% endfor %}
+</center>
+<br><br><br><br><br>
+{% endblock %}

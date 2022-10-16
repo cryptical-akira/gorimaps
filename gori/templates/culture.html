@@ -10,15 +10,18 @@
 
 </style>
 <div class="historydekstop">
-<span class="historypageheader">კულტურა</span>
-
+{% if lang == 'ka' %}
+<span class="historypageheader">{% t 'culture' %}</span>
+{% else %}
+<span class="historypageheaderen">{% t 'culture' %}</span>
+{% endif %}
 
 {% for post in posts %}
 
 <a href="{% url 'culture-detail' lang=lang id=post.id %}">
 <div class="historypostdivs">
 	<div class="historyposttextsdiv">
-	<span class="historypostheader"> {{post.post_title}}</span>
+	<span class="historypostheader"> {{post.post_title|truncatechars:35}}</span>
 	<span class="historypostinfo">{{post.post_text|truncatechars:350 }}</span>
 	</div>
 	<img src="{% static post.post_img %}" class="hitorypostsimgs">
@@ -31,12 +34,16 @@
 <center>
 
 <div class="historymobile">
-	<span class="aboutprojectmobileheader" style="margin-right: 250px;">კულტურა</span>
+	{% if lang == 'ka' %}
+	<span class="aboutprojectmobileheader" style="margin-right: 250px;">{% t 'culture' %}</span>
+	{% else %}
+	<span class="aboutprojectmobileheaderen" style="margin-right: 250px;">{% t 'culture' %}</span>
+	{% endif %}
 	{% for post in posts %}
 	<a href="{% url 'culture-detail' lang=lang id=post.id %}">
 	<div class="mobileposts">
 		<img src="{% static post.post_img %}" class="historypostsmobile">
-		<span class="historymobilepostsheader">{{post.post_title}} </span>
+		<span class="historymobilepostsheader">{{post.post_title|truncatechars:40}} </span>
 	</div>
 	</a>
 	{% endfor %}

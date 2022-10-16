@@ -1,4 +1,4 @@
-.contact_us_header_desktop{font-family: 'LGV Anastasia';
+.contact_us_header_desktop{font-family: 'LGVAnastasia';
 font-family: 'LGVAnastasia';
 font-style: normal;
 font-weight: 400;
@@ -10,6 +10,17 @@ margin-left: 13.6%;
 
 color: #F6C042;
 }
+.contact_us_header_desktop_en{font-family: 'BarlowCondensedBold';
+font-style: normal;
+font-size: 60px;
+line-height: 41px;
+display: block;
+margin-top: 64px;
+margin-left: 13.6%;
+
+color: #F6C042;
+}
+
 
 
 .contact_us_text_desktop{
@@ -113,6 +124,33 @@ border-radius: 10px;
 	border: none;
 	cursor: pointer;
 }
+.contact_send_buttonen{
+	display: flex;
+flex-direction: row;
+margin-right: 20%;
+margin-top: 37px;
+justify-content: center;
+align-items: center;
+font-family: 'BarlowCondensedBold';
+font-style: normal;
+font-size: 28px;
+line-height: 20px;
+
+/* or 62% */
+text-align: center;
+
+color: #3E3A2B;
+
+
+width: 210px;
+height: 56px;
+float: right;
+
+background: #F6C042;
+border-radius: 10px;
+	border: none;
+	cursor: pointer;
+}
 
 .contact_remove_button{
 	border: none;
@@ -127,6 +165,32 @@ font-family: 'LGVAnastasia';
 font-style: normal;
 font-weight: 400;
 font-size: 32px;
+line-height: 20px;
+
+/* or 62% */
+text-align: center;
+
+color: #3E3A2B;
+
+
+width: 126px;
+height: 56px;
+float: right;
+background: #D6CBA4;
+border-radius: 10px;
+}
+.contact_remove_buttonen{
+	border: none;
+	cursor: pointer;
+flex-direction: row;
+justify-content: center;
+margin-top: 37px;
+margin-right: 25px;
+align-items: center;
+gap: 10px;
+font-family: 'BarlowCondensedBold';
+font-style: normal;
+font-size: 28px;
 line-height: 20px;
 
 /* or 62% */
@@ -161,7 +225,14 @@ font-size: 64px;
 line-height: 41px;
 
 color: #F6C042;}
+.contact_us_contact_usen{
+font-family: 'BarlowCondensedBold';
+font-style: normal;
+display: inline-block;
+font-size: 60px;
+line-height: 41px;
 
+color: #F6C042;}
 .contact_us_contact_i_div{
 	width: 450px;
 	display: inline-block;
@@ -253,6 +324,19 @@ margin-right: 230px;
 
 color: #F6C042;
 }
+.contact_us_header_mobileen{
+
+font-family: 'BarlowCondensedBold';
+display: block;
+margin-top: 36px;
+font-style: normal;
+font-size: 35px;
+line-height: 28px;
+margin-right: 230px;
+/* or 74% */
+
+color: #F6C042;
+}
 .contact_us_text_mobile{
 	margin-top: 12px;
 	font-family: 'FiraGO';
@@ -325,6 +409,31 @@ border-radius: 10px;
 	border: none;
 	cursor: pointer;
 }
+.contact_send_button_mobileen{
+flex-direction: row;
+margin-top: 10px;
+justify-content: center;
+align-items: center;
+font-family: 'BarlowCondensedBold';
+font-style: normal;
+font-size: 28px;
+line-height: 20px;
+
+/* or 62% */
+text-align: center;
+
+color: #3E3A2B;
+
+
+width: 180px;
+display: inline-block;
+height: 56px;
+
+background: #F6C042;
+border-radius: 10px;
+	border: none;
+	cursor: pointer;
+}
 .contact_remove_button_mobile{
 	border: none;
 	cursor: pointer;
@@ -333,6 +442,26 @@ font-style: normal;
 font-weight: 400;
 margin-right: 20px;
 font-size: 32px;
+line-height: 20px;
+
+/* or 62% */
+text-align: center;
+
+color: #3E3A2B;
+
+
+width: 126px;
+height: 56px;
+background: #D6CBA4;
+border-radius: 10px;
+}
+.contact_remove_button_mobileen{
+	border: none;
+	cursor: pointer;
+font-family: 'BarlowCondensedBold';
+font-style: normal;
+margin-right: 20px;
+font-size: 28px;
 line-height: 20px;
 
 /* or 62% */
