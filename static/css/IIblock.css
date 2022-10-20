@@ -1026,7 +1026,7 @@ height: 320px;
 position: block;
 width: 0;
 height: 41px;
-padding-right: 100px;
+padding-right: ;
 padding-bottom: 10px;
 margin: auto;
 display: inline-block !important;
@@ -1048,7 +1048,7 @@ color: #3E3A2B;
 position: block;
 width: 0;
 height: 41px;
-padding-right: 80px;
+padding-right: 0px;
 padding-bottom: 10px;
 margin: auto;
 display: inline-block !important;
@@ -1070,7 +1070,7 @@ color: #3E3A2B;
 position: block;
 width: 0;
 height: 41px;
-padding-right: 100px;
+padding-right: 0;
 
 padding-bottom: 10px;
 margin: auto;
@@ -1094,7 +1094,7 @@ color: #3E3A2B;
 position: block;
 width: 0;
 height: 41px;
-padding-right: 80px;
+padding-right: 0px;
 
 padding-bottom: 10px;
 margin: auto;
@@ -1127,7 +1127,7 @@ height: 88px;
 
 display: inline-block !important;
 flex-direction: row;
-margin-left: 100px;
+margin-left: 240px;
 justify-content: center;
 align-items: center;
 
@@ -1137,12 +1137,13 @@ height: 26px;
 
 background: #F6C042;
 border-radius: 6px;
-margin-right: 5%;
+margin-right: 0%;
 }
 .allstaticmobiletext{
 	width: 62px;
 height: 14px;
 display: block !important;
+position: absolute;
 
 text-decoration: none;
 font-family: 'LGVAnastasia';
@@ -1165,6 +1166,7 @@ flex-grow: 0;
 	width: 62px;
 height: 14px;
 display: block !important;
+position: absolute;
 
 text-decoration: none;
 font-family: 'BarlowCondensedBold';
