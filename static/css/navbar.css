@@ -315,10 +315,11 @@ transform: matrix(-1, 0, 0, 1, 0, 0);
 }
 .iconmap{
 
+width: 32px;
 position: block;
 display: block;
-margin-left: 28%;
-margin-top: 25%;
+margin-left: 18.5%;
+margin-top: 19%;
 }
 
 .menu{
