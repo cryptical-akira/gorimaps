@@ -42,21 +42,14 @@
     </div>
     </span>
 
-<a href="{% if lang == 'ka' %}
-            ../en
-            {% else %}
-            ../ka
-            {%endif%}"> 
+<a href="{% if lang == 'ka' %}../en{% else %}../ka{%endif%}"> 
     <div class="langBar" onclick="myFunction()">
-            {% if lang == 'ka' %}
-            English
-            {% else %}
-            ქართული
-            {%endif%}&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<img class="angle"src="{% static '/icons/Iconglobus.png' %}"></div>
+            {% if lang == 'ka' %}English{% else %}ქართული{%endif%}&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            <img class="angle"src="{% static '/icons/Iconglobus.png' %}"></div>
 <!--         <span class="textSpanForLang">
         ქართული
     </span> -->
-    </div>
+    </div></a>
     
     
 

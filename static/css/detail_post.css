@@ -140,7 +140,7 @@ background: #FEFEF8;
 	display: block;
 	width: 686px;
 	margin-top: 64px;
-	height: 306px;
+	height: 320px;
 
 	background-color: #FEFEF8;
 }
@@ -185,7 +185,7 @@ background: #FEFEF8;
 .post_tell_us_more_button{
 align-items: center;
 display: block;
-margin-top: 26px;
+margin-top: 43px;
 width: 154px;
 margin-left: 48px;
 height: 56px;
@@ -207,7 +207,7 @@ border-radius: 10px;
 .post_tell_us_more_buttonen{
 align-items: center;
 display: block;
-margin-top: 26px;
+margin-top: 43px;
 width: 154px;
 margin-left: 48px;
 height: 56px;
