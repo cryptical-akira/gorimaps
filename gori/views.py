@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect
 from django.http import HttpResponse
 
-from .models import History, Culture, Architect, AboutProjectDonors, Human, Video
+from .models import History, Culture, Architect, AboutProjectDonors, Human, Video, PinedPost
 
 #for index page
 def index_wout_lang(request):
@@ -9,9 +9,10 @@ def index_wout_lang(request):
 	return response
 
 def index_page(request, lang):
-	firstvideo = Video.objects.get(id = 1)
-	secondvideo = Video.objects.get(id = 2)
-	thirdsvideo = Video.objects.get(id = 3)
+	pindedpost = PinedPost.objects.last()
+	firstvideo = pindedpost.pined_video_post_1
+	secondvideo = pindedpost.pined_video_post_2
+	thirdsvideo = pindedpost.pined_video_post_3
 	aboutproject = AboutProjectDonors.objects.last()
 	allposthistory = History.objects.all()
 	allpostculture = Culture.objects.all()
@@ -24,11 +25,11 @@ def index_page(request, lang):
 	for i in allpostculture:
 		all_post_culture.insert(0, i)
 
-	last_post_history = all_post_history[0]
-	lastsec_post_history = all_post_history[1]
+	last_post_history = pindedpost.pined_history_post_1
+	lastsec_post_history = pindedpost.pined_history_post_2
 
-	last_post_culture = all_post_culture[0]
-	lastsec_post_culture = all_post_culture[1]
+	last_post_culture = pindedpost.pined_culture_post_1
+	lastsec_post_culture = pindedpost.pined_culture_post_2
 
 	return render(request, 'index.html', {'lang':lang, 
 		'last_post_history':last_post_history, 

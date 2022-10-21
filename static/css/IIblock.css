@@ -209,6 +209,17 @@ order: 0;
 flex-grow: 0;
 }
 
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
 .videodiv1{
 position: block;
 width: 406px;
@@ -993,24 +1004,18 @@ color: #3E3A2B;
   }
   .historychildtext{
 
-  	width: 193px;
-  	margin-left: 10px;
-		height: 100px;
 	float: right;
+	text-align: left;
+	margin-top: 5px;
+	width: 55%;
+	font-family: 'FiraGO';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 24px;
+	margin-top: 9px;
 
-		font-family: '';
-		display: flex;
-  justify-content: center;
-  align-items: center;
-
-		font-style: normal;
-		font-weight: 600;
-		font-size: 16px;
-		line-height: 24px;
-
-		/* or 150% */
-
-		color: #3E3A2B;
+	color: #3E3A2B;
   }
   .historydiv{
 position: block;
@@ -1196,24 +1201,18 @@ height: 320px;
 }
 
 .culutrechildtext{
-  	width: 193px;
-  	margin-left: 10px;
-		height: 100px;
 	float: right;
+	text-align: left;
+	margin-top: 5px;
+	width: 55%;
+	font-family: 'FiraGO';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 24px;
+	margin-top: 9px;
 
-		font-family: '';
-		display: flex;
-  justify-content: center;
-  align-items: center;
-
-		font-style: normal;
-		font-weight: 600;
-		font-size: 16px;
-		line-height: 24px;
-
-		/* or 150% */
-
-		color: #3E3A2B;
+	color: #3E3A2B;
 }
 .cultureimg{
 	object-fit: cover;

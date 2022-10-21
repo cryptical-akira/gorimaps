@@ -62,3 +62,14 @@ class Video(models.Model):
     seconds = models.IntegerField(null=True)
     def __str__(self):
         return str(self.video_title)
+
+class PinedPost(models.Model):
+    pined_history_post_1 = models.ForeignKey(History, on_delete=models.CASCADE, related_name='historypost1', null=True)
+    pined_history_post_2 = models.ForeignKey(History, on_delete=models.CASCADE, related_name='historypost2', null=True)
+    pined_culture_post_1 = models.ForeignKey(Culture, on_delete=models.CASCADE, related_name='culturepost1', null=True)
+    pined_culture_post_2 = models.ForeignKey(Culture, on_delete=models.CASCADE, related_name='culturepost2', null=True)
+    pined_video_post_1 = models.ForeignKey(Video, on_delete=models.CASCADE, related_name='videopost1', null=True)
+    pined_video_post_2 = models.ForeignKey(Video, on_delete=models.CASCADE, related_name='videopost2', null=True)
+    pined_video_post_3 = models.ForeignKey(Video, on_delete=models.CASCADE, related_name='videopost3', null=True)
+    def __str__(self):
+        return str("Pined Posts On Main Page")

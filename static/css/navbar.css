@@ -302,9 +302,9 @@ flex-grow: 0;
 .angle{
   
 position: absolute;
-left: 75%;
+left: 72%;
 right: -25%;
-top: 43%;
+top: 33%;
 bottom: 37.5%;
 
 transform: matrix(-1, 0, 0, 1, 0, 0);
