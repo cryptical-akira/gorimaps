@@ -4,7 +4,7 @@
 
 .aboutprojectdiv{
 width: 1398px;
-height: 428.65px;
+height: 390px;
 margin-left: 13.6%;
 overflow-wrap: break-word;
 padding-top: 74px;
@@ -26,6 +26,22 @@ line-height: 41px;
 
 color: #F6C042;
 }
+
+.allstaticdesktopdiv{
+display: inline-block;
+float:  right;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+gap: 10px;
+
+width: 154px;
+height: 56px;
+
+background: #F6C042;
+border-radius: 10px;
+}
+
 .aboutprojectheaderen{
 /* პროექტის შესახებ */
 
@@ -138,7 +154,7 @@ color: #3E3A2B;
 width: 1398px;
 height: 536.71px;
 display: inline-block;
-margin-top: 117px;
+margin-top: 50px;
 margin-left: 13.6%;
 }
 

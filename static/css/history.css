@@ -21,6 +21,7 @@ font-family: 'FiraGO';
 font-style: normal;
 font-weight: 400;
 font-size: 20px;
+text-align: justify;
 margin-top: 36px;
 line-height: 32px;
 
@@ -33,6 +34,7 @@ color: #3E3A2B;
 
 .historypostheader{
 font-family: 'FiraGO';
+text-align: ;
 font-style: normal;
 font-weight: 600;
 font-size: 36px;

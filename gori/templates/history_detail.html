@@ -5,11 +5,16 @@
 
 <div class="post_detail_desktop">
 <div class="post_first_block">
-
 <a class="post_go_back" href="{% url 'history' lang=lang %}">{% t 'back' %}</a>
 <span class="post_title">{{history}}</span>
+
+<span onclick="copy()">
 <div class="post_social_divs"><img src="{% static '/icons/Iconlink.png' %}" style="width: 20px; height: 20px; margin-left: 14px; margin-top: 14px; float: left;"></div>
-<div class="post_social_divs"><img src="{% static '/icons/Vectorfb.png' %}" style="width: 22px; height: 22px; margin-left: 13.5px; margin-top: 13px; float: left;"></div>
+</span>
+
+<a href="https://www.facebook.com/dialog/share?app_id=87741124305&href={{ request.build_absolute_uri }}
+"><div class="post_social_divs"><img src="{% static '/icons/Vectorfb.png' %}" style="width: 22px; height: 22px; margin-left: 13.5px; margin-top: 13px; float: left;"></div></a>
+
 <div class="post_social_divs"><img src="{% static '/icons/vectortwshare.png' %}" style="width: 20px; height: 20px; margin-left: 14px; margin-top: 14px; float: left;"></div>
 <div class="post_line"></div>
 <span class="post_text">{{history.post_text}}</span>
@@ -82,4 +87,20 @@
 </div>
 </center>
 <br><br><br><br><br>
+<script>
+function copy() {
+  // Get the text field
+  var copyText = ("{{ request.build_absolute_uri }}");
+
+  // Select the text field
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); // For mobile devices
+
+  // Copy the text inside the text field
+  navigator.clipboard.writeText(copyText.value);
+  
+  // Alert the copied text
+  alert("Copied the text: " + copyText.value);
+}
+</script>
 {% endblock %}

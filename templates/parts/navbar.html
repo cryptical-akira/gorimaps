@@ -19,6 +19,11 @@
     <a class="menuitem6" href="{% url 'text_us' lang=lang %}">{% t "textus" %}</a>
 
 <div id="myNavSearch" class="overlaysearch">
+<span onclick="closeNavSearch()" style="cursor: pointer;">
+<div class="closesearchDesktop" > 
+<img src="{% static '/icons/Iconclosex.png' %}" class="closesearchX">
+</div>
+</span>
   <div class="overlaysearch-content">
     <center>
       <span class="searchheaderdesktop">ვებგვერდზე ძიება</span>
@@ -37,27 +42,20 @@
     </div>
     </span>
 
-    <div class="langBar" onclick="myFunction()">
-            {% if lang == 'ka' %}
-            ქართული
-            {% else %}
-            English
-            {%endif%}&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<img class="angle"src="{% static '/icons/Iconglobus.png' %}">
-<!--         <span class="textSpanForLang">
-        ქართული
-    </span> -->
-      <div id="myDropdown" class="dropdown-content">
-   <center> <a href="{% if lang == 'ka' %}
+<a href="{% if lang == 'ka' %}
             ../en
             {% else %}
             ../ka
-            {%endif%}" class="secondlanguage" style="color: #848177;">            
-    {% if lang == 'ka' %}
+            {%endif%}"> 
+    <div class="langBar" onclick="myFunction()">
+            {% if lang == 'ka' %}
             English
             {% else %}
             ქართული
-            {%endif%}</a></center>
-    </div>
+            {%endif%}&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<img class="angle"src="{% static '/icons/Iconglobus.png' %}"></div>
+<!--         <span class="textSpanForLang">
+        ქართული
+    </span> -->
     </div>
     
     

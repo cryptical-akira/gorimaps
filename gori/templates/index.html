@@ -69,12 +69,16 @@
 		{% else %}
 		<span class="aboutprojectheaderen">{% t "about_project_header_block" %}</span><br>
 		{% endif %}
-		<span class="aboutprojecttext">{{about_project.project_info|truncatechars:1000}}</span><br>
+		<span class="aboutprojecttext">{{about_project.project_info|truncatechars:1000}}
+
+		<a href="{% url 'about_project' lang=lang %}"><i style="text-decoration:underline; color:#3E3A2B;">(სრულად ნახვა)</i></a>
+
+		</span><br>
 		<a class="projectinfodetail" href="{% url 'about_project' lang=lang %}">{% t "detail" %} </a>&nbsp
-		<img src="{% static '/icons/Iconrightarrow.png' %}">
+		<img src="{% static '/icons/Iconrightarrow.png' %}" style="position: absolute; display: inline-block; margin-top: 38.5px;">
 
 	</div>
-	<center><div class="line"></div></center>
+	<center><div class="line" style="margin-top:10px"></div></center>
 
 
 
@@ -93,20 +97,31 @@
 		</div><br>
 		<a href="{% url 'history-detail' lang=lang id=last_post_history.id %}"><div class="historychild">
 			<img class="historyimg" src="{% static last_post_history.post_img %}">
-			<span class="historychildtext" style="text-align: left;">{{last_post_history.post_title|truncatechars:50}}
+			<span class="historychildtext" style="text-align: left;">{{last_post_history.post_title|truncatechars:70}}
 			<br>
-			<span class="historychildtextinfo">{{last_post_history.post_text|truncatechars:120 }}
+			<span class="historychildtextinfo">{{last_post_history.post_text|truncatechars:60 }}
+			<i style="text-decoration:underline; color:#3E3A2B;">(სრულად ნახვა)</i>
+
 			</span></span>
 		</div></a>
 
 		<a href="{% url 'history-detail' lang=lang id=lastsec_post_history.id %}"><div class="historychild">
 			<img class="historyimg" src="{% static lastsec_post_history.post_img %}">
 			<span class="historychildtext" style="text-align: left;">
-				{{lastsec_post_history.post_title|truncatechars:50}}
+				{{lastsec_post_history.post_title|truncatechars:70}}
 				<br>
-				<span class="historychildtextinfo">{{lastsec_post_history.post_text|truncatechars:120}}</span>
-				<a class="allstatic" href="{% url 'history' lang=lang %}">{% t "all_static" %}
-					<img src="{% static '/icons/Iconrightarrow.png' %}"></a>
+				<span class="historychildtextinfo">{{lastsec_post_history.post_text|truncatechars:60}}
+				<i style="text-decoration:underline; color:#3E3A2B;">(სრულად ნახვა)</i>
+				</span>
+				<a class="allstatic" href="{% url 'history' lang=lang %}">
+					<div class="allstaticdesktopdiv">
+						{% if lang == 'ka' %}
+						<center><span class="allvideo">{% t "all_static" %}</span></center>
+						{% else %}
+						<span class="allvideoen">{% t "all_static" %}</span>
+						{% endif %}
+					</div>
+				</a>
 			</span>
 		</div></a>
 	</div>
@@ -125,20 +140,29 @@
 		</div><br>
 		<a href="{% url 'culture-detail' lang=lang id=last_post_culture.id %}"><div class="historychild">
 			<img class="cultureimg" src="{% static last_post_culture.post_img %}">
-			<span class="culutrechildtext" style="text-align: left;">{{last_post_culture.post_title|truncatechars:50}}
+			<span class="culutrechildtext" style="text-align: left;">{{last_post_culture.post_title|truncatechars:70}}
 			<br>
-			<span class="historychildtextinfo">{{last_post_culture.post_text|truncatechars:120}}
+			<span class="historychildtextinfo">{{last_post_culture.post_text|truncatechars:60}}
+				<i style="text-decoration:underline; color:#3E3A2B;">(სრულად ნახვა)</i>
 			</span></span>
 		</div>
 		<a href="{% url 'culture-detail' lang=lang id=lastsec_post_culture.id %}"><div class="historychild">
 			<img class="cultureimg" src="{% static lastsec_post_culture.post_img %}">
 			<span class="culutrechildtext" style="text-align: left;">
-				{{lastsec_post_culture.post_title|truncatechars:50}}
+				{{lastsec_post_culture.post_title|truncatechars:70}}
 			<br>
 			<span class="historychildtextinfo">
-				{{lastsec_post_culture.post_text|truncatechars:120}}<br>
-				<a class="allstatic" href="{% url 'culture' lang=lang %}" style="margin-top:50px !important">{% t "all_static" %}
-					<img src="{% static '/icons/Iconrightarrow.png' %}"></a></span></span>
+				{{lastsec_post_culture.post_text|truncatechars:60}}
+				<i style="text-decoration:underline; color:#3E3A2B;">(სრულად ნახვა)</i><br>
+				<a class="allstatic" href="{% url 'culture' lang=lang %}" style="margin-top:50px !important">
+					<div class="allstaticdesktopdiv">
+						{% if lang == 'ka' %}
+						<center><span class="allvideo">{% t "all_static" %}</span></center>
+						{% else %}
+						<span class="allvideoen">{% t "all_static" %}</span>
+						{% endif %}
+					</div>
+				</a></span></span>
 		</div></a>
 
 	</div> <br>

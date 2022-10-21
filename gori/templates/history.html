@@ -25,8 +25,8 @@
 <a href="{% url 'history-detail' lang=lang id=post.id %}">
 <div class="historypostdivs">
 	<div class="historyposttextsdiv">
-	<span class="historypostheader"> {{post.post_title|truncatechars:35}}</span>
-	<span class="historypostinfo">{{post.post_text|truncatechars:350 }}</span>
+	<span class="historypostheader"> {{post.post_title|truncatechars:70}}</span>
+	<span class="historypostinfo">{{post.post_text|truncatechars:200 }}<i style="text-decoration:underline; color:#3E3A2B;">(სრულად ნახვა)</i></span>
 	</div>
 	<img src="{% static post.post_img %}" class="hitorypostsimgs">
 </div>
