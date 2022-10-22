@@ -3,7 +3,12 @@
 {% block content %}
 {% load transl_extras %}
 
+<style>
+	.menuitem5{
+		text-decoration: underline !important;
+	}
 
+</style>
 <div class="humans_desktop">
 <div class="post_first_block">
 
@@ -13,6 +18,10 @@
 <div class="post_social_divs"><img src="{% static '/icons/Vectorfb.png' %}" style="width: 22px; height: 22px; margin-left: 13.5px; margin-top: 13px; float: left;"></div>
 <div class="post_social_divs"><img src="{% static '/icons/vectortwshare.png' %}" style="width: 20px; height: 20px; margin-left: 14px; margin-top: 14px; float: left;"></div>
 <div class="post_line"></div>
+<div class="post_second_block" style="margin-bottom: 35px;">
+	<img src="{% static histhumanory.post_img %}" class="post_img" style="width: 60%; height: 450px; margin-left:20%">
+
+</div>
 <span class="post_text">{{human.post_text}}</span>
 
 	<div class="post_tell_us_more">
@@ -36,10 +45,7 @@
 		</a>{% endif %}
 	</div>
 </div>
-<div class="post_second_block">
-	<img src="{% static histhumanory.post_img %}" class="post_img">
 
-</div>
 </div>
 <center>
 <div class="post_detail_mobile">
