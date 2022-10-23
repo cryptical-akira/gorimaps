@@ -16,6 +16,13 @@ class History(models.Model):
 
     def class_name(self):
         return self.__class__.__name__
+    
+    def serialize(self):
+        return {
+            'title': self.post_text,
+            'body': self.post_text,
+            'image': self.post_img.url,
+        }
 
 class Culture(models.Model):
     post_title = models.ForeignKey(MultilanguageText, on_delete=models.CASCADE, related_name='posttitleculture', null=True)
@@ -73,3 +80,40 @@ class PinedPost(models.Model):
     pined_video_post_3 = models.ForeignKey(Video, on_delete=models.CASCADE, related_name='videopost3', null=True)
     def __str__(self):
         return str("Pined Posts On Main Page")
+
+
+class PostForPin(models.Model):
+    post_title = models.CharField(default='', max_length=250)
+    post_text = models.TextField(default='', max_length=5000)
+    post_videos = models.CharField(default='', max_length=500, blank=True)
+    post_img = models.ImageField(upload_to = "historyimgs", null=True, blank=True)
+    def __str__(self):
+        return str(self.post_title)
+
+    def class_name(self):
+        return self.__class__.__name__
+    
+    def serialize(self):
+        return {
+            'title': self.post_title,
+            'body': self.post_text,
+            'video': self.post_videos,
+            'img': self.post_img.url
+        }
+
+
+class Pin(models.Model):
+    latitude = models.FloatField()
+    longitude = models.FloatField()
+    post = models.ForeignKey(
+        PostForPin, on_delete=models.CASCADE, related_name='pins', null=True, db_constraint=False)
+
+    def __str__(self):
+        return f'{self.latitude},{self.longitude}'
+
+    def serialize(self):
+        return {
+            "latitude": self.latitude,
+            "longitude": self.longitude,
+            "post": self.post.serialize()
+        }

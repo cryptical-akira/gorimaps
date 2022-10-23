@@ -1,7 +1,13 @@
 from django.shortcuts import render, redirect
 from django.http import HttpResponse
 
-from .models import History, Culture, Architect, AboutProjectDonors, Human, Video, PinedPost
+from .models import History, Culture, Architect, AboutProjectDonors, Human, Video, PinedPost, Pin
+
+import json
+
+
+def pin_to_str(pin):
+    return f'{pin.latitude},{pin.longitude}'
 
 #for index page
 def index_wout_lang(request):
@@ -9,6 +15,7 @@ def index_wout_lang(request):
 	return response
 
 def index_page(request, lang):
+	pins = Pin.objects.all()
 	pindedpost = PinedPost.objects.last()
 	firstvideo = pindedpost.pined_video_post_1
 	secondvideo = pindedpost.pined_video_post_2
@@ -16,6 +23,11 @@ def index_page(request, lang):
 	aboutproject = AboutProjectDonors.objects.last()
 	allposthistory = History.objects.all()
 	allpostculture = Culture.objects.all()
+
+    # jsonify pins
+	pins = [pin.serialize() for pin in pins]
+	print(pins)
+	pins = json.dumps(pins)
 
 	all_post_history = []
 	for i in allposthistory:
@@ -39,7 +51,8 @@ def index_page(request, lang):
 		'about_project':aboutproject,
 		'firstvideo':firstvideo,
 		'secondvideo':secondvideo,
-		'thirdsvideo':thirdsvideo})
+		'thirdsvideo':thirdsvideo,
+		'pins':pins})
 
 
 #for about page
