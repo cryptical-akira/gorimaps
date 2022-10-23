@@ -106,7 +106,7 @@
 			<img class="historyimg" src="{% static last_post_history.post_img %}">
 			<span class="historychildtext" style="text-align: left;">{{last_post_history.post_title|truncatechars:70}}
 			<br>
-			<span class="historychildtextinfo">{{last_post_history.post_text|truncatechars:60 }}
+			<span class="historychildtextinfo">{{last_post_history.post_text|truncatechars:60 }}<br>
 			<i style="text-decoration:underline; color:#3E3A2B;">(სრულად ნახვა)</i>
 
 			</span></span>
@@ -117,7 +117,7 @@
 			<span class="historychildtext" style="text-align: left;">
 				{{lastsec_post_history.post_title|truncatechars:70}}
 				<br>
-				<span class="historychildtextinfo">{{lastsec_post_history.post_text|truncatechars:60}}
+				<span class="historychildtextinfo">{{lastsec_post_history.post_text|truncatechars:60}}<br>
 				<i style="text-decoration:underline; color:#3E3A2B;">(სრულად ნახვა)</i>
 				</span>
 				<a class="allstatic" href="{% url 'history' lang=lang %}">
@@ -149,7 +149,7 @@
 			<img class="cultureimg" src="{% static last_post_culture.post_img %}">
 			<span class="culutrechildtext" style="text-align: left;">{{last_post_culture.post_title|truncatechars:70}}
 			<br>
-			<span class="historychildtextinfo">{{last_post_culture.post_text|truncatechars:60}}
+			<span class="historychildtextinfo">{{last_post_culture.post_text|truncatechars:60}}<br>
 				<i style="text-decoration:underline; color:#3E3A2B;">(სრულად ნახვა)</i>
 			</span></span>
 		</div>
@@ -159,7 +159,7 @@
 				{{lastsec_post_culture.post_title|truncatechars:70}}
 			<br>
 			<span class="historychildtextinfo">
-				{{lastsec_post_culture.post_text|truncatechars:60}}
+				{{lastsec_post_culture.post_text|truncatechars:60}}<br>
 				<i style="text-decoration:underline; color:#3E3A2B;">(სრულად ნახვა)</i><br>
 				<a class="allstatic" href="{% url 'culture' lang=lang %}" style="margin-top:50px !important">
 					<div class="allstaticdesktopdiv">
