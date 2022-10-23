@@ -20,7 +20,6 @@ function initMap() {
             <div class="postbkack">
             <span class="pinpostheader">${marker[1].title}</span>
 
-            <img src="/static/${marker[1].img}" class="pinedpostimg">
             <span class="pinedpostbody">${marker[1].body}</span>
             </div></div>`;
             console.log(pins)
