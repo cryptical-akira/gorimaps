@@ -26,7 +26,6 @@ def index_page(request, lang):
 
     # jsonify pins
 	pins = [pin.serialize() for pin in pins]
-	print(pins)
 	pins = json.dumps(pins)
 
 	all_post_history = []

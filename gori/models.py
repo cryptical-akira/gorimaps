@@ -86,7 +86,14 @@ class PostForPin(models.Model):
     post_title = models.CharField(default='', max_length=250)
     post_text = models.TextField(default='', max_length=5000)
     post_videos = models.CharField(default='', max_length=500, blank=True)
-    post_img = models.ImageField(upload_to = "historyimgs", null=True, blank=True)
+    post_img = models.ImageField(upload_to = "postpinimg", null=True, blank=True)
+    post_source = models.CharField(default='', max_length=500, blank=True)
+
+    post_title_en = models.CharField(default='', max_length=250)
+    post_text_en = models.TextField(default='', max_length=5000)
+    post_videos_en = models.CharField(default='', max_length=500, blank=True)
+    post_source_en = models.CharField(default='', max_length=500, blank=True)
+
     def __str__(self):
         return str(self.post_title)
 
@@ -98,7 +105,12 @@ class PostForPin(models.Model):
             'title': self.post_title,
             'body': self.post_text,
             'video': self.post_videos,
-            'img': self.post_img.url
+            'img': self.post_img.url,
+            'source': self.post_source,
+            'title_en': self.post_title_en,
+            'body_en': self.post_text_en,
+            'video_en': self.post_videos_en,
+            'source_en': self.post_source_en,
         }
 
 

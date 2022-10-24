@@ -18,7 +18,7 @@ function initMap() {
             if (marker[1].video == ''){
                 postvisual = `<img src="/static/${marker[1].img}" class="pinedpostimg">`;
             }else{
-                postvisual = ` <iframe width="600px" height="315" src="${marker[1].video}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="margin-top:50px; margin-left:65px"></iframe>`;
+                postvisual = ` <iframe width="600px" height="315" src="${marker[1].video_en}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="margin-top:30px; margin-left:65px"></iframe>`;
             }
             postdiv.innerHTML = `
             <div class="pinpostdiv" id="pinponstdiv">
@@ -26,15 +26,13 @@ function initMap() {
             onclick="document.getElementById('post').style.display = 'none'">
             დახურვა</span>
             <div class="postbkack">
-            <span class="pinpostheader">${marker[1].title}</span>
+            <span class="pinpostheader">${marker[1].title_en}</span>
             ${postvisual}
-            <span class="pinedpostbody">${marker[1].body}</span>
+            <span class="pinedpostbody">${marker[1].body_en}</span>
             <a href="${marker[1].source}" target="_blank" style="margin-left:65px; display:block; color:black; margin-bottom: 50px">${marker[1].source}</a>
 
             </div>
             </div>`;
-            console.log(pins)
-            console.log(marker)
             document.getElementById("post").style.display = "block";
             document.getElementById("pinponstdiv").style.display = "block";
             document.getElementById("postback").style.display = "block";
