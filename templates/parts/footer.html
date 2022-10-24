@@ -10,7 +10,9 @@
 		<span class="footerheaderen">{% t "new_identity_of_gori" %}</span>
 		{% endif %}
 		<span class="allright">{% t 'allrightreserved' %}</span>
+		{% autoescape off %}
 		<span class="supporttext">{% t 'financialsupportertext' %}</span>
+		{% endautoescape %}
 	<div class="supportsinproject" style="margin-top: 35px;">
 		<a href="https://www.usaid.gov/"><img src="{% static '/icons/usaid.png' %}" style="width: 22%; float: left;"></a>
 		<a href="https://zincnetwork.com/"><img src="{% static '/icons/zinc.png' %}" style="width: 27%; float: left; margin-left: 5%;"></a>
@@ -72,7 +74,9 @@
 				<a class="footercontactinfo" style="margin-left: 
 				32px;"href = "mailto:gorimaps@idfi.ge">gorimaps@idfi.ge</a>
 		</div>
+		{% autoescape off %}
 		<span class="mobilefooteraboutproject">{% t 'financialsupportertext' %}</span>
+		{% endautoescape %}
 		<div class="footersupports">
 		<a href="https://www.usaid.gov/">
 			<img class="footersupportsiconsusaid" src="{% static '/icons/usaid.png' %}"></a>
