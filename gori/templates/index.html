@@ -3,6 +3,13 @@
 {% block content %}
 {% load transl_extras %}
 
+<head>
+		{% if lang == 'ka' %}
+		<script src="{% static '/js/map.js' %}" async></script>
+		{% else %}
+        <script src="{% static '/js/mapen.js' %}" async></script>
+		{% endif %}
+</head>
 <style>.navbar{background-color: #F1F1E6 !important;}
 #map{
 	height: 450px;
@@ -13,10 +20,8 @@
 <div class="iblockDiv">
 	<div class="identmapdiv">
 		{% if lang == 'ka' %}
-		<script src="{% static '/js/map.js' %}" async></script>
 		<span class="indentmaptext">{% t "map_of_identity" %}</span>
 		{% else %}
-        <script src="{% static '/js/mapen.js' %}" async></script>
 		<span class="indentmaptexten">{% t "map_of_identity" %}</span>
 		{% endif %}
 		<span class="identmapinfo">{% t "identity_map_text" %}</span>
@@ -63,7 +68,18 @@
 		{% endif %} <br><br><br><br>
 		<span class="identmapinfomobile" style="text-align:left">{% t "identity_map_text" %}</span>
 	</div></center>
-<iframe src="https://snazzymaps.com/embed/429468" width="100%" height="450px" style="margin-top:40px;" id="map"></iframe>
+
+        <div id="map"></div>
+        <script>
+            const pins = {{ pins|safe }};
+        </script>
+        <div id="post" class="pinpost">
+
+        </div>
+        <script
+    src="https://maps.googleapis.com/maps/api/js?v=3.50&key=AIzaSyBQAuKvUDilNX3uXRm29S-Mx7A7ylN5SYk&callback=initMap" async defer>
+</script>
+
 <center><br>
 <span class="under_map_text_first_mobile"> {% t 'undermaptextf' %}</span><br>
 <span class="under_map_text_first_mobile">{% t 'undermaptexts' %}</span>
