@@ -18,11 +18,11 @@
 
 <span class="contact_us_text_desktop">{% t 'contact_us_index' %}</span>
 
-<form method="POST" style="margin-top:80px" >{% csrf_token %}
+<form method="POST" style="margin-top:80px">{% csrf_token %}
 	<input id="your_name" type="" name="your_name" class="contact_input" placeholder="{% t 'your_name' %}">
 	<input id="your_phone" type="" name="your_phone" class="contact_input" placeholder="{% t 'telephone' %}">
 	<input id="your_theme" type="" name="your_theme" class="contact_input" placeholder="{% t 'theme' %}">
-	<textarea id="your_message" type="" name=""class="contact_input_big" placeholder="{% t 'message' %}"></textarea>
+	<textarea id="your_message" type="" name="your_message" class="contact_input_big" placeholder="{% t 'message' %}"></textarea>
 
 	{% if lang == 'ka' %}
 	<button class="contact_send_button" type="submit">{% t 'send' %}</button>
@@ -83,11 +83,11 @@
 <span class="contact_us_header_mobileen">{% t 'textus' %}</span>
 {% endif %}
 <span class="contact_us_text_mobile">{% t 'contact_us_index' %}</span>
-<form style="margin-top:26px">
-	<input type="" name=""class="contact_input_mobile" placeholder="{% t 'your_name' %}">
-	<input type="" name=""class="contact_input_mobile" placeholder="{% t 'telephone' %}">
-	<input type="" name=""class="contact_input_mobile" placeholder="{% t 'theme' %}">
-	<textarea type="" name=""class="contact_input_big_mobile" placeholder="{% t 'message' %}"></textarea>
+<form style="margin-top:26px" method="POST">{% csrf_token %}
+	<input type="" name="your_name" class="contact_input_mobile" placeholder="{% t 'your_name' %}">
+	<input type="" name="your_phone" class="contact_input_mobile" placeholder="{% t 'telephone' %}">
+	<input type="" name="your_theme" class="contact_input_mobile" placeholder="{% t 'theme' %}">
+	<textarea type="" name="your_message" class="contact_input_big_mobile" placeholder="{% t 'message' %}"></textarea>
 
 	
 {% if lang == 'ka' %}

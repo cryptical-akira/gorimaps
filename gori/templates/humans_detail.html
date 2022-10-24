@@ -19,7 +19,7 @@
 <div class="post_social_divs"><img src="{% static '/icons/vectortwshare.png' %}" style="width: 20px; height: 20px; margin-left: 14px; margin-top: 14px; float: left;"></div>
 <div class="post_line"></div>
 <div class="post_second_block" style="margin-bottom: 35px;">
-	<img src="{% static histhumanory.post_img %}" class="post_img" style="width: 60%; height: 450px; margin-left:20%">
+	<img src="{% static human.post_img %}" class="post_img" style="width: 60%; height: 500px; margin-left:20%; object-fit: cover;">
 
 </div>
 <span class="post_text">{{human.post_text}}</span>
@@ -52,7 +52,7 @@
 <div class="post_first_block_mobile">
 	<a class="post_go_back_mobile" href="{% url 'humans' lang=lang %}">{% t 'back' %}</a>
 	<span class="post_title_mobile" style="height: auto; width:60%; float:left; margin-left:10px">{{human}}</span>
-	<img src="{% static human.post_img %}" class="post_img_mobile_human">
+	<img src="{% static human.post_img %}" class="post_img_mobile_human" >
 	</div><br><br><br><br><br><br>
 	<div class="post_first_block_mobile">
 	<span class="post_text_mobile" style="margin-top:35px">{{human.post_text}}</span>

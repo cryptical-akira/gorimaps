@@ -5,6 +5,9 @@ from .models import History, Culture, Architect, AboutProjectDonors, Human, Vide
 
 import json
 
+from django.core.mail import send_mail
+from django.conf import settings
+
 
 def pin_to_str(pin):
     return f'{pin.latitude},{pin.longitude}'
@@ -183,7 +186,13 @@ def search(request, lang):
 #text us page
 
 def text_us(request, lang):
+
 	if request.method == 'POST':
+		send_mail(
+		    subject = request.POST['your_theme'],
+		    message = (request.POST['your_name'] + '\n' + request.POST['your_phone'] + '\n' + request.POST['your_message']),
+		    from_email=settings.EMAIL_HOST_USER,
+		    recipient_list=[settings.RECIPIENT_ADDRESS])
 		print(request.POST)
 	return render(request, 'textus.html', {'lang':lang})
 
