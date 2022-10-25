@@ -2,6 +2,16 @@
 {% load static %}
 {% block content %}
 {% load transl_extras %}
+
+<head>
+	<meta property="og:title" content="{{history}}" />
+	<meta property="og:type" content="culture.post" />
+	<meta property="og:url" content="{{ request.get_full_path }}" />
+	<meta property="og:image" content="{% static history.post_img %}" />
+	<meta property="og:description" content="{{history.post_text|truncatechars:150}}" />
+</head>
+
+
 <style>
 	.menuitem3{
 		text-decoration: underline !important;

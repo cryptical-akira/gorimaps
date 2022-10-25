@@ -3,6 +3,13 @@
 {% block content %}
 {% load transl_extras %}
 
+<head>
+	<meta property="og:title" content="{% t 'textus' %}" />
+	<meta property="og:type" content="textus" />
+	<meta property="og:url" content="{{ request.get_full_path }}" />
+	<meta property="og:image" content="{% static '/aboutproject/gorimaps.jpeg' %}" />
+</head>
+
 <style>
 	.menuitem6{
 		text-decoration: underline !important;

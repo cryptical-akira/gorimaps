@@ -9,6 +9,8 @@
 	<meta property="og:type" content="about.project" />
 	<meta property="og:url" content="{{ request.get_full_path }}" />
 	<meta property="og:image" content="{% static '/aboutproject/gorimaps.jpeg' %}" />
+	<meta property="og:description" content="{{about_project.project_info|truncatechars:150}}" />
+
 </head>
 
 <style>

@@ -3,6 +3,13 @@
 {% block content %}
 {% load transl_extras %}
 
+<head>
+	<meta property="og:title" content="{% t 'videos_block_header' %}" />
+	<meta property="og:type" content="videos" />
+	<meta property="og:url" content="{{ request.get_full_path }}" />
+	<meta property="og:image" content="{% static '/aboutproject/gorimaps.jpeg' %}" />
+</head>
+
 <div class="videos_desktop">
 
 {% if lang == 'ka' %}

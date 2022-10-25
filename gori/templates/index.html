@@ -4,6 +4,15 @@
 {% load transl_extras %}
 
 <head>
+	<meta property="og:title" content="{% t 'new_identity_of_gori' %}" />
+	<meta property="og:type" content="index" />
+	<meta property="og:url" content="{{ request.get_full_path }}" />
+	<meta property="og:image" content="{% static '/aboutproject/gorimaps.jpeg' %}" />
+	<meta property="og:description" content="{% t 'identity_map_text' %}" />
+
+</head>
+
+<head>
 		<link rel="stylesheet" href="{% static '/css/style.css' %}">
 		{% if lang == 'ka' %}
 		<script src="{% static '/js/map.js' %}" async></script>
@@ -14,7 +23,7 @@
             let pins = {{ pins|safe }};
         </script>
         <script
-    src="https://maps.googleapis.com/maps/api/js?v=3.50&key=AIzaSyBQAuKvUDilNX3uXRm29S-Mx7A7ylN5SYk&callback=initMap" async defer>
+    src="https://maps.googleapis.com/maps/api/js?v=3.50&key=AIzaSyBQAuKvUDilNX3uXRm29S-Mx7A7ylN5SYk&callback=initMap" defer>
 </script>
 </head>
 <style>.navbar{background-color: #F1F1E6 !important;}

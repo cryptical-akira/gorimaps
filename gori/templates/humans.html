@@ -3,6 +3,14 @@
 {% block content %}
 {% load transl_extras %}
 
+
+<head>
+	<meta property="og:title" content="{% t 'new_identity_of_gori' %} - {{% t 'ppeople' %}" />
+	<meta property="og:type" content="humans" />
+	<meta property="og:url" content="{{ request.get_full_path }}" />
+	<meta property="og:image" content="{% static '/aboutproject/gorimaps.jpeg' %}" />
+</head>
+
 <style>
 	.menuitem5{
 		text-decoration: underline !important;
