@@ -23,7 +23,7 @@ function initMap() {
             if (marker[1].video == ''){
                 postvisual = `<img src="/static${marker[1].img}" class="pinedpostimg">`;
             }else{
-                postvisual = ` <iframe width="600px" height="315" src="${marker[1].video}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="margin-top:50px; margin-left:65px"></iframe>`;
+                postvisual = ` <iframe width="64%" height="280px" src="${marker[1].video}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="margin-top:50px; margin-left:65px"></iframe>`;
             }
             postdiv.innerHTML = `
             <div class="pinpostdiv" id="pinponstdiv">
@@ -32,9 +32,19 @@ function initMap() {
             დახურვა</span>
             <div class="postbkack">
             <span class="pinpostheader">${marker[1].title}</span>
+            <span onclick="copy()">
+<div class="post_social_divs" style=" margin-left:8%; background-color:#F1F1E6;"><img src="/static/icons/Iconlink.svg" style="width: 20px; height: 20px; margin-left: 14px; margin-top: 14px; float: left;"></div>
+</span>
+
+<a href="https://www.facebook.com/dialog/share?app_id=87741124305&href={{ request.build_absolute_uri }}
+"><div class="post_social_divs" style=" background-color:#F1F1E6;"><img src="/static/icons/Vectorfb.svg" style="width: 22px; height: 22px; margin-left: 13.5px; margin-top: 13px; float: left;"></div></a>
+
+<div class="post_social_divs" style=" background-color:#F1F1E6;"><img src="/static/icons/vectortw.svg" style="width: 20px; height: 20px; margin-left: 14px; margin-top: 14px; float: left;"></div>
+            <div class="post_line" style="width:70%; margin-left: 7%"></div>
+
             ${postvisual}
             <span class="pinedpostbody">${marker[1].body}</span>
-            <a href="${marker[1].source}" target="_blank" style="margin-left:65px; display:block; color:black; margin-bottom: 50px">${marker[1].source}</a>
+            <a href="${marker[1].source}" target="_blank" style="margin-left:65px; display:block; color:black; margin-bottom: 50px; width: 60%; word-wrap: break-word;">${marker[1].source}</a>
 
             </div>
             </div>`;

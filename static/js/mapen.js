@@ -23,7 +23,7 @@ function initMap() {
             if (marker[1].video == ''){
                 postvisual = `<img src="/static${marker[1].img}" class="pinedpostimg">`;
             }else{
-                postvisual = ` <iframe width="600px" height="315" src="${marker[1].video_en}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="margin-top:30px; margin-left:65px"></iframe>`;
+                postvisual = ` <iframe width="64%" height="280px" src="${marker[1].video_en}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="margin-top:30px; margin-left:65px"></iframe>`;
             }
             postdiv.innerHTML = `
             <div class="pinpostdiv" id="pinponstdiv">
@@ -34,7 +34,7 @@ function initMap() {
             <span class="pinpostheader">${marker[1].title_en}</span>
             ${postvisual}
             <span class="pinedpostbody">${marker[1].body_en}</span>
-            <a href="${marker[1].source}" target="_blank" style="margin-left:65px; display:block; color:black; margin-bottom: 50px">${marker[1].source}</a>
+            <a href="${marker[1].source}" target="_blank" style="margin-left:65px; display:block; color:black; margin-bottom: 50px; width: 60%; word-wrap: break-word;">${marker[1].source}</a>
 
             </div>
             </div>`;
