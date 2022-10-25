@@ -15,9 +15,9 @@
 <head>
 		<link rel="stylesheet" href="{% static '/css/style.css' %}">
 		{% if lang == 'ka' %}
-		<script src="{% static '/js/map.js' %}" async></script>
+		<script src="{% static '/js/map.js' %}"></script>
 		{% else %}
-        <script src="{% static '/js/mapen.js' %}" async></script>
+        <script src="{% static '/js/mapen.js' %}"></script>
 		{% endif %}
         <script>
             let pins = {{ pins|safe }};
