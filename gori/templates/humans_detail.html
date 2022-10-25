@@ -14,9 +14,9 @@
 
 <a class="post_go_back" href="{% url 'humans' lang=lang %}">{% t 'back' %}</a>
 <span class="post_title">{{human}}</span>
-<div class="post_social_divs"><img src="{% static '/icons/Iconlink.png' %}" style="width: 20px; height: 20px; margin-left: 14px; margin-top: 14px; float: left;"></div>
-<div class="post_social_divs"><img src="{% static '/icons/Vectorfb.png' %}" style="width: 22px; height: 22px; margin-left: 13.5px; margin-top: 13px; float: left;"></div>
-<div class="post_social_divs"><img src="{% static '/icons/vectortwshare.png' %}" style="width: 20px; height: 20px; margin-left: 14px; margin-top: 14px; float: left;"></div>
+<div class="post_social_divs"><img src="{% static '/icons/Iconlink.svg' %}" style="width: 20px; height: 20px; margin-left: 14px; margin-top: 14px; float: left;"></div>
+<div class="post_social_divs"><img src="{% static '/icons/Vectorfb.svg' %}" style="width: 22px; height: 22px; margin-left: 13.5px; margin-top: 13px; float: left;"></div>
+<div class="post_social_divs"><img src="{% static '/icons/vectortw.svg' %}" style="width: 20px; height: 20px; margin-left: 14px; margin-top: 14px; float: left;"></div>
 <div class="post_line"></div>
 <div class="post_second_block" style="margin-bottom: 35px;">
 	<img src="{% static human.post_img %}" class="post_img" style="width: 60%; height: 500px; margin-left:20%; object-fit: cover;">
@@ -58,9 +58,9 @@
 	<span class="post_text_mobile" style="margin-top:35px">{{human.post_text}}</span>
 	
 
-<div class="post_social_divs" style="margin-top:0; float:left"></div>
-<div class="post_social_divs" style="margin-top:0; float:left"></div>
-<div class="post_social_divs" style="margin-top:0; float:left"></div><br><br>
+<div class="post_social_divs" style="margin-top:0; float:left"><img src="{% static '/icons/Iconlink.svg' %}" style="width: 20px; height: 20px; margin-left: 14px; margin-top: 14px; float: left;"></div>
+<div class="post_social_divs" style="margin-top:0; float:left"><img src="{% static '/icons/Vectorfb.svg' %}" style="width: 22px; height: 22px; margin-left: 13.5px; margin-top: 13px; float: left;"></div>
+<div class="post_social_divs" style="margin-top:0; float:left"><img src="{% static '/icons/vectortw.svg' %}" style="width: 20px; height: 20px; margin-left: 14px; margin-top: 14px; float: left;"></div><br><br>
 
 </div><div class="post_line"></div>
 	{% for human in humans %}

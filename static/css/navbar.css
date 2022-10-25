@@ -12,9 +12,11 @@ border-radius: 10px;
 
 .closesearchX{
   margin-left: 16px;
-  margin-top: 16px;
+  margin-top: 13px;
   position: absolute;
   color: black;
+  padding-top: 3px;
+  padding-left: 1px;
   width: 15px;
 }
 
@@ -324,7 +326,7 @@ flex-grow: 0;
 position: absolute;
 left: 72%;
 right: -25%;
-top: 33%;
+top: 31%;
 bottom: 37.5%;
 
 transform: matrix(-1, 0, 0, 1, 0, 0);

@@ -61,8 +61,8 @@
         </div>
 
 <center>	
-<span class="under_map_text_first"><img src="{% static '/icons/Icongps.png' %}" style="display:inline-block; position: absolute;"> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp{% t 'undermaptextf' %}</span>
-<span class="under_map_text_second"><img src="{% static '/icons/Iconundermap.png' %}" style="display:inline-block; position: absolute;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp{% t 'undermaptexts' %}</span>
+<span class="under_map_text_first"><img src="{% static '/icons/Icongps.svg' %}" style="display:inline-block; position: absolute;"> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp{% t 'undermaptextf' %}</span>
+<span class="under_map_text_second"><img src="{% static '/icons/Iconundermap.svg' %}" style="display:inline-block; position: absolute;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp{% t 'undermaptexts' %}</span>
 </center>
 
 </div>
@@ -100,11 +100,11 @@
 		{% endif %}
 		<span class="aboutprojecttext">{{about_project.project_info|truncatechars:1000}}
 
-		<a href="{% url 'about_project' lang=lang %}"><i style="text-decoration:underline; color:#3E3A2B;">(სრულად ნახვა)</i></a>
+		<a href="{% url 'about_project' lang=lang %}"><i style="text-decoration:underline; color:#3E3A2B;">{% t "see_all" %}</i></a>
 
 		</span><br>
 		<a class="projectinfodetail" href="{% url 'about_project' lang=lang %}">{% t "detail" %} </a>&nbsp
-		<img src="{% static '/icons/Iconrightarrow.png' %}" style="position: absolute; display: inline-block; margin-top: 38.5px;">
+		<img src="{% static '/icons/Iconrightarrow.svg' %}" style="position: absolute; display: inline-block; margin-top: 38.5px;">
 
 	</div>
 	<center><div class="line" style="margin-top:10px"></div></center>
@@ -129,7 +129,7 @@
 			<span class="historychildtext" style="text-align: left;">{{last_post_history.post_title|truncatechars:70}}
 			<br>
 			<span class="historychildtextinfo">{{last_post_history.post_text|truncatechars:60 }}<br>
-			<i style="text-decoration:underline; color:#3E3A2B;">(სრულად ნახვა)</i>
+			<i style="text-decoration:underline; color:#3E3A2B;">{% t "see_all" %}</i>
 
 			</span></span>
 		</div></a>
@@ -140,7 +140,7 @@
 				{{lastsec_post_history.post_title|truncatechars:70}}
 				<br>
 				<span class="historychildtextinfo">{{lastsec_post_history.post_text|truncatechars:60}}<br>
-				<i style="text-decoration:underline; color:#3E3A2B;">(სრულად ნახვა)</i>
+				<i style="text-decoration:underline; color:#3E3A2B;">{% t "see_all" %}</i>
 				</span>
 				<a class="allstatic" href="{% url 'history' lang=lang %}">
 					<div class="allstaticdesktopdiv">
@@ -172,7 +172,7 @@
 			<span class="culutrechildtext" style="text-align: left;">{{last_post_culture.post_title|truncatechars:70}}
 			<br>
 			<span class="historychildtextinfo">{{last_post_culture.post_text|truncatechars:60}}<br>
-				<i style="text-decoration:underline; color:#3E3A2B;">(სრულად ნახვა)</i>
+				<i style="text-decoration:underline; color:#3E3A2B;">{% t "see_all" %}</i>
 			</span></span>
 		</div>
 		<a href="{% url 'culture-detail' lang=lang id=lastsec_post_culture.id %}"><div class="historychild">
@@ -182,7 +182,7 @@
 			<br>
 			<span class="historychildtextinfo">
 				{{lastsec_post_culture.post_text|truncatechars:60}}<br>
-				<i style="text-decoration:underline; color:#3E3A2B;">(სრულად ნახვა)</i><br>
+				<i style="text-decoration:underline; color:#3E3A2B;">{% t "see_all" %}</i><br>
 				<a class="allstatic" href="{% url 'culture' lang=lang %}" style="margin-top:50px !important">
 					<div class="allstaticdesktopdiv">
 						{% if lang == 'ka' %}
@@ -220,7 +220,7 @@
 		<div class="videodiv1" style="float: left;">
 				<iframe width="100%" height="264px" src="{{firstvideo.video_src}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
 				<span class="videotimecounter">
-					<img src="{% static '/icons/Icontime.png' %}" class="undervideotime">{{firstvideo.minutes}}:{{firstvideo.seconds}}</span>
+					<img src="{% static '/icons/Icontime.svg' %}" class="undervideotime">{{firstvideo.minutes}}:{{firstvideo.seconds}}</span>
 				<span class="undervideotext">{{firstvideo.video_title}}</span>
 		</div> 
 				<div class="loadvideodot1"></div>
@@ -230,14 +230,14 @@
 		<div class="videodiv2">
 				<iframe width="100%" height="264px" src="{{secondvideo.video_src}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
 				<span class="videotimecounter">
-					<img src="{% static '/icons/Icontime.png' %}" class="undervideotime">{{secondvideo.minutes}}:{{secondvideo.seconds}}</span>
+					<img src="{% static '/icons/Icontime.svg' %}" class="undervideotime">{{secondvideo.minutes}}:{{secondvideo.seconds}}</span>
 				<span class="undervideotext">{{secondvideo.video_title}}</span>
 		</div>
 
 		<div class="videodiv3" style="float: right;">
 				<iframe width="100%" height="264px" src="{{thirdsvideo.video_src}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
 				<span class="videotimecounter">
-					<img src="{% static '/icons/Icontime.png' %}" class="undervideotime">{{thirdsvideo.minutes}}:{{thirdsvideo.seconds}}</span>
+					<img src="{% static '/icons/Icontime.svg' %}" class="undervideotime">{{thirdsvideo.minutes}}:{{thirdsvideo.seconds}}</span>
 				<span class="undervideotext">{{thirdsvideo.video_title}}</span>
 		</div>
 

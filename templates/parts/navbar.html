@@ -21,7 +21,7 @@
 <div id="myNavSearch" class="overlaysearch">
 <span onclick="closeNavSearch()" style="cursor: pointer;">
 <div class="closesearchDesktop" > 
-<img src="{% static '/icons/Iconclosex.png' %}" class="closesearchX">
+<img src="{% static '/icons/Iconclosex.svg' %}" class="closesearchX">
 </div>
 </span>
   <div class="overlaysearch-content">
@@ -38,14 +38,14 @@
 </div>
     <span style="font-size:30px;cursor:pointer" onclick="openNavSearch()">
       <div class="search" onclick="myFunction()" onclick="openNavSearch()">
-        <img class="searchIcon" src="{% static '/icons/Iconsearch.png' %}" >
+        <img class="searchIcon" src="{% static '/icons/Iconsearch.svg' %}" >
     </div>
     </span>
 
 <a href="{% if lang == 'ka' %}../en{% else %}../ka{%endif%}"> 
     <div class="langBar" onclick="myFunction()">
             {% if lang == 'ka' %}English{% else %}ქართული{%endif%}&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-            <img class="angle"src="{% static '/icons/Iconglobus.png' %}"></div>
+            <img class="angle"src="{% static '/icons/Iconglobus.svg' %}"></div>
 <!--         <span class="textSpanForLang">
         ქართული
     </span> -->
@@ -55,7 +55,7 @@
 
     <div class="menu" onclick="openNav()">
           <div id="mymenu" class="menu-content"></div>
-    <img class="iconmenu" src="{% static '/icons/Iconmenu.png' %}"></div>
+    <img class="iconmenu" src="{% static '/icons/Iconmenu.svg' %}"></div>
 <div class="map">
   {% if lang == 'ka' %}
   <center>
