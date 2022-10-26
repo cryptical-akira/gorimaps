@@ -25,7 +25,7 @@
 <img src="{% static searched_post.post_img %}" class="searched_post_img">
 <div class="searched_post_text_side">
 <span class="searched_post_header">{{ searched_post.post_title|truncatechars:35 }}</span>
-<span class="searched_post_text" style="margin-top:15px">{{ searched_post.post_text|truncatechars:50}}</span>
+<span class="searched_post_text" style="margin-top:15px">{{ searched_post.post_text|truncatechars:50}}<i style="text-decoration:underline; color:#3E3A2B;">{% t "see_all" %}</i></span>
 </div>
 </div>
 </a>

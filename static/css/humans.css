@@ -7,9 +7,11 @@ line-height: 41px;
 display: block;
 margin-top: 64px;
 margin-left: 13.6%;
+margin-bottom: 75px;
 color: #3E3A2B;
 }
 .humans_header_desktopen{
+margin-bottom: 75px;
 font-family: 'BarlowCondensedBold';
 font-style: normal;
 font-size: 60px;
@@ -24,12 +26,13 @@ color: #3E3A2B;
 	display: block;
 	height: 410px;
 	margin: auto;
-	margin-top: 75px;
+	margin-top: 0px;
 }
 
 .humans_post_img_desktop{
-	width: 403.5px;
-	height: 100%;
+	width: 35%;
+	height: 80%;
+	border-radius: 15px;
 	display: inline-block;
 	float: right;
 	object-fit: cover;
@@ -47,7 +50,7 @@ color: #3E3A2B;
 	font-family: 'FiraGO';
 	font-style: normal;
 	font-weight: 600;
-	font-size: 36px;
+	font-size: 25px;
 	line-height: 52px;
 
 	display: inline-block;
@@ -59,11 +62,11 @@ color: #3E3A2B;
 
 .humans_post_desktop_info{
 	display: inline-block;
-	margin-top: 40px;
+	margin-top: 20px;
 	font-family: 'FiraGO';
 	font-style: normal;
 	font-weight: 400;
-	font-size: 20px;
+	font-size: 16px;
 	line-height: 32px;
 
 	/* or 160% */

@@ -27,7 +27,9 @@
 <div class="historypostdivs">
 	<div class="historyposttextsdiv">
 	<span class="historypostheader"> {{post.post_title|truncatechars:70}}</span>
-	<span class="historypostinfo">{{post.post_text|truncatechars:200 }}<i style="text-decoration:underline; color:#3E3A2B;">(სრულად ნახვა)</i></span>
+	<span class="historypostinfo">{{post.post_text|truncatechars:250 }}<br>
+		<i style="text-decoration:underline; color:#3E3A2B;">{% t "see_all" %}
+		<img src="{% static '/icons/Iconrightarrow.svg' %}" style="margin-left: 5px; margin-top: 9px; position: absolute;"></i></span>
 	</div>
 	<img src="{% static post.post_img %}" class="hitorypostsimgs">
 </div>

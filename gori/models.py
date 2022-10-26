@@ -85,6 +85,8 @@ class PinedPost(models.Model):
 class PostForPin(models.Model):
     post_title = models.CharField(default='', max_length=250)
     post_text = models.TextField(default='', max_length=5000)
+    post_location_link = models.CharField(default='', max_length=1000, null=True, blank=True)
+    post_location = models.CharField(default='', max_length=500, null=True, blank=True)
     post_videos = models.CharField(default='', max_length=500, blank=True)
     post_img = models.ImageField(upload_to = "postpinimg", null=True, blank=True)
     post_source = models.CharField(default='', max_length=500, blank=True)
@@ -111,6 +113,8 @@ class PostForPin(models.Model):
             'body_en': self.post_text_en,
             'video_en': self.post_videos_en,
             'source_en': self.post_source_en,
+            'location': self.post_location,
+            'location_link': self.post_location_link,
         }
 
 
