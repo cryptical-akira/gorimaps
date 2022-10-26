@@ -28,8 +28,12 @@
 <div class="post_social_divs"><img src="{% static '/icons/vectortw.svg' %}" style="width: 20px; height: 20px; margin-left: 14px; margin-top: 14px; float: left;"></div>
 
 <div class="post_second_block_human" style="margin-bottom: 35px;">
-	<img src="{% static human.post_img %}" class="post_img" style="width: 70%; height: 350px; margin-left:20%; object-fit: cover;">
-	<i style="width:70%; display:block; margin-left:20%; margin-top:10px; line-height: 25px;">{{human.post_text|truncatechars:100}}</i>
+	<img src="{% static human.post_img %}" class="post_img" style="width: 70%; height: auto; margin-left:20%; object-fit: cover;">
+	<i style="width:70%; display:block; margin-left:20%; margin-top:10px; line-height: 25px;">
+
+	{% if human.post_image_description is not None %}
+	{{human.post_image_description}}
+	{% endif %}</i>
 
 </div>	
 
