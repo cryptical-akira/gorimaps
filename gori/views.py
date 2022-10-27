@@ -231,3 +231,9 @@ def videos(request, lang):
 	for i in allpost:
 		all_post.insert(0, i)
 	return render(request, 'videos.html', {'lang':lang, 'videos':all_post})
+
+
+#404 page 
+def error_404_view(request, exception):
+	response = redirect('/')
+	return response
