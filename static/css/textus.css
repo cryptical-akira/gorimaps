@@ -507,6 +507,20 @@ line-height: 28px;
 
 color: #F6C042;
 }
+.contact_contactus_mobileen{
+	font-family: 'BarlowCondensedBold';
+font-style: normal;
+display: block;
+margin-top: 64px;
+margin-right: 170px;
+font-weight: 400;
+font-size: 38px;
+line-height: 28px;
+
+/* or 74% */
+
+color: #F6C042;
+}
 
 .mobilecontactusline{
 	margin-top: 20px;

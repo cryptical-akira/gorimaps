@@ -27,9 +27,9 @@
 </span>
   <div class="overlaysearch-content">
     <center>
-      <span class="searchheaderdesktop">ვებგვერდზე ძიება</span>
+      <span class="searchheaderdesktop">{% t 'searchonweb' %}</span>
       <form action="/search/{{lang}}">
-          <input type="text" id="search_text" name="search_text" placeholder="ვებ გვერდზე ძიება..." style="margin-top:77px">
+          <input type="text" id="search_text" name="search_text" placeholder="{% t 'searchonweb' %}..." style="margin-top:77px">
           <button type="submit" style="background-color: transparent;background-repeat: no-repeat;border: none;cursor: pointer;">
             <img src="{% static '/icons/Iconmobilesearch.png' %}" ></button>
       <div class="linenavbar"></div></form>
@@ -70,12 +70,16 @@
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
         <img src="{% static '/icons/Iconclosex.svg' %}" class="iconmenuclose">
       </a>
-       <span class="mobilemenuheader">გორის ახალი იდენტობა</span>
+      {% if lang == 'ka' %}
+       <span class="mobilemenuheader">{% t "new_identity_of_gori" %}</span>
+      {% else %}
+       <span class="mobilemenuheaderen">{% t "new_identity_of_gori" %}</span>
+      {% endif %}
       <div class="line6"></div>
       <center>
         <div class="mobilemenusearchbar">
           <form action="/search/{{lang}}">
-          <input type="text" id="search_text" name="search_text" placeholder="ვებ გვერდზე ძიება...">
+          <input type="text" id="search_text" name="search_text" placeholder="{% t 'searchonweb' %}...">
           <button type="submit" style="background-color: transparent;background-repeat: no-repeat;border: none;cursor: pointer;">
             <img src="{% static '/icons/Iconmobilesearch.png' %}" style="margin-top: 9px; display: inline-block;" class="Iconmobilesearch"></button>
             <div class="linenavbar"></div>
@@ -85,13 +89,23 @@
       <div class="overlay-content"> 
 
         <center><br><br>
-        <a href="{% url 'index_page' lang=lang %}" class="mobilemenuitem">მთავარი</a>
-        <a href="{% url 'about_project' lang=lang %}" class="mobilemenuitem">პროექტის შესახებ</a>
-        <a href="{% url 'history' lang=lang %}" class="mobilemenuitem">ისტორია</a>
-        <a href="{% url 'culture' lang=lang %}" class="mobilemenuitem">კულტურა</a>
-        <a href="{% url 'architect' lang=lang %}" class="mobilemenuitem">არქიტექტურა</a>
-        <a href="{% url 'humans' lang=lang %}" class="mobilemenuitem">ადამიანები</a>
-        <a href="{% url 'text_us' lang=lang %}" class="mobilemenuitem">მოგვწერეთ</a>
+        {% if lang == 'ka' %}
+        <a href="{% url 'index_page' lang=lang %}" class="mobilemenuitem">{% t 'homepage' %}</a>
+        <a href="{% url 'about_project' lang=lang %}" class="mobilemenuitem">{% t 'aboutmobile' %}</a>
+        <a href="{% url 'history' lang=lang %}" class="mobilemenuitem">{% t "history" %}</a>
+        <a href="{% url 'culture' lang=lang %}" class="mobilemenuitem">{% t "culture" %}</a>
+        <a href="{% url 'architect' lang=lang %}" class="mobilemenuitem">{% t "architect" %}</a>
+        <a href="{% url 'humans' lang=lang %}" class="mobilemenuitem">{% t "humans" %}</a>
+        <a href="{% url 'text_us' lang=lang %}" class="mobilemenuitem">{% t "textus" %}</a>
+        {% else %}
+        <a href="{% url 'index_page' lang=lang %}" class="mobilemenuitemen">{% t 'homepage' %}</a>
+        <a href="{% url 'about_project' lang=lang %}" class="mobilemenuitemen">{% t 'aboutmobile' %}</a>
+        <a href="{% url 'history' lang=lang %}" class="mobilemenuitemen">{% t "history" %}</a>
+        <a href="{% url 'culture' lang=lang %}" class="mobilemenuitemen">{% t "culture" %}</a>
+        <a href="{% url 'architect' lang=lang %}" class="mobilemenuitemen">{% t "architect" %}</a>
+        <a href="{% url 'humans' lang=lang %}" class="mobilemenuitemen">{% t "humans" %}</a>
+        <a href="{% url 'text_us' lang=lang %}" class="mobilemenuitemen">{% t "textus" %}</a>
+        {% endif %}
         </center>
       </div>
     </div>

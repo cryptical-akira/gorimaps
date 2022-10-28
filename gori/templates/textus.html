@@ -105,7 +105,11 @@
 <button class="contact_send_button_mobileen">{% t 'send' %}</button>
 {% endif %}
 </form>
-<span class="contact_contactus_mobile">{% t 'contact_us' %}</span>
+	{% if lang == 'ka' %}
+	<span class="contact_contactus_mobile">{% t 'contact_us' %}</span>
+	{% else %}
+	<span class="contact_contactus_mobileen">{% t 'contact_us' %}</span>
+	{% endif %}
 <div class="mobilecontactusline"></div>
 <div style="width:300px">
 	<div class="contact_us_contact_child_div" style="width:200px !important; float: left;">
@@ -119,7 +123,11 @@
 		<a href = "mailto:gorimaps@idfi.ge"><span class="contact_us_contact_info">info@idfi.ge</span></a>
 	</div>
 	</div><br><br><br><br>
+	{% if lang == 'ka' %}
 	<span class="contact_contactus_mobile">{% t 'contact_us' %}</span>
+	{% else %}
+	<span class="contact_contactus_mobileen">{% t 'contact_us' %}</span>
+	{% endif %}
 <div class="mobilecontactusline"></div><br>
 <div style="width:300px">
 	<a href="https://www.facebook.com/IDFI.official" style="float: left;">
