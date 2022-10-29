@@ -12,7 +12,7 @@ PROJ_DIR_OLDSTYLE = os.path.dirname(os.path.dirname(os.path.dirname(os.path.absp
 SECRET_KEY = 'django-insecure-4ue=(5ci3=ufvti&u%7s*yu4+tv2q65_rg6$@j!22jwu___aq2'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 CSFR_TRUSTED_ORIGINS = ['https://gorimaps.ge']
 

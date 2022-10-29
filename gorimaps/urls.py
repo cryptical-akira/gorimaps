@@ -36,3 +36,5 @@ urlpatterns = [
 ]
 
 
+handler404 = error_404_view
+handler500 = error_404_view
