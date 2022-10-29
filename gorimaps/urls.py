@@ -1,6 +1,6 @@
 from django.contrib import admin
 from django.urls import path, include, register_converter
-from gori.views import index_page, index_wout_lang, about_project, history, culture, architect, humans, videos
+from gori.views import index_page, index_wout_lang, about_project, history, culture, architect, humans, videos, error_404_view
 from gori.views import history_detail_view, culture_detail_view, architect_detail_view, search, text_us, humans_detail
 from .converters import LanguagePathConverter
 
@@ -34,3 +34,7 @@ urlpatterns = [
     path('videos/<lang:lang>/', videos, name='videos'),
 
 ]
+
+
+handler404 = error_404_view
+handler500 = error_404_view
