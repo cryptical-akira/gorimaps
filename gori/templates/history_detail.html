@@ -15,16 +15,19 @@
 <style>
 	.menuitem2{
 		text-decoration: underline !important;
+		color: #D6CBA4;
+
+
 	}
 
 </style>
 <div class="post_detail_desktop">
 <div class="post_first_block">
-<a class="post_go_back" href="{% url 'history' lang=lang %}">{% t 'back' %}</a>
+<a class="post_go_back" href="{% url 'history' lang=lang %}"><img src="{% static '/icons/Iconleft.svg' %}" style="position: relative; top:4px; margin-right: 11px">{% t 'back' %}</a>
 <span class="post_title">{{history}}</span>
 
-<span onclick="copy()">
-<div class="post_social_divs"><img src="{% static '/icons/Iconlink.svg' %}" style="width: 20px; height: 20px; margin-left: 14px; margin-top: 14px; float: left;"></div>
+<span onclick="navigator.clipboard.writeText(window.location.href);">
+<div class="post_social_divs" style="margin-left: 0; cursor: pointer;"><img src="{% static '/icons/Iconlink.svg' %}" style="width: 20px; height: 20px; margin-left: 14px; margin-top: 14px; float: left;"></div>
 </span>
 
 <a href="https://www.facebook.com/dialog/share?app_id=87741124305&href={{ request.build_absolute_uri }}

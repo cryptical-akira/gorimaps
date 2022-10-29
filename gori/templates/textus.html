@@ -13,6 +13,9 @@
 <style>
 	.menuitem6{
 		text-decoration: underline !important;
+		color: #D6CBA4;
+
+
 	}
 
 </style>
@@ -38,9 +41,25 @@
 	{% endif %}
 </form>
 {% if lang == 'ka' %}
-<button class="contact_remove_button">{% t 'delete' %}</button>
+<button class="contact_remove_button" onclick=
+            "document.getElementById(
+             'your_name').value = '';
+             document.getElementById(
+             'your_phone').value = '';
+             document.getElementById(
+             'your_theme').value = '';
+             document.getElementById(
+             'your_message').value = '';">{% t 'delete' %}</button>
 {% else %}
-<button class="contact_remove_buttonen">{% t 'delete' %}</button>
+<button class="contact_remove_buttonen" onclick=
+            "document.getElementById(
+             'your_name').value = '';
+             document.getElementById(
+             'your_phone').value = '';
+             document.getElementById(
+             'your_theme').value = '';
+             document.getElementById(
+             'your_message').value = '';">{% t 'delete' %}</button>
 {% endif %}
 <br><br><br><br><br><br><br><br>
 <div class="contact_line_desktop"></div>
@@ -98,10 +117,26 @@
 
 	
 {% if lang == 'ka' %}
-<button class="contact_remove_button_mobile">{% t 'delete' %}</button>
+<button class="contact_remove_button_mobile"onclick=
+            "document.getElementById(
+             'your_name').value = '';
+             document.getElementById(
+             'your_phone').value = '';
+             document.getElementById(
+             'your_theme').value = '';
+             document.getElementById(
+             'your_message').value = '';">{% t 'delete' %}</button>
 <button class="contact_send_button_mobile">{% t 'send' %}</button>
 {% else %}
-<button class="contact_remove_button_mobileen">{% t 'delete' %}</button>
+<button class="contact_remove_button_mobileen" onclick=
+            "document.getElementById(
+             'your_name').value = '';
+             document.getElementById(
+             'your_phone').value = '';
+             document.getElementById(
+             'your_theme').value = '';
+             document.getElementById(
+             'your_message').value = '';">{% t 'delete' %}</button>
 <button class="contact_send_button_mobileen">{% t 'send' %}</button>
 {% endif %}
 </form>

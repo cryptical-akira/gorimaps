@@ -59,7 +59,7 @@ class Human(models.Model):
     post_title =  models.ForeignKey(MultilanguageTextField, on_delete=models.CASCADE, related_name='humans', null=True)
     post_text =  models.ForeignKey(MultilanguageTextField, on_delete=models.CASCADE, related_name='huamnstext', null=True)
     post_image_description =  models.ForeignKey(MultilanguageTextField, on_delete=models.CASCADE, related_name='humanimgdescription', null=True, blank=True)
-    post_img = models.ImageField(upload_to = "humansimg", null=True, blank=True)
+    post_img = models.ImageField(upload_to = "humansimg", null=True, blank=True, default='humansimg/default.png')
     def __str__(self):
         return str(self.post_title)
 
