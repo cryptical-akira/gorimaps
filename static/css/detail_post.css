@@ -96,6 +96,26 @@ background: #FEFEF8;
 	color: #3E3A2B;
 }
 
+.sharetext{
+position: absolute;
+margin-top: 47px;
+margin-left: 30px;
+
+font-family: 'FiraGO';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+display: flex;
+align-items: center;
+
+color: #848177;
+
+
+
+display: inline-block;
+}
+
 .post_title{
 	color: black;
 	width: 100%;
@@ -105,7 +125,7 @@ background: #FEFEF8;
 	font-family: 'FiraGO';
 	font-style: normal;
 	font-weight: 600;
-	font-size: 34px;
+	font-size: 40px;
 	line-height: 40px;
 }
 .post_text{

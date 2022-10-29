@@ -142,8 +142,8 @@
 			<span class="historychildtext" style="text-align: left;">{{last_post_history.post_title|truncatechars:70}}
 			<br>
 			<span class="historychildtextinfo">{{last_post_history.post_text|truncatechars:60 }}<br>
-			<i style="text-decoration:underline; color:#3E3A2B;">{% t "see_all" %}
-				<img src="{% static '/icons/Iconrightarrow.svg' %}" style="margin-left: 5px; margin-top: 6px; position: absolute;"></i>
+					<span style="color:#3E3A2B; margin-top: 20px; display: block">{% t "see_all" %}
+		<img src="{% static '/icons/Iconrightarrow.svg' %}" style="margin-left: 10px; margin-top: 8px; position: absolute;"></span>
 
 			</span></span>
 		</div></a>
@@ -154,7 +154,8 @@
 				{{lastsec_post_history.post_title|truncatechars:70}}
 				<br>
 				<span class="historychildtextinfo">{{lastsec_post_history.post_text|truncatechars:60}}<br>
-				<i style="text-decoration:underline; color:#3E3A2B;">{% t "see_all" %}<img src="{% static '/icons/Iconrightarrow.svg' %}" style="margin-left: 5px; margin-top: 6px; position: absolute;"></i>
+		<span style="color:#3E3A2B; margin-top: 20px; display: block">{% t "see_all" %}
+		<img src="{% static '/icons/Iconrightarrow.svg' %}" style="margin-left: 10px; margin-top: 8px; position: absolute;"></span>
 				</span>
 				<a class="allstatic" href="{% url 'history' lang=lang %}">
 					<div class="allstaticdesktopdiv">
@@ -186,7 +187,8 @@
 			<span class="culutrechildtext" style="text-align: left;">{{last_post_culture.post_title|truncatechars:70}}
 			<br>
 			<span class="historychildtextinfo">{{last_post_culture.post_text|truncatechars:60}}<br>
-				<i style="text-decoration:underline; color:#3E3A2B;">{% t "see_all" %}<img src="{% static '/icons/Iconrightarrow.svg' %}" style="margin-left: 5px; margin-top: 6px; position: absolute;"></i>
+		<span style="color:#3E3A2B; margin-top: 20px; display: block">{% t "see_all" %}
+		<img src="{% static '/icons/Iconrightarrow.svg' %}" style="margin-left: 10px; margin-top: 8px; position: absolute;"></span>
 			</span></span>
 		</div>
 		<a href="{% url 'culture-detail' lang=lang id=lastsec_post_culture.id %}"><div class="historychild">
@@ -196,7 +198,8 @@
 			<br>
 			<span class="historychildtextinfo">
 				{{lastsec_post_culture.post_text|truncatechars:60}}<br>
-				<i style="text-decoration:underline; color:#3E3A2B;">{% t "see_all" %}<img src="{% static '/icons/Iconrightarrow.svg' %}" style="margin-left: 5px; margin-top: 6px; position: absolute;"></i><br>
+						<span style="color:#3E3A2B; margin-top: 20px; display: block">{% t "see_all" %}
+		<img src="{% static '/icons/Iconrightarrow.svg' %}" style="margin-left: 10px; margin-top: 8px; position: absolute;"></span><br>
 				<a class="allstatic" href="{% url 'culture' lang=lang %}" style="margin-top:50px !important">
 					<div class="allstaticdesktopdiv">
 						{% if lang == 'ka' %}

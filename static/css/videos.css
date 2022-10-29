@@ -45,10 +45,30 @@ display: inline-block;
 background: #3E3A2B;
 border-radius: 12px;
 }
+
+@media only screen and (min-width: 1755px) {
+.videosdivonpage{
+	width: 85%;
+}
+}
+
+@media only screen and (min-width: 1562px) and (max-width: 1754px){
+.videosdivonpage{
+	width: 100%;
+}
+}
+@media only screen and (min-width: 1200px) and (max-width: 1561px){
 .videosdivonpage{
 	width: 80%;
-	margin-right: 90px;
 }
+}
+
+@media only screen and (max-width: 1339px){
+.videotimecounter{
+	display: none;
+}
+}
+
 .videopageundertext{
 	font-family: 'FiraGO';
 font-style: normal;

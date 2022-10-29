@@ -23,7 +23,7 @@ font-weight: 400;
 font-size: 16px;
 text-align: justify;
 margin-top: 36px;
-line-height: 28px;
+line-height: 26px;
 
 /* or 160% */
 
@@ -37,12 +37,12 @@ font-family: 'FiraGO';
 text-align: ;
 font-style: normal;
 font-weight: 600;
-font-size: 25px;
+font-size: 30px;
 line-height: 37px;
 
 /* or 144% */
 
-color: #F6C042;
+color: #3E3A2B;
 }
 
 .historypostdivs{

@@ -2,14 +2,6 @@
 
 }
 
-.aboutprojectdiv{
-width: 1398px;
-height: 390px;
-margin-left: 13.6%;
-overflow-wrap: break-word;
-padding-top: 74px;
-
-}
 
 .aboutprojectheader{
 /* პროექტის შესახებ */
@@ -61,6 +53,27 @@ color: #F6C042;
 
 }
 
+
+.aboutprojectdiv{
+width: 72.5%;
+height: 390px;
+margin-left: 13.6%;
+overflow-wrap: break-word;
+padding-top: 74px;
+
+}
+
+@media only screen and (max-width: 1615px){
+	.aboutprojectdiv{
+	width: 96%;
+	height: 500px;
+	margin-left: 13.6%;
+	overflow-wrap: break-word;
+	padding-top: 74px;
+
+	}
+}
+
 .aboutprojecttext{
 position: block;
 overflow-wrap: break-word;
@@ -79,8 +92,6 @@ line-height: 26px;
 /* or 162% */
 
 color: #3E3A2B;
-
-
 }
 
 .aboutprojectimg{
@@ -150,7 +161,7 @@ color: #3E3A2B;
 	display: none;
 }
 .videosdiv{
-width: 1398px;
+width: 1310px;
 height: 536.71px;
 display: inline-block;
 margin-top: 50px;
@@ -394,7 +405,7 @@ position: block;
 display: inline-block;
 width: 680px;
 height: 549.68px;
-margin-left: 14.6%;
+margin-left: 13.6%;
 
 }
 		.culturediv{
@@ -534,7 +545,7 @@ line-height: 41px;
 color: #3E3A2B;
 }
 	@media only screen and (max-width: 1620px) and (min-width: 1455px){.historydiv{margin-left: 10%}}
-	@media only screen and (max-width: 1454px){.historydiv{margin-left: 6%}}
+	@media only screen and (max-width: 1454px){.historydiv{margin-left: 5%}}
 			.historydiv{
 position: block;
 display: inline-block;

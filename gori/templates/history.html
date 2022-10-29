@@ -34,8 +34,8 @@
 	<div class="historyposttextsdiv">
 	<span class="historypostheader"> {{post.post_title|truncatechars:70}}</span>
 	<span class="historypostinfo">{{post.post_text|truncatechars:250 }}<br>
-		<i style="text-decoration:underline; color:#3E3A2B;">{% t "see_all" %}
-		<img src="{% static '/icons/Iconrightarrow.svg' %}" style="margin-left: 5px; margin-top: 9px; position: absolute;"></i></span>
+		<span style="color:#3E3A2B; margin-top: 30px; display: block">{% t "see_all" %}
+		<img src="{% static '/icons/Iconrightarrow.svg' %}" style="margin-left: 10px; margin-top: 8px; position: absolute;"></span></span>
 	</div>
 	<img src="{% static post.post_img %}" class="hitorypostsimgs">
 </div>

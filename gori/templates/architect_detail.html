@@ -19,7 +19,7 @@
 </style>
 <div class="post_detail_desktop">
 <div class="post_first_block">
-<a class="post_go_back" href="{% url 'history' lang=lang %}">{% t 'back' %}</a>
+<a class="post_go_back" href="{% url 'architect' lang=lang %}">{% t 'back' %}</a>
 <span class="post_title">{{history}}</span>
 
 <span onclick="copy()">
@@ -30,6 +30,8 @@
 "><div class="post_social_divs"><img src="{% static '/icons/Vectorfb.svg' %}" style="width: 22px; height: 22px; margin-left: 13.5px; margin-top: 13px; float: left;"></div></a>
 
 <div class="post_social_divs"><img src="{% static '/icons/vectortw.svg' %}" style="width: 20px; height: 20px; margin-left: 14px; margin-top: 14px; float: left;"></div>
+
+<span class="sharetext">{% t 'share' %}</span>
 
 <div class="post_line"></div>
 <div class="post_second_block">
