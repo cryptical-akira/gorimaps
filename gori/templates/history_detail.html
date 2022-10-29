@@ -10,6 +10,8 @@
 	<meta property="og:url" content="{{ request.get_full_path }}" />
 	<meta property="og:image" content="{% static history.post_img %}" />
 	<meta property="og:description" content="{{history.post_text|truncatechars:150}}" />
+	<link rel="stylesheet" href="{% static '/css/detail_post.css' %}">
+	<link rel="stylesheet" href="{% static '/css/IIblock.css' %}">
 </head>
 
 <style>
@@ -79,7 +81,7 @@
 <center>
 <div class="post_detail_mobile">
 <div class="post_first_block_mobile">
-	<a class="post_go_back_mobile" href="{% url 'history' lang=lang %}">{% t 'back' %}</a>
+	<a class="post_go_back_mobile" href="{% url 'history' lang=lang %}"><img src="{% static '/icons/Iconleft.svg' %}" style="position: relative; top:4px; margin-right: 11px">{% t 'back' %}</a>
 	<span class="post_title_mobile">{{history}}<br><br>
 	<div class="post_social_divs_mobile">
 		<img src="{% static '/icons/Iconlink.svg' %}" style="width: 13.86px; height: 13.86px; margin-left: 11.07px; margin-top: 10px;"></div>
