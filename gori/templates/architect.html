@@ -46,9 +46,9 @@
 <center>
 <div class="historymobile">
 	{% if lang == 'ka' %}
-	<span class="aboutprojectmobileheader" style="margin-right: 250px;">{% t 'architect' %}</span>
+	<span class="aboutprojectmobileheader" style="margin-right: 210px;">{% t 'architect' %}</span>
 	{% else %}
-	<span class="aboutprojectmobileheaderen" style="margin-right: 250px;">{% t 'architect' %}</span>
+	<span class="aboutprojectmobileheaderen" style="margin-right: 210px;">{% t 'architect' %}</span>
 	{% endif %}
 	{% for post in posts %}
 	<a href="{% url 'architect-detail' lang=lang id=post.id %}">
