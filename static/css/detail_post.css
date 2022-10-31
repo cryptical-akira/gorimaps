@@ -169,7 +169,7 @@ display: inline-block;
 }
 
 .post_tell_us_more{
-	display: block;
+	display: inline-block;
 	width: 686px;
 	margin-top: 64px;
 	height: 300px;
