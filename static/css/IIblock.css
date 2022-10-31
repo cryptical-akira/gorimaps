@@ -1,7 +1,23 @@
 .iiblockDiv{
 
 }
+.videomobileslideshow{
+	display: none;
+}
 
+.prev {
+  cursor: pointer;
+  position: absolute;
+  width: auto;
+  color: #F6C042;
+  left: 20%;
+  margin-top: 125px;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
 
 .aboutprojectheader{
 /* პროექტის შესახებ */
@@ -871,14 +887,15 @@ border-radius: 6px;
 }
  	.loadvideodot1{
  		position: relative;
+ 		display: flex;
  		width: 12px;
 height: 12px;
 display: inline-block;
 border-radius: 50%;
-top: 80px;
+top: 100px;
 right: 15px;
 
-background: #D6CBA4;
+background: #F6C042;
 }
  	.loadvideodot2{
  		position: relative;
@@ -887,7 +904,7 @@ height: 12px;
 left: 0px;
 display: inline-block;
 border-radius: 50%;
-top: 80px;
+top: 100px;
 
 background: #D6CBA4;
  	}
@@ -897,7 +914,7 @@ background: #D6CBA4;
 	width: 12px;
 	height: 12px;
 	border-radius: 50%;
-	top: 80px;
+	top: 100px;
 	left: 15px;
 
 	background: /*#F6C042*/ #D6CBA4;
@@ -1001,11 +1018,17 @@ color: #3E3A2B;
  		margin: auto;
  		height: 420px;
  	}
- 	.videodiv1{
+ 	.videodivmobile{
  		width: 335px;
  		height: 218px;
  		margin-top: 0;
  		margin-left: 0px;
+ 	}
+ 	.videomobileslideshow{
+ 		display: block;
+ 	}
+ 	.videodiv1{
+ 		display: none;
  	}
  	.videodiv2{
  		display: none;

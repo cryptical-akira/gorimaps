@@ -245,9 +245,50 @@
 					<img src="{% static '/icons/Icontime.svg' %}" class="undervideotime">{{firstvideo.minutes}}:{{firstvideo.seconds}}</span>
 				<span class="undervideotext">{{firstvideo.video_title}}</span>
 		</div> 
-				<div class="loadvideodot1"></div>
-				<div class="loadvideodot2"></div>
-				<div class="loadvideodot3"></div>
+
+
+
+
+
+				<div class="videomobileslideshow">
+
+
+
+				<div class="mySlides fade">
+				<div class="videodivmobile" style="float: left;">
+				<iframe width="100%" height="264px" src="{{firstvideo.video_src}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
+				<span class="videotimecounter">
+					<img src="{% static '/icons/Icontime.svg' %}" class="undervideotime">{{firstvideo.minutes}}:{{firstvideo.seconds}}</span>
+				<span class="undervideotext">{{firstvideo.video_title}}</span>
+				</div> 
+				</div>
+
+				<div class="mySlides fade">
+				<div class="videodivmobile" style="float: left;">
+				<iframe width="100%" height="264px" src="{{secondvideo.video_src}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
+				<span class="videotimecounter">
+					<img src="{% static '/icons/Icontime.svg' %}" class="undervideotime">{{secondvideo.minutes}}:{{secondvideo.seconds}}</span>
+				<span class="undervideotext">{{secondvideo.video_title}}</span>
+				</div> 
+				</div>
+
+				<div class="mySlides fade">
+				<div class="videodivmobile" style="float: left;">
+				<iframe width="100%" height="264px" src="{{thirdsvideo.video_src}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
+				<span class="videotimecounter">
+					<img src="{% static '/icons/Icontime.svg' %}" class="undervideotime">{{thirdsvideo.minutes}}:{{thirdsvideo.seconds}}</span>
+				<span class="undervideotext">{{thirdsvideo.video_title}}</span>
+				</div> 
+				</div>
+
+
+				</div>
+
+
+				<div class="loadvideodot1" id="dot1" onclick="currentSlide(1)"></div>
+				<div class="loadvideodot2" id="dot2" onclick="currentSlide(2)"></div>
+				<div class="loadvideodot3" id="dot3" onclick="currentSlide(3)"></div>
+
 
 		<div class="videodiv2">
 				<iframe width="100%" height="264px" src="{{secondvideo.video_src}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
@@ -265,6 +306,7 @@
 
 		</center>
 	</div>
+
 	<center>
 	<div class="tellusmoremobile">
 		{% if lang == 'ka' %}
@@ -284,6 +326,49 @@
 
 </div>
 
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
 
+function plusSlides(n) {   
+  showSlides(slideIndex += n);
+
+}
+
+function currentSlide(n) {
+  if (n == 1) {
+  document.getElementById("dot2").style.backgroundColor = "rgb(214,203,164)";
+  document.getElementById("dot1").style.backgroundColor = "rgb(246,192,66)";
+  document.getElementById("dot3").style.backgroundColor = "rgb(214,203,164)";
+  }  
+  if (n == 2) {
+  document.getElementById("dot3").style.backgroundColor = "rgb(214,203,164)";
+  document.getElementById("dot2").style.backgroundColor = "rgb(246,192,66)";
+  document.getElementById("dot1").style.backgroundColor = "rgb(214,203,164)";
+  }
+  if (n == 3) {
+  document.getElementById("dot1").style.backgroundColor = "rgb(214,203,164)";
+  document.getElementById("dot3").style.backgroundColor = "rgb(246,192,66)";
+  document.getElementById("dot2").style.backgroundColor = "rgb(214,203,164)";
+  } 
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
 
 {% endblock %}
