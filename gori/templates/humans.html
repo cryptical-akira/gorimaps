@@ -58,7 +58,12 @@
 	<a href="{% url 'humans_detail' lang=lang id=human.id %}">
 	<div class="humans_mobile_posts">
 		<span class="humans_mobile_post_header">{{human.post_title}}</span>
-		<img src="{% static human.post_img %}" class="humans_post_img_mobile">
+	{% if human.post_cover_img != 'None' %}
+	<img src="{% static human.post_cover_img %}" class="humans_post_img_mobile">
+	{% else %}
+	<img src="{% static human.post_img %}" class="humans_post_img_mobile">
+	{% endif %}
+
 		<span class="get_more_mobile_post">{% t 'learnmore' %}</span>
 
 	</div>
