@@ -51,7 +51,7 @@
 	{% endif %}
 	<span class="post_author">{% t 'author' %}: {{history.post_author}}</span>
 </div>
-<span class="post_text">{{history.post_text}}</span>
+<span class="post_text">{{history.post_text|safe}}</span>
 
 	<center>
 	<div class="post_tell_us_more">
@@ -97,7 +97,7 @@
 	<img src="{% static history.post_img %}" class="post_img_mobile">
 	{% endif %}
 	<div class="post_first_block_mobile">
-	<span class="post_text_mobile">{{history.post_text}}</span>
+	<span class="post_text_mobile">{{history.post_text|safe}}</span>
 	</div>
 	<div class="tellusmoremobile">
 		{% if lang == 'ka' %}
