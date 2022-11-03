@@ -31,7 +31,7 @@ function initMap() {
             <div class="pinpostdiv" id="pinponstdiv">
             <span class="pinpostclose" 
             onclick="document.getElementById('post').style.display = 'none'">
-            დახურვა</span>
+            <img src='/static/icons/Iconleft.svg' style="position: relative; top:4px; margin-right: 11px">დახურვა</span>
             <div class="postbkack">
             <span class="pinpostheader">${marker[1].title}</span>
             <a class="pinpostlocation" href="${marker[1].location_link}">${marker[1].location}</a>
@@ -71,7 +71,7 @@ function initMap() {
             <div class="pinpostdiv" id="pinponstdiv">
             <span class="pinpostclose"  style="margin-left:42%"
             onclick="document.getElementById('postmobile').style.display = 'none'">
-            დახურვა</span>
+            <img src='/static/icons/Iconleft.svg' style="position: relative; top:4px; margin-right: 11px">დახურვა</span>
             <div class="postbkack">
             <span class="pinpostheader">${marker[1].title}</span>
            <a class="pinpostlocation" href="${marker[1].location_link}">${marker[1].location}</a>

@@ -29,7 +29,7 @@ function initMap() {
             <div class="pinpostdiv" id="pinponstdiv">
             <span class="pinpostclose" 
             onclick="document.getElementById('post').style.display = 'none'">
-            close</span>
+            <img src='/static/icons/Iconleft.svg' style="position: relative; top:4px; margin-right: 11px">close</span>
             <div class="postbkack">
             <span class="pinpostheader">${marker[1].title_en}</span>
             <a class="pinpostlocation" href="${marker[1].location_link}">${marker[1].location}</a>
@@ -67,7 +67,7 @@ function initMap() {
             <div class="pinpostdiv" id="pinponstdiv">
             <span class="pinpostclose" 
             onclick="document.getElementById('postmobile').style.display = 'none'">
-            close</span>
+            <img src='/static/icons/Iconleft.svg' style="position: relative; top:4px; margin-right: 11px">close</span>
             <div class="postbkack">
             <span class="pinpostheader">${marker[1].title_en}</span>
            <a class="pinpostlocation" href="${marker[1].location_link}">${marker[1].location}</a>
